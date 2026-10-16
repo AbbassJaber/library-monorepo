@@ -1,0 +1,31 @@
+# Overlay for smoke/e2e runs (CI `stack` job and local):
+#   pnpm stack:test   (= docker compose -f compose.yaml -f compose.test.yaml up --build -d --wait)
+# bcrypt verification cost follows the stored hash, so the demo accounts are re-seeded with
+# 4 rounds too; 12 rounds (≈ 0.5 s of CPU per login on the API's event loop) made parallel
+# Playwright workers starve the API (spurious 500s from Prisma's transaction-start timeout).
+# Its own Compose project, so its own containers and database volume: test runs (re-seeded on
+# every start, e2e accounts created and deleted) never touch the data of `pnpm stack` /
+# `pnpm stack:real`. Same host ports, so one of the two runs at a time (`pnpm stack:test` stops
+# the other first, and the other scripts stop this one).
+name: library-monorepo-test
+
+services:
+  migrate:
+    environment:
+      BCRYPT_ROUNDS: 4
+      SEED_ON_START: always
+  api:
+    environment:
+      BCRYPT_ROUNDS: 4
+      # Back-to-back suites with parallel workers exceed the production limits (30 logins and
+      # 300 requests per minute); limiter behaviour is covered by middleware/rateLimit.test.ts.
+      RATE_LIMIT_AUTH_MAX_REQUESTS: 1000
+      RATE_LIMIT_MAX_REQUESTS: 5000
+      # The retrieval eval (CI stack job) makes ~150 AI calls in a minute; production keeps 30.
+      RATE_LIMIT_AI_MAX_REQUESTS: 1000
+      # Autofill replays the recorded Open Library answers: smoke and e2e never reach the network.
+      LOOKUP_PROVIDER: fixture
+      # The voice e2e drives the scripted mock with a fake microphone; never the real model.
+      VOICE_PROVIDER: mock
+      VOICE_SESSIONS_PER_HOUR: 1000
+      VOICE_DAILY_SECONDS: 86400

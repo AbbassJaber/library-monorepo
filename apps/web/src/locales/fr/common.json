@@ -1,0 +1,263 @@
+{
+  "footer": "Une petite bibliothèque publique, cataloguée avec soin.",
+  "nav": {
+    "skipToContent": "Aller au contenu",
+    "main": "Principal",
+    "manage": "Gérer les {{what}}",
+    "home": "Accueil",
+    "librarian": "Bibliothécaire",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu",
+    "activity": "Activité"
+  },
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français"
+  },
+  "theme": {
+    "system": "Thème : suit votre système",
+    "light": "Thème : clair",
+    "dark": "Thème : sombre",
+    "change": "cliquer pour changer"
+  },
+  "auth": {
+    "logIn": "Se connecter",
+    "logOut": "Se déconnecter",
+    "register": "S’inscrire",
+    "loadingSession": "Chargement de votre session"
+  },
+  "actions": {
+    "tryAgain": "Réessayer",
+    "close": "Fermer",
+    "dismiss": "Fermer la notification",
+    "remove": "Retirer {{label}}",
+    "browse": "Parcourir le {{what}}",
+    "save": "Enregistrer",
+    "saveChanges": "Enregistrer les modifications",
+    "cancel": "Annuler",
+    "discard": "Abandonner les modifications",
+    "edit": "Modifier",
+    "ok": "Ok"
+  },
+  "notFound": {
+    "title": "Il n’y a rien sur cette étagère",
+    "body": "La page demandée n’existe pas."
+  },
+  "errors": {
+    "title": "Une erreur est survenue",
+    "renderTitle": "Cette page n’a pas pu s’afficher",
+    "network": "La requête a échoué. Vérifiez votre connexion et réessayez.",
+    "VALIDATION_ERROR": "Certaines valeurs ne sont pas valides. Vérifiez les champs signalés.",
+    "UNAUTHENTICATED": "E-mail ou mot de passe incorrect, ou session expirée.",
+    "FORBIDDEN": "Vous n’avez pas l’autorisation de faire cela.",
+    "NOT_FOUND": "Cet élément est introuvable.",
+    "CONFLICT": "Cette modification entre en conflit avec l’état actuel. Rechargez et réessayez.",
+    "VERSION_CONFLICT": "Cet élément a changé depuis que vous l’avez ouvert.",
+    "GENRE_IN_USE": "Ce genre est le seul genre actif de certains livres et ne peut pas être archivé.",
+    "BOOK_ARCHIVED": "Ce livre est archivé ; son état de lecture est verrouillé.",
+    "EMAIL_TAKEN": "Un compte existe déjà avec cet e-mail.",
+    "ISBN_TAKEN": "Un autre livre porte déjà cet ISBN.",
+    "RATE_LIMITED": "Trop de tentatives. Patientez un instant et réessayez.",
+    "AI_UNAVAILABLE": "L’assistant est indisponible pour le moment.",
+    "CONFIRM_TOKEN_INVALID": "Cette confirmation n'est plus valable. Redemandez.",
+    "ACTION_ALREADY_DECIDED": "Cette modification a déjà été confirmée ou annulée.",
+    "NOT_READY": "Le service démarre encore. Réessayez dans un instant.",
+    "INTERNAL": "Le serveur a rencontré une erreur inattendue. Réessayez dans un instant."
+  },
+  "zod": {
+    "isbn": {
+      "invalid": "Doit être un ISBN-10 ou un ISBN-13."
+    },
+    "year": {
+      "future": "L’année est dans le futur."
+    },
+    "rating": {
+      "decimals": "Une décimale au maximum."
+    },
+    "query": {
+      "yearRange": "« De l’année » ne peut pas être après « À l’année »."
+    },
+    "genre": {
+      "slug": "Doit être un identifiant en minuscules."
+    },
+    "favorites": {
+      "duplicate": "Chaque genre ne peut être choisi qu’une fois."
+    },
+    "autofill": {
+      "isbnOrTitle": "Indiquez un ISBN ou un titre."
+    },
+    "batch": {
+      "duplicate": "Chaque livre ne peut figurer qu’une fois dans un lot."
+    }
+  },
+  "ai": {
+    "label": "IA",
+    "labelPrefix": "IA : {{label}}",
+    "offline": "mode hors ligne",
+    "offlineLabel": "mode hors ligne (aucun fournisseur configuré)",
+    "small": "petit",
+    "strong": "fort",
+    "embeddings": "plongements",
+    "cachingOn": "cache de prompt actif",
+    "cachingOff": "pas de cache de prompt",
+    "unavailable": "L’assistant est indisponible pour le moment ; voici la version classique.",
+    "statusLine": "IA · {{provider}} · {{model}}",
+    "statusOffline": "IA · mode hors ligne"
+  },
+  "chat": {
+    "open": "Discuter avec le bibliothécaire",
+    "title": "Bibliothécaire",
+    "intro": "Posez vos questions sur le catalogue en français, en anglais ou en arabe. Rien ne change dans votre liste de lecture sans votre confirmation.",
+    "suggestions": {
+      "s1": "Des livres d'Albert Camus",
+      "s2": "Un roman sur une planète désertique et des vers géants",
+      "s3": "Ajoute Le Petit Prince à ma liste de lecture"
+    },
+    "inputLabel": "Votre message",
+    "placeholder": "Un livre, un auteur ou une envie",
+    "send": "Envoyer",
+    "newChat": "Nouvelle conversation",
+    "sources": "Livres cités",
+    "you": "Vous",
+    "assistant": "Bibliothécaire",
+    "pendingTitle": "En attente de votre confirmation",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "cancelled": "Annulé",
+    "alreadyDecided": "Cette modification a déjà été confirmée ou annulée.",
+    "expired": "Cette proposition a expiré. Redemandez.",
+    "unavailable": "L'assistant est indisponible pour le moment. La recherche du catalogue fonctionne toujours.",
+    "voicePending": "En attente de votre confirmation à l'écran.",
+    "voiceBusyHere": "Une conversation vocale est déjà ouverte dans un autre onglet.",
+    "voiceUnavailable": "La voix est indisponible pour le moment. Vous pouvez écrire.",
+    "voiceNoMic": "Le micro n'est pas disponible. Vérifiez l'autorisation du navigateur, ou écrivez.",
+    "jumpLatest": "Aller au dernier message",
+    "composerHint": "Le micro écrit ce que vous dites. Rien n’est envoyé avant que vous appuyiez sur Envoyer.",
+    "askingAbout": "À propos de",
+    "removeContext": "Ne plus parler de {{title}}",
+    "sendLabel": "Envoyer",
+    "state": {
+      "idle": "Au bureau de prêt",
+      "thinking": "Je parcours le catalogue…"
+    },
+    "pulling": "Je sors des livres des rayons…",
+    "openHint": "Ouvrez une couverture pour voir le livre.",
+    "startersLabel": "Pour commencer",
+    "starters": {
+      "after": "Après {{title}}, quoi lire ?",
+      "like": "Quelque chose comme {{title}}",
+      "french": "Propose-moi un livre en français"
+    },
+    "slip": {
+      "title": "Fiche de liste de lecture",
+      "added": "Ajouté",
+      "removed": "Retiré",
+      "done": "Fait",
+      "offList": "Retiré de votre liste",
+      "confirmedBy": "Confirmé par vous"
+    }
+  },
+  "search": {
+    "label": "Chercher dans le catalogue",
+    "placeholder": "Un titre, un auteur, ou décrivez un livre",
+    "placeholderPlain": "Un titre ou un auteur"
+  },
+  "call": {
+    "start": "Appeler le bibliothécaire",
+    "short": "Appeler",
+    "onCall": "En appel avec le bibliothécaire",
+    "elapsed": "Durée de l’appel",
+    "left": "{{time}} restantes",
+    "minimize": "Réduire",
+    "backToCall": "Revenir à l’appel",
+    "end": "Raccrocher",
+    "ending": "Fin de l’appel…",
+    "mute": "Couper le micro",
+    "captions": "Sous-titres",
+    "state": {
+      "connecting": "Connexion…",
+      "listening": "À l’écoute",
+      "thinking": "Recherche dans le catalogue…",
+      "speaking": "Parle"
+    },
+    "hint": "Vous pouvez l’interrompre à tout moment",
+    "you": "Vous",
+    "librarian": "Bibliothécaire",
+    "mentioned": "Cités pendant l’appel",
+    "pillLabel": "Appel avec le bibliothécaire",
+    "orCall": "Ou appelez le bibliothécaire",
+    "record": {
+      "title": "Appel · {{duration}}",
+      "confirmed_one": "{{count}} changement confirmé",
+      "confirmed_other": "{{count}} changements confirmés",
+      "transcript": "Transcription",
+      "empty": "Rien n’a été dit pendant cet appel.",
+      "ended": {
+        "max-duration": "Durée maximale atteinte",
+        "idle": "Terminé après un silence",
+        "daily-budget": "Le temps d’appel du jour est épuisé",
+        "provider": "Le service vocal a raccroché",
+        "error": "Terminé après une erreur"
+      }
+    }
+  },
+  "account": {
+    "label": "Compte : {{name}}",
+    "librarian": "Compte bibliothécaire",
+    "reader": "Compte lecteur"
+  },
+  "shelfRow": {
+    "seeAll": "Tout voir",
+    "previous": "Faire défiler {{title}} vers l’arrière",
+    "next": "Faire défiler {{title}} vers l’avant"
+  },
+  "dictation": {
+    "start": "Dicter",
+    "stop": "Arrêter la dictée",
+    "listening": "À l’écoute… parlez pour écrire",
+    "errors": {
+      "notAllowed": "Le micro est bloqué. Autorisez-le dans le navigateur pour dicter.",
+      "noSpeech": "Aucune parole détectée. Réessayez un peu plus près du micro.",
+      "network": "La dictée utilise le service vocal du navigateur. Écrivez plutôt, ou réessayez.",
+      "other": "La dictée s’est arrêtée. Vous pouvez écrire."
+    }
+  },
+  "command": {
+    "title": "Menu des commandes",
+    "open": "Ouvrir",
+    "placeholder": "Chercher des livres, des pages et des actions…",
+    "bookPlaceholder": "Que faire de ce livre…",
+    "empty": "Aucun résultat.",
+    "searching": "Recherche dans le catalogue…",
+    "groups": {
+      "pages": "Aller à",
+      "actions": "Actions",
+      "librarian": "Bibliothécaire",
+      "book": "Ce livre"
+    },
+    "back": "Retour aux résultats",
+    "addTo": "Ajouter à « {{state}} »",
+    "moveTo": "Passer à « {{state}} »",
+    "added": "Ajouté à « {{state}} » : {{title}}",
+    "moved": "Passé à « {{state}} » : {{title}}",
+    "ask": "Demander au bibliothécaire : {{text}}",
+    "newItem": "Nouveau : {{item}}",
+    "theme": {
+      "light": "Passer au thème clair",
+      "dark": "Passer au thème sombre"
+    },
+    "language": "Passer en {{language}}",
+    "keywords": {
+      "theme": "thème apparence",
+      "language": "langue"
+    },
+    "hints": {
+      "move": "naviguer",
+      "select": "choisir",
+      "back": "retour",
+      "close": "fermer"
+    },
+    "openMenu": "Ouvrir le menu des commandes"
+  }
+}

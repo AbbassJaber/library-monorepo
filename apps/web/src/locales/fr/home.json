@@ -1,0 +1,32 @@
+{
+  "title": "Accueil",
+  "hero": {
+    "continueReading": "Reprendre la lecture",
+    "recommended": "Choisi pour vous",
+    "newest": "Nouveau dans le catalogue",
+    "markFinished": "Marquer comme terminé",
+    "stateLabel": "État de lecture de {{title}}",
+    "askAbout": "Poser une question sur ce livre",
+    "askPrompt": "Parle-moi de « {{title}} » de {{author}}."
+  },
+  "forYou": {
+    "because": "D’après {{titles}}, dans votre {{shelf}}",
+    "plain": "D’après vos genres favoris, sans ce qui est déjà dans votre {{shelf}}",
+    "noFavorites": "Choisissez quelques <favorites>genres favoris</favorites> et des suggestions apparaîtront ici.",
+    "exhausted": "Tout ce qui relève de vos genres favoris est déjà dans votre {{shelf}}."
+  },
+  "librarian": {
+    "title": "Demandez au bibliothécaire",
+    "body": "Appelez ou écrivez. Le bibliothécaire cherche dans le catalogue et peut ajouter des livres à votre liste de lecture, mais rien ne change tant que vous n’avez pas confirmé à l’écran.",
+    "type": "Écrire une question",
+    "examples": "Essayez de demander"
+  },
+  "newest": {
+    "subtitle": "Les derniers ajouts au catalogue"
+  },
+  "welcome": {
+    "title": "Trouvez un livre par son titre, son auteur ou son sujet.",
+    "lede": "Connectez-vous pour tenir une liste de lecture, choisir vos genres favoris et demander des suggestions au bibliothécaire, par écrit ou par appel.",
+    "createAccount": "Créer un compte"
+  }
+}

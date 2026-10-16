@@ -1,0 +1,32 @@
+{
+  "title": "Home",
+  "hero": {
+    "continueReading": "Continue reading",
+    "recommended": "Picked for you",
+    "newest": "New in the catalog",
+    "markFinished": "Mark as finished",
+    "stateLabel": "Reading state of {{title}}",
+    "askAbout": "Ask about this book",
+    "askPrompt": "Tell me about “{{title}}” by {{author}}."
+  },
+  "forYou": {
+    "because": "Because of {{titles}} on your {{shelf}}",
+    "plain": "From your favorite genres, leaving out what is already on your {{shelf}}",
+    "noFavorites": "Choose a few <favorites>favorite genres</favorites> and suggestions will appear here.",
+    "exhausted": "Everything in your favorite genres is already on your {{shelf}}."
+  },
+  "librarian": {
+    "title": "Ask the librarian",
+    "body": "Call or type. The librarian searches the catalog and can add books to your reading list, but nothing changes until you confirm on screen.",
+    "type": "Type a question",
+    "examples": "Try asking"
+  },
+  "newest": {
+    "subtitle": "The latest additions to the catalog"
+  },
+  "welcome": {
+    "title": "Find a book by its title, its author, or what it is about.",
+    "lede": "Log in to keep a reading list, choose favorite genres and ask the librarian for suggestions, by text or by call.",
+    "createAccount": "Create account"
+  }
+}

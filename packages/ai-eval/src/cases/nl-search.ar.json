@@ -1,0 +1,75 @@
+{
+  "language": "ar",
+  "cases": [
+    {
+      "id": "ar-01",
+      "text": "روايات رومانسية",
+      "expected": {
+        "genre": ["romance"]
+      }
+    },
+    {
+      "id": "ar-02",
+      "text": "شعر من الستينات",
+      "expected": {
+        "genre": ["poetry"],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      }
+    },
+    {
+      "id": "ar-03",
+      "text": "كتب فلسفة",
+      "expected": {
+        "genre": ["philosophy"]
+      }
+    },
+    {
+      "id": "ar-04",
+      "text": "روايات تاريخية قبل 1950",
+      "expected": {
+        "genre": ["historical-fiction"],
+        "yearTo": 1949
+      }
+    },
+    {
+      "id": "ar-05",
+      "text": "كتب الطيب صالح",
+      "expected": {
+        "q": "الطيب صالح"
+      }
+    },
+    {
+      "id": "ar-06",
+      "text": "أحدث روايات الخيال العلمي",
+      "expected": {
+        "genre": ["science-fiction"],
+        "sort": "newest"
+      }
+    },
+    {
+      "id": "ar-07",
+      "text": "مذكرات وسير ذاتية",
+      "expected": {
+        "genre": ["biography"]
+      }
+    },
+    {
+      "id": "ar-08",
+      "text": "قصص أطفال من الثمانينات",
+      "expected": {
+        "genre": ["children"],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      }
+    },
+    {
+      "id": "ar-09",
+      "text": "روايات بوليسية الأعلى تقييما",
+      "expected": {
+        "genre": ["mystery"],
+        "sort": "rating"
+      }
+    }
+  ]
+}

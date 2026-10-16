@@ -1,0 +1,78 @@
+{
+  "language": "fr",
+  "cases": [
+    {
+      "id": "fr-01",
+      "text": "science-fiction des années 60",
+      "expected": {
+        "genre": ["science-fiction"],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      }
+    },
+    {
+      "id": "fr-02",
+      "text": "romans historiques avant 1900",
+      "expected": {
+        "genre": ["historical-fiction"],
+        "yearTo": 1899
+      }
+    },
+    {
+      "id": "fr-03",
+      "text": "les meilleurs polars",
+      "expected": {
+        "genre": ["mystery"],
+        "sort": "rating"
+      }
+    },
+    {
+      "id": "fr-04",
+      "text": "livres de Victor Hugo",
+      "expected": {
+        "q": "victor hugo"
+      }
+    },
+    {
+      "id": "fr-05",
+      "text": "philosophie depuis 1940",
+      "expected": {
+        "genre": ["philosophy"],
+        "yearFrom": 1940
+      }
+    },
+    {
+      "id": "fr-06",
+      "text": "thrillers récents",
+      "expected": {
+        "genre": ["thriller"],
+        "sort": "newest"
+      }
+    },
+    {
+      "id": "fr-07",
+      "text": "livres pour enfants des années 50",
+      "expected": {
+        "genre": ["children"],
+        "yearFrom": 1950,
+        "yearTo": 1959
+      }
+    },
+    {
+      "id": "fr-08",
+      "text": "biographies par ordre alphabétique",
+      "expected": {
+        "genre": ["biography"],
+        "sort": "title"
+      }
+    },
+    {
+      "id": "fr-09",
+      "text": "poèmes de Baudelaire",
+      "expected": {
+        "q": "baudelaire",
+        "genre": ["poetry"]
+      }
+    }
+  ]
+}

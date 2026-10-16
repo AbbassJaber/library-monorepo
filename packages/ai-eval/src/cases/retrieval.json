@@ -1,0 +1,299 @@
+{
+  "note": "Expected ids are seed ids (deterministic seed). Categories: title/author (author, title, typos, variants, translated titles), description, cross-lingual (an FR or AR description of a book titled in another language), paraphrase (a description worded unlike the stored synopsis), near-duplicate (a query for one book that sits close to a sibling: same author or theme), nonsense (expected: nothing).",
+  "cases": [
+    {
+      "id": "r-01",
+      "query": "tolkien",
+      "expected": [1, 2],
+      "kind": "author"
+    },
+    {
+      "id": "r-02",
+      "query": "tolkein",
+      "expected": [1, 2],
+      "kind": "author-typo"
+    },
+    {
+      "id": "r-03",
+      "query": "dune",
+      "expected": [12],
+      "kind": "title"
+    },
+    {
+      "id": "r-04",
+      "query": "agatha christie",
+      "expected": [27, 28],
+      "kind": "author"
+    },
+    {
+      "id": "r-05",
+      "query": "orient express",
+      "expected": [27],
+      "kind": "title-fragment"
+    },
+    {
+      "id": "r-06",
+      "query": "le guin",
+      "expected": [3, 15],
+      "kind": "author"
+    },
+    {
+      "id": "r-07",
+      "query": "camus",
+      "expected": [102, 103],
+      "kind": "author"
+    },
+    {
+      "id": "r-08",
+      "query": "نجيب محفوظ",
+      "expected": [90, 91, 92],
+      "kind": "author-ar"
+    },
+    {
+      "id": "r-09",
+      "query": "harry potter",
+      "expected": [10],
+      "kind": "title"
+    },
+    {
+      "id": "r-10",
+      "query": "roald dahl",
+      "expected": [81, 82],
+      "kind": "author"
+    },
+    {
+      "id": "r-11",
+      "query": "austen",
+      "expected": [37, 40],
+      "kind": "author"
+    },
+    {
+      "id": "r-12",
+      "query": "bronte",
+      "expected": [38, 39],
+      "kind": "author-diacritics"
+    },
+    {
+      "id": "r-13",
+      "query": "orwell 1984",
+      "expected": [16],
+      "kind": "author+title-variant"
+    },
+    {
+      "id": "r-14",
+      "query": "the little prince",
+      "expected": [104],
+      "kind": "translated-title"
+    },
+    {
+      "id": "r-15",
+      "query": "a boy wizard at a school of magic",
+      "expected": [10],
+      "kind": "description"
+    },
+    {
+      "id": "r-16",
+      "query": "murder on a train",
+      "expected": [27],
+      "kind": "description"
+    },
+    {
+      "id": "r-17",
+      "query": "desert planet with giant worms",
+      "expected": [12],
+      "kind": "description"
+    },
+    {
+      "id": "r-18",
+      "query": "girl with the dragon tattoo",
+      "expected": [31],
+      "kind": "title"
+    },
+    {
+      "id": "r-19",
+      "query": "victor hugo",
+      "expected": [105],
+      "kind": "author"
+    },
+    {
+      "id": "r-20",
+      "query": "murakami",
+      "expected": [57],
+      "kind": "author"
+    },
+    {
+      "id": "r-21",
+      "query": "zola",
+      "expected": [112],
+      "kind": "author"
+    },
+    {
+      "id": "r-22",
+      "query": "adichie",
+      "expected": [58, 59],
+      "kind": "author"
+    },
+    {
+      "id": "r-23",
+      "query": "love poems full of despair",
+      "expected": [74],
+      "kind": "description"
+    },
+    {
+      "id": "r-24",
+      "query": "a plague in an algerian town",
+      "expected": [103],
+      "kind": "description"
+    },
+    {
+      "id": "r-25",
+      "query": "un orphelin découvre à onze ans qu'il est sorcier et entre dans une école de magie",
+      "expected": [10],
+      "kind": "cross-lingual-fr"
+    },
+    {
+      "id": "r-26",
+      "query": "une famille chassée de sa ferme par la poussière part chercher du travail en Californie",
+      "expected": [55],
+      "kind": "cross-lingual-fr"
+    },
+    {
+      "id": "r-27",
+      "query": "un jeune Soudanais rentre de Londres dans son village au bord du Nil",
+      "expected": [93],
+      "kind": "cross-lingual-fr"
+    },
+    {
+      "id": "r-28",
+      "query": "trois Palestiniens cachés dans la citerne d'un camion pour traverser le désert",
+      "expected": [94],
+      "kind": "cross-lingual-fr"
+    },
+    {
+      "id": "r-29",
+      "query": "عائلة نبيلة تتولى حكم كوكب صحراوي ينتج أثمن مادة في الكون",
+      "expected": [12],
+      "kind": "cross-lingual-ar"
+    },
+    {
+      "id": "r-30",
+      "query": "وباء يجتاح مدينة وهران فيختار طبيب أن يقاومه",
+      "expected": [103],
+      "kind": "cross-lingual-ar"
+    },
+    {
+      "id": "r-31",
+      "query": "فتاة يهودية تكتب يومياتها وهي مختبئة مع عائلتها في أمستردام",
+      "expected": [67],
+      "kind": "cross-lingual-ar"
+    },
+    {
+      "id": "r-32",
+      "query": "طيار يسقط في الصحراء ويلتقي بصبي صغير جاء من كوكب آخر",
+      "expected": [104],
+      "kind": "cross-lingual-ar"
+    },
+    {
+      "id": "r-33",
+      "query": "a fireman whose job is burning books begins hiding them instead",
+      "expected": [18],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "r-34",
+      "query": "a scientist builds a creature out of corpses and then abandons it",
+      "expected": [24],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "r-35",
+      "query": "a spider spells out messages to save a pig from slaughter",
+      "expected": [80],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "r-36",
+      "query": "a journalist exposes a fraudulent blood-testing startup",
+      "expected": [66],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "r-37",
+      "query": "a woman forced to bear children for a commander in a religious dictatorship",
+      "expected": [25],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "r-38",
+      "query": "Austen novel where a woman meets again the naval officer she was persuaded to refuse years ago",
+      "expected": [40],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-39",
+      "query": "Camus novel where a man kills someone on a beach near Algiers",
+      "expected": [102],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-40",
+      "query": "the Tolkien book where a hobbit inherits a ring of terrible power",
+      "expected": [2],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-41",
+      "query": "a future where people are grown in bottles and kept content with drugs",
+      "expected": [17],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-42",
+      "query": "Mahfouz novel about a young woman in a Cairo alley dreaming of escaping poverty during the war",
+      "expected": [90],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-43",
+      "query": "a boy studying magic on an island archipelago who unleashes a shadow",
+      "expected": [3],
+      "kind": "near-duplicate"
+    },
+    {
+      "id": "r-44",
+      "query": "xqzv plorbt wuggle frim",
+      "expected": [],
+      "kind": "nonsense"
+    },
+    {
+      "id": "r-45",
+      "query": "asdfghjkl qwertyuiop",
+      "expected": [],
+      "kind": "nonsense"
+    },
+    {
+      "id": "r-46",
+      "query": "zzzz zzzz zzzz",
+      "expected": [],
+      "kind": "nonsense"
+    },
+    {
+      "id": "r-47",
+      "query": "كفتخ زبرطل شمقرط",
+      "expected": [],
+      "kind": "nonsense"
+    },
+    {
+      "id": "r-48",
+      "query": "lkjh mnbv poiu vcxz",
+      "expected": [],
+      "kind": "nonsense"
+    },
+    {
+      "id": "r-49",
+      "query": "blorft snargle vimpish quonk",
+      "expected": [],
+      "kind": "nonsense"
+    }
+  ]
+}

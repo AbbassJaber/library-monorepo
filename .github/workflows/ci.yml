@@ -1,0 +1,149 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DATABASE_URL: postgresql://library:library@localhost:55432/library
+  DATABASE_URL_TEST: postgresql://library:library@localhost:55432/library_test
+  LOG_LEVEL: silent
+
+jobs:
+  # Mirrors the local gate: pnpm build / typecheck / lint / coverage / format:check.
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: library
+          POSTGRES_PASSWORD: library
+          POSTGRES_DB: library
+        ports:
+          - 55432:5432
+        options: >-
+          --health-cmd "pg_isready -U library -d library"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @library/api exec prisma generate
+      - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm format:check
+      - run: pnpm coverage
+      # The web app has no coverage task (not gated), so its tests run on their own.
+      - run: pnpm --filter @library/web test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage
+          path: |
+            apps/api/coverage/coverage-summary.json
+            packages/*/coverage/coverage-summary.json
+          if-no-files-found: ignore
+
+  # The real stack: Compose build, image-size gate, smoke (API) and Playwright (web).
+  stack:
+    runs-on: ubuntu-latest
+    needs: quality
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # compose.test.yaml: 4-round bcrypt (demo accounts re-seeded) and relaxed limits for parallel e2e.
+      - run: docker compose -f compose.yaml -f compose.test.yaml up --build --wait
+      # compose.test.yaml names the project library-monorepo-test (its own containers and data).
+      - run: node scripts/check-image-size.mjs library-monorepo-test-api
+      - run: pnpm smoke
+      # The MCP server over stdio, as both demo accounts (tool lists, a search, draftBook by role).
+      - run: pnpm --filter @library/mcp smoke
+      - run: pnpm --filter @library/web e2e:install
+      - run: pnpm e2e
+      # Lighthouse (desktop + mobile) against the committed baseline: accessibility, best
+      # practices and SEO may not drop; performance has some slack for slower runners.
+      - run: pnpm --filter @library/web lighthouse
+      # Retrieval against the running API: lexical (gated at its pinned recall@5), hybrid and
+      # hybrid + rerank on the Mock providers (reported; free).
+      - run: pnpm eval --suite retrieval --target http --mode all
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright
+          path: |
+            apps/web/playwright-report
+            apps/web/test-results
+          if-no-files-found: ignore
+      - run: docker compose -f compose.yaml -f compose.test.yaml logs --no-color > compose.log
+        if: failure()
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: compose-logs
+          path: compose.log
+      - run: docker compose -f compose.yaml -f compose.test.yaml down -v
+        if: always()
+
+  # AI evaluation: the Mock suite is gated (deterministic); Bedrock runs only when the AWS
+  # secrets exist (never on forks) and is reported, not gated. The cost guard refuses above
+  # EVAL_MAX_COST_USD before any call.
+  eval:
+    runs-on: ubuntu-latest
+    needs: stack
+    timeout-minutes: 30
+    env:
+      HAS_AWS: ${{ secrets.AWS_ACCESS_KEY_ID != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm eval --provider mock
+      # Autofill replays the recorded Open Library answers (no network in CI).
+      - run: pnpm eval --suite autofill --provider mock
+      # Prompt-injection attacks: zero violations is gated for every provider.
+      - run: pnpm eval --suite injection --provider mock
+      # Agent chat: the deterministic rubric (tools, pending action, nothing written, cited).
+      - run: pnpm eval --suite agent --provider mock
+      # Voice: 20 spoken fixtures through full sessions on the scripted mock (nothing written, gated).
+      - run: pnpm eval --suite voice
+      # Explained recommendations: picks and citations stay inside what the model was shown.
+      - run: pnpm eval --suite recommend --provider mock
+      - run: pnpm eval --provider bedrock --cache-padding both && pnpm eval --suite autofill --provider bedrock && pnpm eval --suite injection --provider bedrock
+        if: env.HAS_AWS == 'true'
+        env:
+          EVAL_MAX_COST_USD: '3'
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          BEDROCK_MODEL_SMALL: ${{ secrets.BEDROCK_MODEL_SMALL }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: packages/ai-eval/results/
+          if-no-files-found: ignore

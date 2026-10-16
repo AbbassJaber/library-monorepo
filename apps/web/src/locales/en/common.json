@@ -1,0 +1,263 @@
+{
+  "footer": "A small public library, cataloged with care.",
+  "nav": {
+    "skipToContent": "Skip to content",
+    "main": "Main",
+    "manage": "Manage {{what}}",
+    "home": "Home",
+    "librarian": "Librarian",
+    "menu": "Menu",
+    "openMenu": "Open the menu",
+    "activity": "Activity"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français"
+  },
+  "theme": {
+    "system": "Theme: follows your system",
+    "light": "Theme: light",
+    "dark": "Theme: dark",
+    "change": "click to change"
+  },
+  "auth": {
+    "logIn": "Log in",
+    "logOut": "Log out",
+    "register": "Register",
+    "loadingSession": "Loading your session"
+  },
+  "actions": {
+    "tryAgain": "Try again",
+    "close": "Close",
+    "dismiss": "Dismiss notification",
+    "remove": "Remove {{label}}",
+    "browse": "Browse the {{what}}",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "discard": "Discard changes",
+    "edit": "Edit",
+    "ok": "Ok"
+  },
+  "notFound": {
+    "title": "There is nothing on this shelf",
+    "body": "The page you asked for does not exist."
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "renderTitle": "This page could not be shown",
+    "network": "The request failed. Check your connection and try again.",
+    "VALIDATION_ERROR": "Some of the values are not valid. Check the highlighted fields.",
+    "UNAUTHENTICATED": "Invalid email or password, or your session has ended.",
+    "FORBIDDEN": "You do not have permission to do that.",
+    "NOT_FOUND": "That record could not be found.",
+    "CONFLICT": "That change conflicts with the current state. Reload and try again.",
+    "VERSION_CONFLICT": "This record changed since you opened it.",
+    "GENRE_IN_USE": "This genre is the only active genre of some books and cannot be archived.",
+    "BOOK_ARCHIVED": "This book is archived; its reading state is locked.",
+    "EMAIL_TAKEN": "An account with this email already exists.",
+    "ISBN_TAKEN": "Another book already has this ISBN.",
+    "RATE_LIMITED": "Too many attempts. Wait a moment and try again.",
+    "AI_UNAVAILABLE": "The assistant is unavailable right now.",
+    "CONFIRM_TOKEN_INVALID": "This confirmation is no longer valid. Ask again.",
+    "ACTION_ALREADY_DECIDED": "This change was already confirmed or cancelled.",
+    "NOT_READY": "The service is still starting. Try again in a moment.",
+    "INTERNAL": "The server hit an unexpected error. Try again in a moment."
+  },
+  "zod": {
+    "isbn": {
+      "invalid": "Must be an ISBN-10 or ISBN-13."
+    },
+    "year": {
+      "future": "The year is in the future."
+    },
+    "rating": {
+      "decimals": "At most one decimal place."
+    },
+    "query": {
+      "yearRange": "“From year” must not be after “To year”."
+    },
+    "genre": {
+      "slug": "Must be a lowercase slug."
+    },
+    "favorites": {
+      "duplicate": "Each genre can be chosen once."
+    },
+    "autofill": {
+      "isbnOrTitle": "Provide an ISBN or a title."
+    },
+    "batch": {
+      "duplicate": "Each book can appear once in a batch."
+    }
+  },
+  "ai": {
+    "label": "AI",
+    "labelPrefix": "AI: {{label}}",
+    "offline": "offline mode",
+    "offlineLabel": "offline mode (no provider configured)",
+    "small": "small",
+    "strong": "strong",
+    "embeddings": "embeddings",
+    "cachingOn": "prompt caching on",
+    "cachingOff": "no prompt caching",
+    "unavailable": "The assistant is unavailable right now, so this is the plain version.",
+    "statusLine": "AI · {{provider}} · {{model}}",
+    "statusOffline": "AI · offline mode"
+  },
+  "chat": {
+    "open": "Chat with the librarian",
+    "title": "Librarian",
+    "intro": "Ask about the catalog in English, French or Arabic. Nothing on your reading list changes until you confirm.",
+    "suggestions": {
+      "s1": "Books by Tolkien",
+      "s2": "A novel about a desert planet with giant worms",
+      "s3": "Add Dune to my reading list"
+    },
+    "inputLabel": "Your message",
+    "placeholder": "Ask about a book, an author or a mood",
+    "send": "Send",
+    "newChat": "New conversation",
+    "sources": "Books mentioned",
+    "you": "You",
+    "assistant": "Librarian",
+    "pendingTitle": "Waiting for your confirmation",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "cancelled": "Cancelled",
+    "alreadyDecided": "This change was already confirmed or cancelled.",
+    "expired": "This proposal has expired. Ask again.",
+    "unavailable": "The assistant is unavailable right now. The catalog search still works.",
+    "voicePending": "Waiting for your confirmation on screen.",
+    "voiceBusyHere": "A voice conversation is already open in another tab.",
+    "voiceUnavailable": "Voice is unavailable right now. You can type instead.",
+    "voiceNoMic": "The microphone is not available. Check the browser permission, or type instead.",
+    "jumpLatest": "Jump to latest",
+    "composerHint": "The mic types what you say. Nothing is sent until you press Send.",
+    "askingAbout": "Asking about",
+    "removeContext": "Stop asking about {{title}}",
+    "sendLabel": "Send",
+    "state": {
+      "idle": "At the desk",
+      "thinking": "Looking through the catalog…"
+    },
+    "pulling": "Pulling books from the shelves…",
+    "openHint": "Open a cover to see the book.",
+    "startersLabel": "Ways to start",
+    "starters": {
+      "after": "After {{title}}, what next?",
+      "like": "Something like {{title}}",
+      "french": "Suggest a book in French"
+    },
+    "slip": {
+      "title": "Reading list slip",
+      "added": "Added",
+      "removed": "Removed",
+      "done": "Done",
+      "offList": "Off your list",
+      "confirmedBy": "Confirmed by you"
+    }
+  },
+  "search": {
+    "label": "Search the catalog",
+    "placeholder": "Search a title, an author, or describe a book",
+    "placeholderPlain": "Search a title or an author"
+  },
+  "call": {
+    "start": "Call the librarian",
+    "short": "Call",
+    "onCall": "On call with the librarian",
+    "elapsed": "Call time",
+    "left": "{{time}} left",
+    "minimize": "Minimize",
+    "backToCall": "Back to the call",
+    "end": "End call",
+    "ending": "Ending the call…",
+    "mute": "Mute",
+    "captions": "Captions",
+    "state": {
+      "connecting": "Connecting…",
+      "listening": "Listening",
+      "thinking": "Searching the catalog…",
+      "speaking": "Speaking"
+    },
+    "hint": "Talk over it anytime to interrupt",
+    "you": "You",
+    "librarian": "Librarian",
+    "mentioned": "Mentioned in this call",
+    "pillLabel": "Call with the librarian",
+    "orCall": "Or call the librarian",
+    "record": {
+      "title": "Call · {{duration}}",
+      "confirmed_one": "{{count}} change confirmed",
+      "confirmed_other": "{{count}} changes confirmed",
+      "transcript": "Transcript",
+      "empty": "Nothing was said in this call.",
+      "ended": {
+        "max-duration": "Time limit reached",
+        "idle": "Ended after a silence",
+        "daily-budget": "Today’s call time is used up",
+        "provider": "The voice service hung up",
+        "error": "Ended after an error"
+      }
+    }
+  },
+  "account": {
+    "label": "Account: {{name}}",
+    "librarian": "Librarian account",
+    "reader": "Reader account"
+  },
+  "shelfRow": {
+    "seeAll": "See all",
+    "previous": "Scroll {{title}} back",
+    "next": "Scroll {{title}} forward"
+  },
+  "dictation": {
+    "start": "Dictate",
+    "stop": "Stop dictation",
+    "listening": "Listening… speak to type",
+    "errors": {
+      "notAllowed": "The microphone is blocked. Allow it in the browser to dictate.",
+      "noSpeech": "Nothing was heard. Try again a little closer to the microphone.",
+      "network": "Dictation needs the browser’s speech service. Type instead, or try again.",
+      "other": "Dictation stopped. You can type instead."
+    }
+  },
+  "command": {
+    "title": "Command menu",
+    "open": "Open",
+    "placeholder": "Search books, pages and actions…",
+    "bookPlaceholder": "What to do with this book…",
+    "empty": "Nothing matches.",
+    "searching": "Searching the catalog…",
+    "groups": {
+      "pages": "Go to",
+      "actions": "Actions",
+      "librarian": "Librarian",
+      "book": "This book"
+    },
+    "back": "Back to the results",
+    "addTo": "Add to {{state}}",
+    "moveTo": "Move to {{state}}",
+    "added": "Added to {{state}}: {{title}}",
+    "moved": "Moved to {{state}}: {{title}}",
+    "ask": "Ask the librarian: {{text}}",
+    "newItem": "New {{item}}",
+    "theme": {
+      "light": "Switch to the light theme",
+      "dark": "Switch to the dark theme"
+    },
+    "language": "Switch to {{language}}",
+    "keywords": {
+      "theme": "theme appearance",
+      "language": "language"
+    },
+    "hints": {
+      "move": "move",
+      "select": "select",
+      "back": "back",
+      "close": "close"
+    },
+    "openMenu": "Open the command menu"
+  }
+}

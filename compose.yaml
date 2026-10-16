@@ -1,0 +1,132 @@
+name: library-monorepo
+
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: library
+      POSTGRES_PASSWORD: library
+      POSTGRES_DB: library
+    ports:
+      - '55432:5432'
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U library -d library']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # One-shot: migrations + seed, then exits; `api` waits for it (see apps/api/Dockerfile).
+  migrate:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: migrate
+    environment:
+      DATABASE_URL: postgresql://library:library@db:5432/library
+      SEED_ON_START: ${SEED_ON_START:-if-empty}
+      BCRYPT_ROUNDS: 12
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: runtime
+      args:
+        WITH_LOCAL_EMBEDDINGS: ${WITH_LOCAL_EMBEDDINGS:-false}
+        RUNTIME_BASE: ${API_RUNTIME_BASE:-node:22-alpine}
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      DATABASE_URL: postgresql://library:library@db:5432/library
+      SEED_ON_START: ${SEED_ON_START:-if-empty}
+      CORS_ORIGINS: http://localhost:8080,http://localhost:5173
+      COOKIE_SECURE: 'false'
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-dev-only-change-me-32-chars-minimum!!}
+      JWT_ACCESS_TTL_SECONDS: 900
+      JWT_REFRESH_TTL_SECONDS: 604800
+      BCRYPT_ROUNDS: 12
+      # AI (PLAN §8): everything is env-only; the defaults run the Mock provider with no keys.
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+      AI_PROVIDER_STRONG: ${AI_PROVIDER_STRONG:-}
+      AI_CHAT_TIER: ${AI_CHAT_TIER:-small}
+      NL_SEARCH_CACHE_PADDING: ${NL_SEARCH_CACHE_PADDING:-false}
+      HYBRID_SEARCH_RERANK: ${HYBRID_SEARCH_RERANK:-false}
+      HYBRID_MIN_SIMILARITY: ${HYBRID_MIN_SIMILARITY:-}
+      EMBEDDING_EXPANSION: ${EMBEDDING_EXPANSION:-off}
+      READY_REQUIRE_EMBEDDINGS: ${READY_REQUIRE_EMBEDDINGS:-true}
+      RATE_LIMIT_AI_MAX_REQUESTS: ${RATE_LIMIT_AI_MAX_REQUESTS:-30}
+      AI_MODEL_SMALL: ${AI_MODEL_SMALL:-}
+      AI_MODEL_STRONG: ${AI_MODEL_STRONG:-}
+      BEDROCK_MODEL_SMALL: ${BEDROCK_MODEL_SMALL:-}
+      BEDROCK_MODEL_STRONG: ${BEDROCK_MODEL_STRONG:-}
+      ANTHROPIC_MODEL_SMALL: ${ANTHROPIC_MODEL_SMALL:-}
+      ANTHROPIC_MODEL_STRONG: ${ANTHROPIC_MODEL_STRONG:-}
+      KIMI_MODEL_SMALL: ${KIMI_MODEL_SMALL:-}
+      KIMI_MODEL_STRONG: ${KIMI_MODEL_STRONG:-}
+      OPENAI_COMPAT_MODEL_SMALL: ${OPENAI_COMPAT_MODEL_SMALL:-}
+      OPENAI_COMPAT_MODEL_STRONG: ${OPENAI_COMPAT_MODEL_STRONG:-}
+      AI_TEMPERATURE_SMALL: ${AI_TEMPERATURE_SMALL:-0}
+      AI_TEMPERATURE_STRONG: ${AI_TEMPERATURE_STRONG:-0.3}
+      AI_CONFIRM_SECRET: ${AI_CONFIRM_SECRET:-dev-only-change-me-confirm-secret}
+      AWS_REGION: ${AWS_REGION:-}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      AWS_SESSION_TOKEN: ${AWS_SESSION_TOKEN:-}
+      OPENAI_COMPAT_BASE_URL: ${OPENAI_COMPAT_BASE_URL:-}
+      OPENAI_COMPAT_API_KEY: ${OPENAI_COMPAT_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      EMBEDDING_PROVIDER: ${EMBEDDING_PROVIDER:-mock}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-}
+      EMBEDDING_DIMENSIONS: ${EMBEDDING_DIMENSIONS:-384}
+      TRANSFORMERS_CACHE: /models
+      LOOKUP_PROVIDER: ${LOOKUP_PROVIDER:-openlibrary}
+      # Voice agent (Phase 13.2): the scripted mock by default (no keys); nova-sonic with stack:real.
+      VOICE_PROVIDER: ${VOICE_PROVIDER:-mock}
+      VOICE_MODEL: ${VOICE_MODEL:-}
+      VOICE_AWS_REGION: ${VOICE_AWS_REGION:-eu-north-1}
+      VOICE_ID: ${VOICE_ID:-tiffany}
+      VOICE_MAX_SECONDS: ${VOICE_MAX_SECONDS:-420}
+      VOICE_IDLE_SECONDS: ${VOICE_IDLE_SECONDS:-60}
+      VOICE_MAX_SESSIONS: ${VOICE_MAX_SESSIONS:-10}
+      VOICE_SESSIONS_PER_HOUR: ${VOICE_SESSIONS_PER_HOUR:-6}
+      VOICE_DAILY_SECONDS: ${VOICE_DAILY_SECONDS:-600}
+    volumes:
+      - models:/models
+    ports:
+      - '4000:4000'
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://localhost:4000/ready').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - '8080:80'
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  models: {}
+  dbdata: {}

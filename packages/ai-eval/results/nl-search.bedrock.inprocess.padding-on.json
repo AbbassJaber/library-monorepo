@@ -1,0 +1,1167 @@
+{
+  "suite": "nl-search",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "on",
+  "date": "2026-10-01T19:34:41.422Z",
+  "summary": {
+    "cases": 34,
+    "errors": 0,
+    "accuracy": {
+      "q": 1,
+      "genre": 1,
+      "yearFrom": 1,
+      "yearTo": 1,
+      "sort": 1,
+      "exact": 1
+    },
+    "exactByLanguage": {
+      "en": 1,
+      "fr": 1,
+      "ar": 1
+    },
+    "fallbackRate": 0,
+    "cost": {
+      "total": 0.06241955,
+      "perQuery": 0.00183587,
+      "cacheWrite": 0.00748632,
+      "cacheWrites": 1,
+      "steady": 0.00166331
+    },
+    "latencyMs": {
+      "p50": 1482,
+      "p95": 2460
+    },
+    "cacheReadTokens": 151503,
+    "throttleRetries": 25,
+    "meanTokensIn": 5018
+  },
+  "rows": [
+    {
+      "id": "en-01",
+      "language": "en",
+      "text": "science fiction from the 80s",
+      "expected": {
+        "genre": [
+          "science-fiction"
+        ],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "science-fiction"
+        ],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00748632,
+      "latencyMs": 1520,
+      "tokensIn": 5018,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 4591,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-02",
+      "language": "en",
+      "text": "top rated poetry",
+      "expected": {
+        "genre": [
+          "poetry"
+        ],
+        "sort": "rating"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "poetry"
+        ],
+        "sort": "rating"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165231,
+      "latencyMs": 1292,
+      "tokensIn": 5014,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-03",
+      "language": "en",
+      "text": "agatha christie",
+      "expected": {
+        "q": "agatha christie"
+      },
+      "actual": {
+        "q": "agatha christie"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165231,
+      "latencyMs": 2338,
+      "tokensIn": 5014,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "en-04",
+      "language": "en",
+      "text": "fantasy books for kids",
+      "expected": {
+        "genre": [
+          "fantasy",
+          "children"
+        ]
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "fantasy",
+          "children"
+        ]
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166991,
+      "latencyMs": 1526,
+      "tokensIn": 5015,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-05",
+      "language": "en",
+      "text": "historical fiction before 1900",
+      "expected": {
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1899
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1899
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167211,
+      "latencyMs": 1423,
+      "tokensIn": 5017,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-06",
+      "language": "en",
+      "text": "new spy thrillers",
+      "expected": {
+        "genre": [
+          "thriller"
+        ],
+        "sort": "newest"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "thriller"
+        ],
+        "sort": "newest"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165451,
+      "latencyMs": 1325,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-07",
+      "language": "en",
+      "text": "romance from the 1840s",
+      "expected": {
+        "genre": [
+          "romance"
+        ],
+        "yearFrom": 1840,
+        "yearTo": 1849
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "romance"
+        ],
+        "yearFrom": 1840,
+        "yearTo": 1849
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166771,
+      "latencyMs": 1429,
+      "tokensIn": 5018,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "en-08",
+      "language": "en",
+      "text": "philosophy after 1950",
+      "expected": {
+        "genre": [
+          "philosophy"
+        ],
+        "yearFrom": 1951
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "philosophy"
+        ],
+        "yearFrom": 1951
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166001,
+      "latencyMs": 1687,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-09",
+      "language": "en",
+      "text": "the great gatsby",
+      "expected": {
+        "q": "the great gatsby"
+      },
+      "actual": {
+        "q": "the great gatsby"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165231,
+      "latencyMs": 3332,
+      "tokensIn": 5014,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-10",
+      "language": "en",
+      "text": "memoirs sorted alphabetically",
+      "expected": {
+        "genre": [
+          "biography"
+        ],
+        "sort": "title"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "biography"
+        ],
+        "sort": "title"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165451,
+      "latencyMs": 2460,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "en-11",
+      "language": "en",
+      "text": "non-fiction from the 2010s",
+      "expected": {
+        "genre": [
+          "non-fiction"
+        ],
+        "yearFrom": 2010,
+        "yearTo": 2019
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "non-fiction"
+        ],
+        "yearFrom": 2010,
+        "yearTo": 2019
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00168091,
+      "latencyMs": 1411,
+      "tokensIn": 5020,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-12",
+      "language": "en",
+      "text": "detective stories between 1930 and 1940",
+      "expected": {
+        "genre": [
+          "mystery"
+        ],
+        "yearFrom": 1930,
+        "yearTo": 1940
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "mystery"
+        ],
+        "yearFrom": 1930,
+        "yearTo": 1940
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167211,
+      "latencyMs": 1687,
+      "tokensIn": 5022,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-13",
+      "language": "en",
+      "text": "le guin",
+      "expected": {
+        "q": "le guin"
+      },
+      "actual": {
+        "q": "le guin"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165231,
+      "latencyMs": 2154,
+      "tokensIn": 5014,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "en-14",
+      "language": "en",
+      "text": "best classics",
+      "expected": {
+        "genre": [
+          "literary-fiction"
+        ],
+        "sort": "rating"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "literary-fiction"
+        ],
+        "sort": "rating"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166221,
+      "latencyMs": 1390,
+      "tokensIn": 5013,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-15",
+      "language": "en",
+      "text": "kids books from the 60s",
+      "expected": {
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166771,
+      "latencyMs": 1417,
+      "tokensIn": 5018,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "en-16",
+      "language": "en",
+      "text": "dune by frank herbert",
+      "expected": {
+        "q": "dune frank herbert"
+      },
+      "actual": {
+        "q": "dune frank herbert"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166001,
+      "latencyMs": 1480,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-01",
+      "language": "fr",
+      "text": "science-fiction des années 60",
+      "expected": {
+        "genre": [
+          "science-fiction"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "science-fiction"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167871,
+      "latencyMs": 1455,
+      "tokensIn": 5018,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "fr-02",
+      "language": "fr",
+      "text": "romans historiques avant 1900",
+      "expected": {
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1899
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1899
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167321,
+      "latencyMs": 1540,
+      "tokensIn": 5018,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-03",
+      "language": "fr",
+      "text": "les meilleurs polars",
+      "expected": {
+        "genre": [
+          "mystery"
+        ],
+        "sort": "rating"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "mystery"
+        ],
+        "sort": "rating"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165451,
+      "latencyMs": 1502,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-04",
+      "language": "fr",
+      "text": "livres de Victor Hugo",
+      "expected": {
+        "q": "victor hugo"
+      },
+      "actual": {
+        "q": "Victor Hugo"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00164901,
+      "latencyMs": 1411,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-05",
+      "language": "fr",
+      "text": "philosophie depuis 1940",
+      "expected": {
+        "genre": [
+          "philosophy"
+        ],
+        "yearFrom": 1940
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "philosophy"
+        ],
+        "yearFrom": 1940
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166111,
+      "latencyMs": 2025,
+      "tokensIn": 5017,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "fr-06",
+      "language": "fr",
+      "text": "thrillers récents",
+      "expected": {
+        "genre": [
+          "thriller"
+        ],
+        "sort": "newest"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "thriller"
+        ],
+        "sort": "newest"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165451,
+      "latencyMs": 1482,
+      "tokensIn": 5016,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-07",
+      "language": "fr",
+      "text": "livres pour enfants des années 50",
+      "expected": {
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1950,
+        "yearTo": 1959
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1950,
+        "yearTo": 1959
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166991,
+      "latencyMs": 1378,
+      "tokensIn": 5020,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-08",
+      "language": "fr",
+      "text": "biographies par ordre alphabétique",
+      "expected": {
+        "genre": [
+          "biography"
+        ],
+        "sort": "title"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "biography"
+        ],
+        "sort": "title"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165671,
+      "latencyMs": 1279,
+      "tokensIn": 5018,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "fr-09",
+      "language": "fr",
+      "text": "poèmes de Baudelaire",
+      "expected": {
+        "q": "baudelaire",
+        "genre": [
+          "poetry"
+        ]
+      },
+      "actual": {
+        "q": "Baudelaire",
+        "genre": [
+          "poetry"
+        ]
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167431,
+      "latencyMs": 2012,
+      "tokensIn": 5019,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "ar-01",
+      "language": "ar",
+      "text": "روايات رومانسية",
+      "expected": {
+        "genre": [
+          "romance"
+        ]
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "romance"
+        ]
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165781,
+      "latencyMs": 1424,
+      "tokensIn": 5019,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-02",
+      "language": "ar",
+      "text": "شعر من الستينات",
+      "expected": {
+        "genre": [
+          "poetry"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "poetry"
+        ],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166881,
+      "latencyMs": 1565,
+      "tokensIn": 5019,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-03",
+      "language": "ar",
+      "text": "كتب فلسفة",
+      "expected": {
+        "genre": [
+          "philosophy"
+        ]
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "philosophy"
+        ]
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00165781,
+      "latencyMs": 1487,
+      "tokensIn": 5019,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-04",
+      "language": "ar",
+      "text": "روايات تاريخية قبل 1950",
+      "expected": {
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1949
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "historical-fiction"
+        ],
+        "yearTo": 1949
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00168091,
+      "latencyMs": 2051,
+      "tokensIn": 5025,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "ar-05",
+      "language": "ar",
+      "text": "كتب الطيب صالح",
+      "expected": {
+        "q": "الطيب صالح"
+      },
+      "actual": {
+        "q": "الطيب صالح"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00168201,
+      "latencyMs": 1484,
+      "tokensIn": 5021,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-06",
+      "language": "ar",
+      "text": "أحدث روايات الخيال العلمي",
+      "expected": {
+        "genre": [
+          "science-fiction"
+        ],
+        "sort": "newest"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "science-fiction"
+        ],
+        "sort": "newest"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167651,
+      "latencyMs": 1471,
+      "tokensIn": 5026,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-07",
+      "language": "ar",
+      "text": "مذكرات وسير ذاتية",
+      "expected": {
+        "genre": [
+          "biography"
+        ]
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "biography"
+        ]
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166331,
+      "latencyMs": 1511,
+      "tokensIn": 5024,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    },
+    {
+      "id": "ar-08",
+      "language": "ar",
+      "text": "قصص أطفال من الثمانينات",
+      "expected": {
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "children"
+        ],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00167541,
+      "latencyMs": 1456,
+      "tokensIn": 5025,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "ar-09",
+      "language": "ar",
+      "text": "روايات بوليسية الأعلى تقييما",
+      "expected": {
+        "genre": [
+          "mystery"
+        ],
+        "sort": "rating"
+      },
+      "actual": {
+        "q": null,
+        "genre": [
+          "mystery"
+        ],
+        "sort": "rating"
+      },
+      "fields": {
+        "q": true,
+        "genre": true,
+        "yearFrom": true,
+        "yearTo": true,
+        "sort": true,
+        "exact": true
+      },
+      "costUsd": 0.00166771,
+      "latencyMs": 1389,
+      "tokensIn": 5028,
+      "tokensCachedRead": 4591,
+      "tokensCachedWrite": 0,
+      "fallbackUsed": false,
+      "throttleRetries": 1,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,1086 @@
+[
+  {
+    "title": "The Hobbit",
+    "author": "J. R. R. Tolkien",
+    "year": 1937,
+    "language": "en",
+    "genres": ["fantasy", "children"],
+    "rating": 4.7,
+    "isbn": "9780547928227",
+    "synopsis": "A comfort-loving hobbit is talked into joining thirteen dwarves on a journey to reclaim their mountain home from a dragon, and finds more courage and cunning in himself than anyone expected."
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "J. R. R. Tolkien",
+    "year": 1954,
+    "language": "en",
+    "genres": ["fantasy"],
+    "rating": 4.8,
+    "synopsis": "A young hobbit inherits a ring of terrible power and sets out with eight companions to carry it toward the one place it can be destroyed."
+  },
+  {
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin",
+    "year": 1968,
+    "language": "en",
+    "genres": ["fantasy"],
+    "rating": 4.4,
+    "synopsis": "A gifted boy studying magic on an island archipelago unleashes a shadow in a moment of pride and must pursue it across the sea to learn its true name."
+  },
+  {
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "year": 2007,
+    "language": "en",
+    "genres": ["fantasy"],
+    "rating": 4.5,
+    "synopsis": "An innkeeper with a hidden past recounts his years as a brilliant, penniless student of magic and his search for the beings who murdered his family."
+  },
+  {
+    "title": "The Lion, the Witch and the Wardrobe",
+    "author": "C. S. Lewis",
+    "year": 1950,
+    "language": "en",
+    "genres": ["fantasy", "children"],
+    "rating": 4.5,
+    "synopsis": "Four evacuated siblings discover a snowbound country through the back of a wardrobe and are drawn into its long struggle against a witch who has banished spring."
+  },
+  {
+    "title": "The Colour of Magic",
+    "author": "Terry Pratchett",
+    "year": 1983,
+    "language": "en",
+    "genres": ["fantasy"],
+    "rating": 4,
+    "synopsis": "An incompetent wizard is ordered to guide the Discworld's first tourist, whose sentient luggage and boundless optimism attract disaster wherever they go."
+  },
+  {
+    "title": "Mistborn: The Final Empire",
+    "author": "Brandon Sanderson",
+    "year": 2006,
+    "language": "en",
+    "genres": ["fantasy"],
+    "rating": 4.5,
+    "synopsis": "In a world where ash falls from the sky and a god-emperor has ruled for a thousand years, a street thief learns she can burn metals for power and joins a crew planning the impossible."
+  },
+  {
+    "title": "Jonathan Strange & Mr Norrell",
+    "author": "Susanna Clarke",
+    "year": 2004,
+    "language": "en",
+    "genres": ["fantasy", "historical-fiction"],
+    "rating": 4.2,
+    "synopsis": "Two very different magicians revive English magic during the Napoleonic wars, and their rivalry draws the attention of a fairy with plans of his own."
+  },
+  {
+    "title": "The Fifth Season",
+    "author": "N. K. Jemisin",
+    "year": 2015,
+    "language": "en",
+    "genres": ["fantasy", "science-fiction"],
+    "rating": 4.4,
+    "synopsis": "On a continent wracked by apocalyptic seasons, a woman with the power to still earthquakes searches for her kidnapped daughter as the world ends once more."
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "year": 1997,
+    "language": "en",
+    "genres": ["fantasy", "children"],
+    "rating": 4.6,
+    "synopsis": "An orphan raised in a cupboard learns on his eleventh birthday that he is a wizard, and begins his first year at a school where a hidden stone is being guarded."
+  },
+  {
+    "title": "Northern Lights",
+    "author": "Philip Pullman",
+    "year": 1995,
+    "language": "en",
+    "genres": ["fantasy", "children"],
+    "rating": 4.4,
+    "synopsis": "A wild girl and her shape-shifting daemon travel to the Arctic to rescue kidnapped children and stumble onto experiments that reach into other worlds."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.6,
+    "isbn": "9780441172719",
+    "synopsis": "A noble family takes charge of the only planet that produces the most valuable substance in the universe, and its young heir must survive betrayal in the deep desert."
+  },
+  {
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "year": 1984,
+    "language": "en",
+    "genres": ["science-fiction", "thriller"],
+    "rating": 4.1,
+    "synopsis": "A burnt-out hacker is given back his ability to enter cyberspace in exchange for one last run against an artificial intelligence with its own agenda."
+  },
+  {
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "year": 1951,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.3,
+    "synopsis": "A mathematician who can predict the fall of a galactic empire establishes a colony of scholars at the edge of space to shorten the dark age that follows."
+  },
+  {
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "year": 1969,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.2,
+    "synopsis": "An envoy from a league of worlds tries to win over a planet of people who have no fixed sex, and learns how much of his own thinking depends on that difference."
+  },
+  {
+    "title": "Nineteen Eighty-Four",
+    "author": "George Orwell",
+    "year": 1949,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.6,
+    "isbn": "9780451524935",
+    "synopsis": "A clerk who rewrites history for a totalitarian state begins a forbidden love affair and a private rebellion that the state has already anticipated."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.2,
+    "synopsis": "In a future engineered for contentment, where people are grown in bottles and soothed by drugs, a man raised outside the system is brought in as a curiosity."
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "year": 1953,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.2,
+    "synopsis": "A fireman whose job is to burn books meets a neighbour who asks whether he is happy, and starts to hide the very things he is paid to destroy."
+  },
+  {
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "year": 1985,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.3,
+    "synopsis": "A brilliant child is taken to an orbital school and pushed through increasingly brutal war games meant to prepare him to command a fleet against an alien enemy."
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "year": 1979,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.4,
+    "synopsis": "Seconds before Earth is demolished to make way for a bypass, an ordinary Englishman is whisked into space by a friend who turns out to be an alien travel writer."
+  },
+  {
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "year": 2008,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.1,
+    "synopsis": "A physicist's disillusionment during a violent political era leads her to answer a signal from the stars, with consequences that surface decades later in a strange video game."
+  },
+  {
+    "title": "Kindred",
+    "author": "Octavia E. Butler",
+    "year": 1979,
+    "language": "en",
+    "genres": ["science-fiction", "historical-fiction"],
+    "rating": 4.4,
+    "synopsis": "A Black writer in 1970s California is pulled again and again back to a Maryland plantation before the Civil War, where her survival is tied to a slaveholder's son."
+  },
+  {
+    "title": "Solaris",
+    "author": "Stanisław Lem",
+    "year": 1961,
+    "language": "en",
+    "genres": ["science-fiction", "philosophy"],
+    "rating": 4.1,
+    "synopsis": "A psychologist arrives at a station orbiting a sentient ocean and is confronted by a visitor who looks exactly like the woman he once failed."
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": 1818,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.1,
+    "synopsis": "A young scientist assembles a living being from dead matter, then abandons it, and is pursued by the articulate, lonely creature he refused to care for."
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "year": 1985,
+    "language": "en",
+    "genres": ["science-fiction"],
+    "rating": 4.2,
+    "synopsis": "In a theocratic republic that has replaced the United States, a woman assigned to bear children for a commander records her narrow, watchful days."
+  },
+  {
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "language": "en",
+    "genres": ["mystery"],
+    "rating": 4.2,
+    "synopsis": "A family legend of a spectral hound seems to have claimed another baronet on the moor, and Sherlock Holmes sends Watson ahead to watch the heir."
+  },
+  {
+    "title": "Murder on the Orient Express",
+    "author": "Agatha Christie",
+    "year": 1934,
+    "language": "en",
+    "genres": ["mystery"],
+    "rating": 4.3,
+    "synopsis": "A train stuck in a snowdrift, a passenger stabbed in his locked compartment, and a carriage full of strangers who all have something to hide from Hercule Poirot."
+  },
+  {
+    "title": "And Then There Were None",
+    "author": "Agatha Christie",
+    "year": 1939,
+    "language": "en",
+    "genres": ["mystery", "thriller"],
+    "rating": 4.4,
+    "synopsis": "Ten strangers lured to an island are accused by a recorded voice of crimes they got away with, then begin to die one by one in the order of a nursery rhyme."
+  },
+  {
+    "title": "The Big Sleep",
+    "author": "Raymond Chandler",
+    "year": 1939,
+    "language": "en",
+    "genres": ["mystery"],
+    "rating": 4,
+    "synopsis": "Private detective Philip Marlowe is hired by a dying millionaire over a blackmail note and walks into a tangle of gambling, pornography and murder in Los Angeles."
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "year": 2012,
+    "language": "en",
+    "genres": ["thriller", "mystery"],
+    "rating": 4,
+    "synopsis": "On the morning of their fifth anniversary a wife vanishes, and her husband's evasions, her diary and the media make it hard to know whom to believe."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "year": 2005,
+    "language": "en",
+    "genres": ["mystery", "thriller"],
+    "rating": 4.1,
+    "synopsis": "A disgraced journalist and a brilliant, damaged hacker investigate the decades-old disappearance of a girl from a wealthy Swedish industrial family."
+  },
+  {
+    "title": "The Name of the Rose",
+    "author": "Umberto Eco",
+    "year": 1980,
+    "language": "en",
+    "genres": ["mystery", "historical-fiction"],
+    "rating": 4.2,
+    "synopsis": "A Franciscan friar and his novice investigate a series of deaths in a medieval abbey whose labyrinthine library holds a book someone will kill to hide."
+  },
+  {
+    "title": "The Day of the Jackal",
+    "author": "Frederick Forsyth",
+    "year": 1971,
+    "language": "en",
+    "genres": ["thriller"],
+    "rating": 4.2,
+    "synopsis": "A professional assassin hired to kill the French president builds his plan detail by detail, while a modest detective races to identify a man with no name."
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "author": "Thomas Harris",
+    "year": 1988,
+    "language": "en",
+    "genres": ["thriller"],
+    "rating": 4.3,
+    "synopsis": "A trainee FBI agent is sent to interview an imprisoned cannibal psychiatrist in the hope that he will help catch a killer who skins his victims."
+  },
+  {
+    "title": "Tinker Tailor Soldier Spy",
+    "author": "John le Carré",
+    "year": 1974,
+    "language": "en",
+    "genres": ["thriller"],
+    "rating": 4.2,
+    "synopsis": "A retired intelligence officer is quietly brought back to find the Soviet mole at the top of the British secret service, one of four men he used to call colleagues."
+  },
+  {
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "year": 1938,
+    "language": "en",
+    "genres": ["mystery", "romance"],
+    "rating": 4.3,
+    "synopsis": "A shy young bride arrives at her husband's grand estate and finds it still ruled by the memory of his glamorous first wife and the housekeeper who adored her."
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "language": "en",
+    "genres": ["romance"],
+    "rating": 4.6,
+    "isbn": "9780141439518",
+    "synopsis": "The second of five daughters in a family with no fortune trades barbs with a proud, wealthy newcomer and slowly revises everything she was sure of about him."
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "year": 1847,
+    "language": "en",
+    "genres": ["romance"],
+    "rating": 4.4,
+    "synopsis": "A plain, fiercely independent governess falls in love with her brooding employer, whose house hides a secret laughing in the attic."
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "year": 1847,
+    "language": "en",
+    "genres": ["romance"],
+    "rating": 4.1,
+    "synopsis": "A foundling raised on a Yorkshire farm and the daughter of the house form a bond so consuming that its bitterness poisons the next generation."
+  },
+  {
+    "title": "Persuasion",
+    "author": "Jane Austen",
+    "year": 1817,
+    "language": "en",
+    "genres": ["romance"],
+    "rating": 4.4,
+    "synopsis": "Eight years after being talked out of an engagement to a penniless naval officer, a quiet woman meets him again, now a wealthy captain who seems to have forgotten her."
+  },
+  {
+    "title": "Outlander",
+    "author": "Diana Gabaldon",
+    "year": 1991,
+    "language": "en",
+    "genres": ["romance", "historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "A nurse on a post-war holiday in Scotland steps through a circle of standing stones into 1743 and must marry a young Highlander to stay alive."
+  },
+  {
+    "title": "Wolf Hall",
+    "author": "Hilary Mantel",
+    "year": 2009,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.2,
+    "synopsis": "A blacksmith's son rises to become Henry VIII's indispensable minister, steering the king's break with Rome while remembering everyone who ever underestimated him."
+  },
+  {
+    "title": "All the Light We Cannot See",
+    "author": "Anthony Doerr",
+    "year": 2014,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.4,
+    "synopsis": "A blind French girl and a gifted German orphan drafted into the army follow separate paths that converge in a walled Breton town during the last days of the war."
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "year": 2005,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.5,
+    "synopsis": "Narrated by Death, the story of a foster girl in wartime Germany who steals books, learns to read, and shares them with a Jewish man hidden in the basement."
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "year": 1869,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.4,
+    "synopsis": "Five aristocratic families live through Napoleon's invasion of Russia, and a searching young count tries to work out how anyone should live."
+  },
+  {
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "year": 1987,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.2,
+    "synopsis": "A formerly enslaved woman living in Ohio after the Civil War is visited by a young stranger who may be the daughter she lost eighteen years before."
+  },
+  {
+    "title": "The Remains of the Day",
+    "author": "Kazuo Ishiguro",
+    "year": 1989,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "An ageing butler takes a motoring trip through the English countryside and reflects on a lifetime of loyalty to an employer who did not deserve it."
+  },
+  {
+    "title": "Things Fall Apart",
+    "author": "Chinua Achebe",
+    "year": 1958,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.2,
+    "synopsis": "A proud Igbo wrestler and farmer sees his village's traditions, and his own place in them, undone by the arrival of missionaries and colonial officials."
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "year": 1967,
+    "language": "en",
+    "genres": ["literary-fiction", "fantasy"],
+    "rating": 4.4,
+    "synopsis": "Seven generations of the Buendía family found, rule and lose the town of Macondo, where miracles are ordinary and a prophecy waits in a gypsy's manuscripts."
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "year": 2003,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.4,
+    "synopsis": "A privileged boy in Kabul betrays his loyal friend and, decades later as an exile in America, returns to a ruined country to make amends."
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960,
+    "language": "en",
+    "genres": ["literary-fiction"],
+    "rating": 4.6,
+    "synopsis": "Through the eyes of a young girl in a Depression-era Alabama town, a lawyer's defence of a Black man falsely accused of assault exposes the town's quiet cruelties."
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "language": "en",
+    "genres": ["literary-fiction"],
+    "rating": 4.2,
+    "synopsis": "A bond salesman on Long Island becomes the confidant of a mysterious millionaire whose lavish parties are all in service of winning back a woman he lost."
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year": 1866,
+    "language": "en",
+    "genres": ["literary-fiction", "philosophy"],
+    "rating": 4.4,
+    "synopsis": "A destitute former student convinces himself that an extraordinary man may kill a worthless pawnbroker, then discovers what the act does to him."
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J. D. Salinger",
+    "year": 1951,
+    "language": "en",
+    "genres": ["literary-fiction"],
+    "rating": 3.9,
+    "synopsis": "Expelled from another prep school, a sixteen-year-old drifts around New York for a few days, judging everyone as a phony and looking for someone to talk to."
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "year": 1939,
+    "language": "en",
+    "genres": ["literary-fiction", "historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "Driven from their Oklahoma farm by dust and debt, the Joad family drives west to California and finds the promised work is a trap."
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "year": 2006,
+    "language": "en",
+    "genres": ["literary-fiction", "science-fiction"],
+    "rating": 4.2,
+    "synopsis": "A father and his young son push a shopping cart south through the ash of a dead world, keeping their fire alive and avoiding those who have stopped being human."
+  },
+  {
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "year": 1987,
+    "language": "en",
+    "genres": ["literary-fiction", "romance"],
+    "rating": 4.1,
+    "synopsis": "Hearing an old song on a plane, a man remembers his student years in Tokyo, a fragile girl he loved after his best friend's death, and the lively girl who pulled him toward life."
+  },
+  {
+    "title": "Half of a Yellow Sun",
+    "author": "Chimamanda Ngozi Adichie",
+    "year": 2006,
+    "language": "en",
+    "genres": ["historical-fiction"],
+    "rating": 4.4,
+    "synopsis": "A houseboy, a professor's lover and an English writer live through the birth and collapse of Biafra during the Nigerian civil war."
+  },
+  {
+    "title": "Americanah",
+    "author": "Chimamanda Ngozi Adichie",
+    "year": 2013,
+    "language": "en",
+    "genres": ["literary-fiction", "romance"],
+    "rating": 4.3,
+    "synopsis": "A Nigerian woman builds a life and a sharp-eyed blog about race in America, then returns to Lagos and the man she left behind."
+  },
+  {
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "year": 1969,
+    "language": "en",
+    "genres": ["literary-fiction", "science-fiction"],
+    "rating": 4.1,
+    "synopsis": "An optometrist who survived the firebombing of Dresden as a prisoner of war becomes unstuck in time and is exhibited in an alien zoo."
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "year": 1952,
+    "language": "en",
+    "genres": ["literary-fiction"],
+    "rating": 4,
+    "synopsis": "After eighty-four days without a catch, an old Cuban fisherman hooks a giant marlin far out in the Gulf Stream and fights it for days."
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "year": 2011,
+    "language": "en",
+    "genres": ["non-fiction"],
+    "rating": 4.3,
+    "synopsis": "A sweeping account of how one species of ape came to dominate the planet through shared fictions such as money, nations and religions."
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "year": 1988,
+    "language": "en",
+    "genres": ["non-fiction"],
+    "rating": 4.2,
+    "synopsis": "A physicist explains the big bang, black holes and the nature of time for readers with no equations, and asks whether the universe needs a creator."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "year": 2011,
+    "language": "en",
+    "genres": ["non-fiction"],
+    "rating": 4.2,
+    "synopsis": "A psychologist describes the two systems that drive our judgement, one fast and intuitive and one slow and deliberate, and the predictable errors of each."
+  },
+  {
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "year": 1980,
+    "language": "en",
+    "genres": ["non-fiction"],
+    "rating": 4.4,
+    "synopsis": "A tour of the universe and the history of the people who tried to understand it, written with the conviction that science is a source of wonder."
+  },
+  {
+    "title": "Bad Blood",
+    "author": "John Carreyrou",
+    "year": 2018,
+    "language": "en",
+    "genres": ["non-fiction"],
+    "rating": 4.4,
+    "synopsis": "The reporter who exposed Theranos tells how a charismatic founder built a nine-billion-dollar blood-testing company on technology that never worked."
+  },
+  {
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "year": 1947,
+    "language": "en",
+    "genres": ["biography"],
+    "rating": 4.2,
+    "synopsis": "The diary kept by a Jewish teenager during the two years her family hid in a concealed Amsterdam annexe before they were discovered."
+  },
+  {
+    "title": "Long Walk to Freedom",
+    "author": "Nelson Mandela",
+    "year": 1994,
+    "language": "en",
+    "genres": ["biography"],
+    "rating": 4.4,
+    "synopsis": "The autobiography of the man who led the struggle against apartheid, spent twenty-seven years in prison and became South Africa's first democratically elected president."
+  },
+  {
+    "title": "I Know Why the Caged Bird Sings",
+    "author": "Maya Angelou",
+    "year": 1969,
+    "language": "en",
+    "genres": ["biography"],
+    "rating": 4.3,
+    "synopsis": "The first volume of the poet's memoirs, from a childhood in segregated Arkansas through trauma, silence and the discovery of her voice."
+  },
+  {
+    "title": "Leaves of Grass",
+    "author": "Walt Whitman",
+    "year": 1855,
+    "language": "en",
+    "genres": ["poetry"],
+    "rating": 4.1,
+    "synopsis": "A collection the poet revised for the rest of his life, celebrating the body, democracy and the American landscape in long unrhymed lines."
+  },
+  {
+    "title": "The Waste Land",
+    "author": "T. S. Eliot",
+    "year": 1922,
+    "language": "en",
+    "genres": ["poetry"],
+    "rating": 4,
+    "synopsis": "A long poem of fragments, voices and quotations that captured the exhaustion of Europe after the First World War."
+  },
+  {
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "year": 1923,
+    "language": "en",
+    "genres": ["poetry", "philosophy"],
+    "rating": 4.2,
+    "synopsis": "Before sailing home, a prophet answers the townspeople's questions on love, work, children, joy and death in poetic prose."
+  },
+  {
+    "title": "Ariel",
+    "author": "Sylvia Plath",
+    "year": 1965,
+    "language": "en",
+    "genres": ["poetry"],
+    "rating": 4.2,
+    "synopsis": "The poems written in the last months of the poet's life, published after her death, fierce and precise about motherhood, rage and mortality."
+  },
+  {
+    "title": "Twenty Love Poems and a Song of Despair",
+    "author": "Pablo Neruda",
+    "year": 1924,
+    "language": "en",
+    "genres": ["poetry", "romance"],
+    "rating": 4.3,
+    "synopsis": "The young Chilean poet's collection of sensual, melancholy love poems that made him famous at nineteen."
+  },
+  {
+    "title": "Paradise Lost",
+    "author": "John Milton",
+    "year": 1667,
+    "language": "en",
+    "genres": ["poetry"],
+    "rating": 3.9,
+    "synopsis": "An epic in blank verse retelling the fall of Satan and the temptation of Adam and Eve, with the rebel angel as its most vivid character."
+  },
+  {
+    "title": "Beyond Good and Evil",
+    "author": "Friedrich Nietzsche",
+    "year": 1886,
+    "language": "en",
+    "genres": ["philosophy"],
+    "rating": 4,
+    "synopsis": "Aphorisms and essays attacking the dogmatism of past philosophers and sketching a morality beyond the categories of good and evil."
+  },
+  {
+    "title": "Sophie's World",
+    "author": "Jostein Gaarder",
+    "year": 1991,
+    "language": "en",
+    "genres": ["philosophy", "children"],
+    "rating": 3.9,
+    "synopsis": "A Norwegian schoolgirl begins receiving letters that teach her the history of philosophy, while stranger letters suggest her own world is not what it seems."
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "year": 1946,
+    "language": "en",
+    "genres": ["philosophy", "biography"],
+    "rating": 4.4,
+    "synopsis": "A psychiatrist who survived Auschwitz describes what kept prisoners alive and outlines a therapy built on the human need for meaning."
+  },
+  {
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "year": 1854,
+    "language": "en",
+    "genres": ["philosophy", "non-fiction"],
+    "rating": 3.9,
+    "synopsis": "An account of two years spent living simply in a cabin by a Massachusetts pond, and an argument for deliberate living."
+  },
+  {
+    "title": "Charlotte's Web",
+    "author": "E. B. White",
+    "year": 1952,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.4,
+    "synopsis": "A runt pig saved by a farm girl is befriended by a clever barn spider who sets out to save him a second time by writing words in her web."
+  },
+  {
+    "title": "Matilda",
+    "author": "Roald Dahl",
+    "year": 1988,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.4,
+    "synopsis": "A small girl of enormous intelligence, neglected by her parents and terrorised by a headmistress who throws children, discovers she can move things with her mind."
+  },
+  {
+    "title": "Charlie and the Chocolate Factory",
+    "author": "Roald Dahl",
+    "year": 1964,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.2,
+    "synopsis": "A poor boy finds one of five golden tickets and tours a chocolate factory where the other winners are undone by their greed."
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "year": 1963,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.3,
+    "synopsis": "Sent to bed without supper, a boy in a wolf suit sails to an island of monsters, becomes their king, and sails home to find his supper still hot."
+  },
+  {
+    "title": "Winnie-the-Pooh",
+    "author": "A. A. Milne",
+    "year": 1926,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.4,
+    "synopsis": "A bear of very little brain and his friends in the Hundred Acre Wood hunt heffalumps, look for Eeyore's tail and visit Rabbit for lunch."
+  },
+  {
+    "title": "Anne of Green Gables",
+    "author": "L. M. Montgomery",
+    "year": 1908,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.3,
+    "synopsis": "An elderly brother and sister on Prince Edward Island send for a boy to help on the farm and receive a talkative red-haired orphan girl instead."
+  },
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "year": 1865,
+    "language": "en",
+    "genres": ["children", "fantasy"],
+    "rating": 4.1,
+    "synopsis": "A girl follows a hurried white rabbit down a hole into a world of shrinking potions, mad tea parties and a queen fond of beheadings."
+  },
+  {
+    "title": "The Gruffalo",
+    "author": "Julia Donaldson",
+    "year": 1999,
+    "language": "en",
+    "genres": ["children"],
+    "rating": 4.5,
+    "synopsis": "A mouse walking through the deep dark wood invents a terrible monster to scare off predators, then meets the monster itself."
+  },
+  {
+    "title": "The Lightning Thief",
+    "author": "Rick Riordan",
+    "year": 2005,
+    "language": "en",
+    "genres": ["children", "fantasy"],
+    "rating": 4.3,
+    "synopsis": "A dyslexic twelve-year-old discovers he is the son of a Greek god and must recover Zeus's stolen lightning bolt before the gods go to war."
+  },
+  {
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "year": 2002,
+    "language": "en",
+    "genres": ["children", "fantasy"],
+    "rating": 4.1,
+    "synopsis": "A bored girl finds a door to a mirror flat where her Other Mother, with buttons for eyes, offers her everything she wants in exchange for staying forever."
+  },
+  {
+    "title": "زقاق المدق",
+    "author": "نجيب محفوظ",
+    "year": 1947,
+    "language": "ar",
+    "genres": ["literary-fiction", "historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "في زقاق صغير بالقاهرة أثناء الحرب العالمية الثانية، تحلم فتاة جميلة بالخروج من الفقر، وتتشابك أقدار جيرانها بين الطموح والخيانة."
+  },
+  {
+    "title": "أولاد حارتنا",
+    "author": "نجيب محفوظ",
+    "year": 1959,
+    "language": "ar",
+    "genres": ["literary-fiction", "philosophy"],
+    "rating": 4.4,
+    "synopsis": "حكاية حارة مصرية يتوارث أبناؤها الصراع على وقف الجد الغامض، في رواية رمزية عن العدل والقوة أثارت جدلاً واسعاً عند نشرها."
+  },
+  {
+    "title": "ثرثرة فوق النيل",
+    "author": "نجيب محفوظ",
+    "year": 1966,
+    "language": "ar",
+    "genres": ["literary-fiction"],
+    "rating": 4.1,
+    "synopsis": "موظف حكومي يقضي لياليه في عوامة على النيل مع أصدقاء يهربون من الواقع بالكيف والكلام، حتى تقع حادثة تفرض عليهم مواجهة أنفسهم."
+  },
+  {
+    "title": "موسم الهجرة إلى الشمال",
+    "author": "الطيب صالح",
+    "year": 1966,
+    "language": "ar",
+    "genres": ["literary-fiction"],
+    "rating": 4.5,
+    "synopsis": "يعود شاب سوداني من دراسته في لندن إلى قريته على النيل، فيلتقي رجلاً غامضاً عاش في إنجلترا وترك وراءه أثراً من العشق والدمار."
+  },
+  {
+    "title": "رجال في الشمس",
+    "author": "غسان كنفاني",
+    "year": 1963,
+    "language": "ar",
+    "genres": ["literary-fiction"],
+    "rating": 4.4,
+    "synopsis": "ثلاثة فلسطينيين من أجيال مختلفة يحاولون عبور الصحراء إلى الكويت مختبئين في خزان شاحنة فارغ، بحثاً عن عمل وكرامة."
+  },
+  {
+    "title": "ذاكرة الجسد",
+    "author": "أحلام مستغانمي",
+    "year": 1993,
+    "language": "ar",
+    "genres": ["romance", "literary-fiction"],
+    "rating": 4,
+    "synopsis": "رسام جزائري فقد ذراعه في حرب التحرير يكتب إلى ابنة قائده القديم التي أحبها في باريس، فتتداخل ذاكرة الوطن مع ذاكرة الحب."
+  },
+  {
+    "title": "عزازيل",
+    "author": "يوسف زيدان",
+    "year": 2008,
+    "language": "ar",
+    "genres": ["historical-fiction"],
+    "rating": 4.1,
+    "synopsis": "راهب مصري في القرن الخامس الميلادي يدوّن اعترافاته على رقوق، بين الإسكندرية وأورشليم وأنطاكية، وصوت داخلي يدفعه إلى الشك."
+  },
+  {
+    "title": "عمارة يعقوبيان",
+    "author": "علاء الأسواني",
+    "year": 2002,
+    "language": "ar",
+    "genres": ["literary-fiction"],
+    "rating": 4,
+    "synopsis": "سكان عمارة قديمة في وسط القاهرة، من أرستقراطي عجوز إلى شاب فقير يسكن سطحها، يكشفون معاً صورة مجتمع يتغير بقسوة."
+  },
+  {
+    "title": "ساق البامبو",
+    "author": "سعود السنعوسي",
+    "year": 2012,
+    "language": "ar",
+    "genres": ["literary-fiction"],
+    "rating": 4.3,
+    "synopsis": "شاب من أب كويتي وأم فلبينية يعود إلى الكويت بحثاً عن هوية وعائلة، فيجد أنه غريب في البلدين معاً."
+  },
+  {
+    "title": "مدن الملح",
+    "author": "عبد الرحمن منيف",
+    "year": 1984,
+    "language": "ar",
+    "genres": ["historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "واحة هادئة في الصحراء تتحول رأساً على عقب حين يصل الأمريكيون بحثاً عن النفط، في الجزء الأول من خماسية عن تبدل الحياة في الجزيرة العربية."
+  },
+  {
+    "title": "الأيام",
+    "author": "طه حسين",
+    "year": 1929,
+    "language": "ar",
+    "genres": ["biography"],
+    "rating": 4.3,
+    "synopsis": "سيرة ذاتية يرويها عميد الأدب العربي بضمير الغائب، عن طفولته في قرية بصعيد مصر بعد أن فقد بصره، ثم دراسته في الأزهر."
+  },
+  {
+    "title": "مقدمة ابن خلدون",
+    "author": "ابن خلدون",
+    "year": 1377,
+    "language": "ar",
+    "genres": ["philosophy", "non-fiction"],
+    "rating": 4.5,
+    "synopsis": "مدخل لتاريخ العالم يضع أسس علم العمران، ويشرح كيف تنشأ الدول على العصبية ثم تشيخ وتسقط."
+  },
+  {
+    "title": "L'Étranger",
+    "author": "Albert Camus",
+    "year": 1942,
+    "language": "fr",
+    "genres": ["literary-fiction", "philosophy"],
+    "rating": 4.2,
+    "synopsis": "Un employé d'Alger apprend la mort de sa mère sans émotion apparente, tue un homme sur une plage et se retrouve jugé autant pour son indifférence que pour son crime."
+  },
+  {
+    "title": "La Peste",
+    "author": "Albert Camus",
+    "year": 1947,
+    "language": "fr",
+    "genres": ["literary-fiction", "philosophy"],
+    "rating": 4.3,
+    "synopsis": "Les rats meurent dans les rues d'Oran, puis les hommes ; un médecin et quelques compagnons choisissent de lutter alors que la ville est fermée au monde."
+  },
+  {
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "year": 1943,
+    "language": "fr",
+    "genres": ["children", "philosophy"],
+    "rating": 4.6,
+    "synopsis": "Un aviateur tombé dans le désert rencontre un petit garçon venu d'une autre planète, qui lui raconte sa rose, ses voyages et ce que les grandes personnes ne voient pas."
+  },
+  {
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "year": 1862,
+    "language": "fr",
+    "genres": ["historical-fiction"],
+    "rating": 4.5,
+    "synopsis": "Un ancien forçat racheté par la bonté d'un évêque consacre sa vie à faire le bien, poursuivi sans relâche par un policier qui ne croit pas au changement."
+  },
+  {
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "year": 1857,
+    "language": "fr",
+    "genres": ["literary-fiction", "romance"],
+    "rating": 4.1,
+    "synopsis": "Mariée à un médecin de campagne médiocre, une jeune femme nourrie de romans cherche dans l'adultère et le luxe une vie à la hauteur de ses rêves."
+  },
+  {
+    "title": "Le Comte de Monte-Cristo",
+    "author": "Alexandre Dumas",
+    "year": 1844,
+    "language": "fr",
+    "genres": ["historical-fiction", "thriller"],
+    "rating": 4.6,
+    "synopsis": "Un jeune marin trahi et emprisonné quatorze ans s'évade, découvre un trésor et revient à Paris sous un nouveau nom pour se venger méthodiquement."
+  },
+  {
+    "title": "Candide",
+    "author": "Voltaire",
+    "year": 1759,
+    "language": "fr",
+    "genres": ["philosophy", "literary-fiction"],
+    "rating": 4.1,
+    "synopsis": "Chassé du château où on lui enseignait que tout est pour le mieux, un jeune homme naïf traverse guerres, naufrages et tremblements de terre en testant cette idée."
+  },
+  {
+    "title": "Vingt mille lieues sous les mers",
+    "author": "Jules Verne",
+    "year": 1870,
+    "language": "fr",
+    "genres": ["science-fiction"],
+    "rating": 4.1,
+    "synopsis": "Un professeur, son domestique et un harponneur sont recueillis par le capitaine Nemo à bord d'un sous-marin qui parcourt les océans loin de toute loi humaine."
+  },
+  {
+    "title": "Bonjour tristesse",
+    "author": "Françoise Sagan",
+    "year": 1954,
+    "language": "fr",
+    "genres": ["literary-fiction", "romance"],
+    "rating": 3.9,
+    "synopsis": "Pendant un été sur la Côte d'Azur, une adolescente manipule les amours de son père pour préserver leur vie insouciante, avec des conséquences qu'elle n'avait pas voulues."
+  },
+  {
+    "title": "Le Deuxième Sexe",
+    "author": "Simone de Beauvoir",
+    "year": 1949,
+    "language": "fr",
+    "genres": ["philosophy", "non-fiction"],
+    "rating": 4.2,
+    "synopsis": "Une analyse de la condition des femmes à travers la biologie, l'histoire, les mythes et l'expérience vécue, qui affirme qu'on ne naît pas femme, on le devient."
+  },
+  {
+    "title": "Germinal",
+    "author": "Émile Zola",
+    "year": 1885,
+    "language": "fr",
+    "genres": ["historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "Un ouvrier sans travail descend dans une mine du Nord et finit par mener une grève qui révèle la misère des mineurs et la violence de la Compagnie."
+  },
+  {
+    "title": "Mémoires d'Hadrien",
+    "author": "Marguerite Yourcenar",
+    "year": 1951,
+    "language": "fr",
+    "genres": ["historical-fiction"],
+    "rating": 4.3,
+    "synopsis": "L'empereur romain vieillissant écrit à son successeur pour raconter sa vie, son pouvoir, son amour pour Antinoüs et sa manière d'accepter la mort."
+  },
+  {
+    "title": "Les Fleurs du mal",
+    "author": "Charles Baudelaire",
+    "year": 1857,
+    "language": "fr",
+    "genres": ["poetry"],
+    "rating": 4.3,
+    "synopsis": "Un recueil de poèmes sur la beauté, le spleen, la ville et la mort, condamné pour outrage aux bonnes mœurs lors de sa parution."
+  },
+  {
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "year": 2020,
+    "language": "en",
+    "genres": ["fantasy", "mystery"],
+    "rating": 4.3,
+    "synopsis": "A gentle man lives alone in an endless house of halls and statues flooded by tides, keeping careful journals that slowly reveal how he came to be there."
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "year": 2018,
+    "language": "en",
+    "genres": ["romance", "literary-fiction"],
+    "rating": 4,
+    "synopsis": "A popular boy and an outsider girl from the same small Irish town drift in and out of each other's lives through school and university, never quite saying what they mean."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "year": 2018,
+    "language": "en",
+    "genres": ["biography"],
+    "rating": 4.5,
+    "synopsis": "A woman raised by survivalists in the Idaho mountains, kept out of school and away from doctors, teaches herself enough to reach university and, eventually, Cambridge."
+  },
+  {
+    "title": "Born a Crime",
+    "author": "Trevor Noah",
+    "year": 2016,
+    "language": "en",
+    "genres": ["biography"],
+    "rating": 4.5,
+    "synopsis": "A comedian recounts growing up in South Africa as the son of a Black mother and a white father at a time when their relationship was illegal."
+  },
+  {
+    "title": "فرانكشتاين في بغداد",
+    "author": "أحمد سعداوي",
+    "year": 2013,
+    "language": "ar",
+    "genres": ["literary-fiction", "fantasy"],
+    "rating": 4,
+    "synopsis": "بائع خردة في بغداد يجمع أشلاء ضحايا التفجيرات في جسد واحد، فيستيقظ الجسد ليطالب بالثأر لكل جزء فيه."
+  },
+  {
+    "title": "L'Élégance du hérisson",
+    "author": "Muriel Barbery",
+    "year": 2006,
+    "language": "fr",
+    "genres": ["literary-fiction", "philosophy"],
+    "rating": 4,
+    "synopsis": "Une concierge parisienne qui cache sa culture et une fillette surdouée décidée à mourir se reconnaissent grâce à l'arrivée d'un locataire japonais."
+  }
+]

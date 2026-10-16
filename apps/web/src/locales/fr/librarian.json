@@ -1,0 +1,144 @@
+{
+  "status": {
+    "active": "Actif",
+    "archived": "Archivé",
+    "all": "Tous"
+  },
+  "actions": {
+    "archive": "Archiver",
+    "restore": "Restaurer",
+    "archiveTitled": "Archiver {{title}}",
+    "restoreTitled": "Restaurer {{title}}"
+  },
+  "books": {
+    "add": "Ajouter un {{item}}",
+    "search": "Rechercher",
+    "show": "Afficher",
+    "columns": {
+      "title": "Titre",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "noMatch": "Aucun {{items}} ne correspond.",
+    "archived": "{{item}} archivé",
+    "restored": "{{item}} restauré"
+  },
+  "form": {
+    "addTitle": "Ajouter un {{item}}",
+    "editTitle": "Modifier le {{item}}",
+    "back": "Retour à la gestion des {{items}}",
+    "create": "Créer le {{item}}",
+    "created": "{{item}} créé",
+    "saved": "Modifications enregistrées",
+    "editingVersion": "Modification de la version {{version}}",
+    "fields": {
+      "title": "Titre",
+      "isbnHint": "ISBN-10 ou ISBN-13 ; les tirets sont acceptés.",
+      "rating": "Note (0–5)",
+      "coverUrl": "URL de l’image de couverture",
+      "coverUrlHint": "Facultatif ; sinon une couverture générée est utilisée.",
+      "genresHint": "Choisissez de 1 à {{max}}.",
+      "language": "Langue",
+      "languageUnknown": "Non précisée"
+    }
+  },
+  "conflict": {
+    "title": "Ce {{item}} a changé depuis que vous l’avez ouvert",
+    "body": "Quelqu’un a enregistré la version {{version}} pendant votre modification. Les dernières valeurs sont :",
+    "explain": "« Garder mes modifications » renvoie votre formulaire sur la version {{version}} ; « Utiliser la dernière version » remplace vos modifications.",
+    "takeTheirs": "Utiliser la dernière version",
+    "keepMine": "Garder mes modifications et réessayer"
+  },
+  "genres": {
+    "lede": "Un {{genre}} ne peut pas être archivé tant qu’il est le seul {{genre}} actif d’un {{item}} actif.",
+    "new": "Nouveau {{genre}}",
+    "add": "Ajouter le {{genre}}",
+    "columns": {
+      "name": "Nom",
+      "slug": "Identifiant",
+      "activeItems": "{{items}} actifs"
+    },
+    "newNameFor": "Nouveau nom pour {{name}}",
+    "rename": "Renommer",
+    "renameTitled": "Renommer {{name}}",
+    "created": "{{genre}} créé",
+    "renamed": "{{genre}} renommé",
+    "archived": "{{genre}} archivé",
+    "restored": "{{genre}} restauré",
+    "blocked": {
+      "title": "{{name}} ne peut pas encore être archivé",
+      "body": "C’est le seul {{genre}} actif de ces {{items}}. Donnez-leur d’abord un autre {{genre}}, ou archivez-les."
+    }
+  },
+  "autofill": {
+    "heading": "Remplir depuis Open Library",
+    "intro": "Saisissez un ISBN, ou un titre et un auteur. Chaque valeur indique sa provenance ; rien n'est enregistré avant la création du livre.",
+    "isbn": "ISBN à rechercher",
+    "title": "Titre à rechercher",
+    "author": "Auteur à rechercher",
+    "submit": "Rechercher",
+    "apply": "Utiliser ces valeurs",
+    "discard": "Ignorer",
+    "notFound": "Ce livre n'est pas dans Open Library. Ce que vous avez saisi est conservé ; vérifiez le reste avant d'enregistrer.",
+    "check": "à vérifier",
+    "source": {
+      "lookup": "Open Library",
+      "input": "Saisi",
+      "model": "Suggéré par l'IA",
+      "empty": "Introuvable"
+    },
+    "aiSays": "L'IA indique {{year}}",
+    "useYear": "Utiliser {{year}}",
+    "keepYear": "Garder {{year}}"
+  },
+  "activity": {
+    "title": "Activité",
+    "lede": "Les modifications du catalogue et des genres, les plus récentes d’abord. Listes de lecture, favoris et comptes sont dans le filtre.",
+    "filter": "Afficher",
+    "count_one": "{{count}} entrée",
+    "count_other": "{{count}} entrées",
+    "types": {
+      "all": "Tout",
+      "book": "Livres",
+      "genre": "Genres",
+      "reading_list_entry": "Listes de lecture",
+      "favorite_genre": "Genres favoris",
+      "user": "Comptes",
+      "catalog": "Catalogue : livres et genres"
+    },
+    "who": {
+      "seed": "Données initiales",
+      "unknown": "Un compte supprimé",
+      "librarian": "Bibliothécaire"
+    },
+    "via": {
+      "HTTP": "Application web",
+      "AI": "Assistant bibliothécaire",
+      "SEED": "Données initiales"
+    },
+    "changes_one": "{{count}} modification",
+    "changes_other": "{{count}} modifications",
+    "to": "devenu",
+    "empty": {
+      "title": "Rien pour l’instant",
+      "hint": "Les modifications apparaissent ici dès qu’elles sont faites."
+    },
+    "actions": {
+      "bookCreate": "a ajouté le {{item}} <item>{{label}}</item>",
+      "bookUpdate": "a modifié le {{item}} <item>{{label}}</item>",
+      "bookArchive": "a archivé le {{item}} <item>{{label}}</item>",
+      "bookRestore": "a restauré le {{item}} <item>{{label}}</item>",
+      "genreCreate": "a ajouté le {{genre}} <item>{{label}}</item>",
+      "genreRename": "a renommé le {{genre}} désormais appelé <item>{{label}}</item>",
+      "genreArchive": "a archivé le {{genre}} <item>{{label}}</item>",
+      "genreRestore": "a restauré le {{genre}} <item>{{label}}</item>",
+      "shelfAdd": "a ajouté <item>{{label}}</item> à sa {{shelf}}",
+      "shelfUpdate": "a changé l’état de <item>{{label}}</item> dans sa {{shelf}}",
+      "shelfRemove": "a retiré <item>{{label}}</item> de sa {{shelf}}",
+      "favoritesSet": "a mis à jour ses genres favoris",
+      "userRegister": "a créé un compte",
+      "userDisable": "a désactivé le compte <item>{{label}}</item>",
+      "seedRun": "a installé le catalogue de démonstration"
+    }
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "suite": "retrieval",
+  "provider": "bedrock-embed-v4-0-1024",
+  "model": "eu.cohere.embed-v4:0 (1024 dims, cutoff 0.3) + RRF k = 60",
+  "target": "http",
+  "setting": "hybrid",
+  "date": "2026-10-01T23:13:14.868Z",
+  "summary": {
+    "cases": 49,
+    "errors": 0,
+    "recallAt5": 0.767,
+    "byCategory": {
+      "title/author": 0.947,
+      "description": 0.8,
+      "cross-lingual": 0.625,
+      "paraphrase": 0.6,
+      "near-duplicate": 0.5,
+      "nonsense": 1
+    },
+    "latencyMs": {
+      "p50": 1638,
+      "p95": 2355
+    }
+  },
+  "rows": [
+    {
+      "id": "r-01",
+      "query": "tolkien",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        1,
+        2
+      ],
+      "top": [
+        1,
+        2
+      ],
+      "recall": 1,
+      "latencyMs": 1280,
+      "modelLatencyMs": 737,
+      "costUsd": 2.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-02",
+      "query": "tolkein",
+      "kind": "author-typo",
+      "mode": "hybrid",
+      "expected": [
+        1,
+        2
+      ],
+      "top": [
+        1,
+        2
+      ],
+      "recall": 1,
+      "latencyMs": 456,
+      "modelLatencyMs": 439,
+      "costUsd": 2.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-03",
+      "query": "dune",
+      "kind": "title",
+      "mode": "hybrid",
+      "expected": [
+        12
+      ],
+      "top": [
+        12,
+        3,
+        36,
+        15,
+        7
+      ],
+      "recall": 1,
+      "latencyMs": 489,
+      "modelLatencyMs": 474,
+      "costUsd": 1.2e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-04",
+      "query": "agatha christie",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        27,
+        28
+      ],
+      "top": [
+        28,
+        27,
+        36,
+        26
+      ],
+      "recall": 1,
+      "latencyMs": 540,
+      "modelLatencyMs": 522,
+      "costUsd": 4.8e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-05",
+      "query": "orient express",
+      "kind": "title-fragment",
+      "mode": "hybrid",
+      "expected": [
+        27
+      ],
+      "top": [
+        27
+      ],
+      "recall": 1,
+      "latencyMs": 451,
+      "modelLatencyMs": 435,
+      "costUsd": 4.8e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-06",
+      "query": "le guin",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        3,
+        15
+      ],
+      "top": [
+        15,
+        3
+      ],
+      "recall": 1,
+      "latencyMs": 1823,
+      "modelLatencyMs": 1807,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-07",
+      "query": "camus",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        102,
+        103
+      ],
+      "top": [
+        102,
+        103,
+        111,
+        104,
+        72
+      ],
+      "recall": 1,
+      "latencyMs": 1616,
+      "modelLatencyMs": 1601,
+      "costUsd": 2.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-08",
+      "query": "نجيب محفوظ",
+      "kind": "author-ar",
+      "mode": "hybrid",
+      "expected": [
+        90,
+        91,
+        92
+      ],
+      "top": [
+        92,
+        91,
+        90
+      ],
+      "recall": 1,
+      "latencyMs": 1960,
+      "modelLatencyMs": 1940,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-09",
+      "query": "harry potter",
+      "kind": "title",
+      "mode": "hybrid",
+      "expected": [
+        10
+      ],
+      "top": [
+        10,
+        86,
+        2,
+        8,
+        1
+      ],
+      "recall": 1,
+      "latencyMs": 697,
+      "modelLatencyMs": 681,
+      "costUsd": 3.6e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-10",
+      "query": "roald dahl",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        81,
+        82
+      ],
+      "top": [
+        82,
+        81
+      ],
+      "recall": 1,
+      "latencyMs": 2069,
+      "modelLatencyMs": 2054,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-11",
+      "query": "austen",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        37,
+        40
+      ],
+      "top": [
+        37,
+        40,
+        38,
+        106,
+        39
+      ],
+      "recall": 1,
+      "latencyMs": 973,
+      "modelLatencyMs": 959,
+      "costUsd": 2.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-12",
+      "query": "bronte",
+      "kind": "author-diacritics",
+      "mode": "hybrid",
+      "expected": [
+        38,
+        39
+      ],
+      "top": [
+        38,
+        39
+      ],
+      "recall": 1,
+      "latencyMs": 1307,
+      "modelLatencyMs": 1294,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-13",
+      "query": "orwell 1984",
+      "kind": "author+title-variant",
+      "mode": "hybrid",
+      "expected": [
+        16
+      ],
+      "top": [
+        16,
+        25,
+        19,
+        17,
+        13
+      ],
+      "recall": 1,
+      "latencyMs": 1884,
+      "modelLatencyMs": 1870,
+      "costUsd": 3.6e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-14",
+      "query": "the little prince",
+      "kind": "translated-title",
+      "mode": "hybrid",
+      "expected": [
+        104
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1125,
+      "modelLatencyMs": 1106,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-15",
+      "query": "a boy wizard at a school of magic",
+      "kind": "description",
+      "mode": "hybrid",
+      "expected": [
+        10
+      ],
+      "top": [
+        10,
+        3
+      ],
+      "recall": 1,
+      "latencyMs": 1736,
+      "modelLatencyMs": 1717,
+      "costUsd": 0.00000108,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-16",
+      "query": "murder on a train",
+      "kind": "description",
+      "mode": "hybrid",
+      "expected": [
+        27
+      ],
+      "top": [
+        27
+      ],
+      "recall": 1,
+      "latencyMs": 1415,
+      "modelLatencyMs": 1402,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-17",
+      "query": "desert planet with giant worms",
+      "kind": "description",
+      "mode": "hybrid",
+      "expected": [
+        12
+      ],
+      "top": [
+        12
+      ],
+      "recall": 1,
+      "latencyMs": 1989,
+      "modelLatencyMs": 1971,
+      "costUsd": 9.6e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-18",
+      "query": "girl with the dragon tattoo",
+      "kind": "title",
+      "mode": "hybrid",
+      "expected": [
+        31
+      ],
+      "top": [
+        31
+      ],
+      "recall": 1,
+      "latencyMs": 1854,
+      "modelLatencyMs": 1840,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-19",
+      "query": "victor hugo",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        105
+      ],
+      "top": [
+        105,
+        109,
+        107
+      ],
+      "recall": 1,
+      "latencyMs": 657,
+      "modelLatencyMs": 645,
+      "costUsd": 3.6e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-20",
+      "query": "murakami",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        57
+      ],
+      "top": [
+        57
+      ],
+      "recall": 1,
+      "latencyMs": 2016,
+      "modelLatencyMs": 2002,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-21",
+      "query": "zola",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        112
+      ],
+      "top": [
+        112
+      ],
+      "recall": 1,
+      "latencyMs": 925,
+      "modelLatencyMs": 913,
+      "costUsd": 1.2e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-22",
+      "query": "adichie",
+      "kind": "author",
+      "mode": "hybrid",
+      "expected": [
+        58,
+        59
+      ],
+      "top": [
+        59,
+        58
+      ],
+      "recall": 1,
+      "latencyMs": 2226,
+      "modelLatencyMs": 2212,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-23",
+      "query": "love poems full of despair",
+      "kind": "description",
+      "mode": "hybrid",
+      "expected": [
+        74
+      ],
+      "top": [
+        74,
+        114,
+        71,
+        110,
+        106
+      ],
+      "recall": 1,
+      "latencyMs": 923,
+      "modelLatencyMs": 908,
+      "costUsd": 8.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-24",
+      "query": "a plague in an algerian town",
+      "kind": "description",
+      "mode": "hybrid",
+      "expected": [
+        103
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 2240,
+      "modelLatencyMs": 2223,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-25",
+      "query": "un orphelin découvre à onze ans qu'il est sorcier et entre dans une école de magie",
+      "kind": "cross-lingual-fr",
+      "mode": "hybrid",
+      "expected": [
+        10
+      ],
+      "top": [
+        10,
+        88,
+        4,
+        3,
+        5
+      ],
+      "recall": 1,
+      "latencyMs": 483,
+      "modelLatencyMs": 457,
+      "costUsd": 0.00000252,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-26",
+      "query": "une famille chassée de sa ferme par la poussière part chercher du travail en Californie",
+      "kind": "cross-lingual-fr",
+      "mode": "hybrid",
+      "expected": [
+        55
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1638,
+      "modelLatencyMs": 1613,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-27",
+      "query": "un jeune Soudanais rentre de Londres dans son village au bord du Nil",
+      "kind": "cross-lingual-fr",
+      "mode": "hybrid",
+      "expected": [
+        93
+      ],
+      "top": [
+        93
+      ],
+      "recall": 1,
+      "latencyMs": 2301,
+      "modelLatencyMs": 2278,
+      "costUsd": 0.00000204,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-28",
+      "query": "trois Palestiniens cachés dans la citerne d'un camion pour traverser le désert",
+      "kind": "cross-lingual-fr",
+      "mode": "hybrid",
+      "expected": [
+        94
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1630,
+      "modelLatencyMs": 1605,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-29",
+      "query": "عائلة نبيلة تتولى حكم كوكب صحراوي ينتج أثمن مادة في الكون",
+      "kind": "cross-lingual-ar",
+      "mode": "hybrid",
+      "expected": [
+        12
+      ],
+      "top": [
+        12
+      ],
+      "recall": 1,
+      "latencyMs": 424,
+      "modelLatencyMs": 400,
+      "costUsd": 0.0000018,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-30",
+      "query": "وباء يجتاح مدينة وهران فيختار طبيب أن يقاومه",
+      "kind": "cross-lingual-ar",
+      "mode": "hybrid",
+      "expected": [
+        103
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 2088,
+      "modelLatencyMs": 2067,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-31",
+      "query": "فتاة يهودية تكتب يومياتها وهي مختبئة مع عائلتها في أمستردام",
+      "kind": "cross-lingual-ar",
+      "mode": "hybrid",
+      "expected": [
+        67
+      ],
+      "top": [
+        67,
+        44
+      ],
+      "recall": 1,
+      "latencyMs": 1791,
+      "modelLatencyMs": 1767,
+      "costUsd": 0.0000018,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-32",
+      "query": "طيار يسقط في الصحراء ويلتقي بصبي صغير جاء من كوكب آخر",
+      "kind": "cross-lingual-ar",
+      "mode": "hybrid",
+      "expected": [
+        104
+      ],
+      "top": [
+        104
+      ],
+      "recall": 1,
+      "latencyMs": 2232,
+      "modelLatencyMs": 2208,
+      "costUsd": 0.00000168,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-33",
+      "query": "a fireman whose job is burning books begins hiding them instead",
+      "kind": "paraphrase",
+      "mode": "hybrid",
+      "expected": [
+        18
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1307,
+      "modelLatencyMs": 1284,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-34",
+      "query": "a scientist builds a creature out of corpses and then abandons it",
+      "kind": "paraphrase",
+      "mode": "hybrid",
+      "expected": [
+        24
+      ],
+      "top": [
+        24,
+        119
+      ],
+      "recall": 1,
+      "latencyMs": 2386,
+      "modelLatencyMs": 2364,
+      "costUsd": 0.00000204,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-35",
+      "query": "a spider spells out messages to save a pig from slaughter",
+      "kind": "paraphrase",
+      "mode": "hybrid",
+      "expected": [
+        80
+      ],
+      "top": [
+        80
+      ],
+      "recall": 1,
+      "latencyMs": 2515,
+      "modelLatencyMs": 2494,
+      "costUsd": 0.0000018,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-36",
+      "query": "a journalist exposes a fraudulent blood-testing startup",
+      "kind": "paraphrase",
+      "mode": "hybrid",
+      "expected": [
+        66
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1918,
+      "modelLatencyMs": 1896,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-37",
+      "query": "a woman forced to bear children for a commander in a religious dictatorship",
+      "kind": "paraphrase",
+      "mode": "hybrid",
+      "expected": [
+        25
+      ],
+      "top": [
+        25
+      ],
+      "recall": 1,
+      "latencyMs": 1231,
+      "modelLatencyMs": 1205,
+      "costUsd": 0.00000228,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-38",
+      "query": "Austen novel where a woman meets again the naval officer she was persuaded to refuse years ago",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        40
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 2064,
+      "modelLatencyMs": 2038,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-39",
+      "query": "Camus novel where a man kills someone on a beach near Algiers",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        102
+      ],
+      "top": [
+        102,
+        103,
+        61,
+        51,
+        33
+      ],
+      "recall": 1,
+      "latencyMs": 433,
+      "modelLatencyMs": 411,
+      "costUsd": 0.00000192,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-40",
+      "query": "the Tolkien book where a hobbit inherits a ring of terrible power",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        2
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1735,
+      "modelLatencyMs": 1715,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-41",
+      "query": "a future where people are grown in bottles and kept content with drugs",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        17
+      ],
+      "top": [
+        17
+      ],
+      "recall": 1,
+      "latencyMs": 1961,
+      "modelLatencyMs": 1938,
+      "costUsd": 0.00000216,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-42",
+      "query": "Mahfouz novel about a young woman in a Cairo alley dreaming of escaping poverty during the war",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        90
+      ],
+      "top": [],
+      "recall": 0,
+      "latencyMs": 1660,
+      "modelLatencyMs": 1635,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-43",
+      "query": "a boy studying magic on an island archipelago who unleashes a shadow",
+      "kind": "near-duplicate",
+      "mode": "hybrid",
+      "expected": [
+        3
+      ],
+      "top": [
+        3,
+        10,
+        11,
+        88,
+        83
+      ],
+      "recall": 1,
+      "latencyMs": 994,
+      "modelLatencyMs": 971,
+      "costUsd": 0.00000204,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-44",
+      "query": "xqzv plorbt wuggle frim",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 2355,
+      "modelLatencyMs": 2337,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-45",
+      "query": "asdfghjkl qwertyuiop",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 446,
+      "modelLatencyMs": 431,
+      "costUsd": 6e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-46",
+      "query": "zzzz zzzz zzzz",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 1705,
+      "modelLatencyMs": 1691,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-47",
+      "query": "كفتخ زبرطل شمقرط",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 2248,
+      "modelLatencyMs": 2231,
+      "costUsd": 4.8e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-48",
+      "query": "lkjh mnbv poiu vcxz",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 1377,
+      "modelLatencyMs": 1362,
+      "costUsd": 0,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": true,
+      "error": null
+    },
+    {
+      "id": "r-49",
+      "query": "blorft snargle vimpish quonk",
+      "kind": "nonsense",
+      "mode": "hybrid",
+      "expected": [],
+      "top": [],
+      "recall": 1,
+      "latencyMs": 839,
+      "modelLatencyMs": 823,
+      "costUsd": 8.4e-7,
+      "reranked": false,
+      "rerankStatus": "off",
+      "rank": null,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    }
+  ]
+}

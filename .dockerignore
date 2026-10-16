@@ -1,0 +1,21 @@
+# Allow-list: everything is excluded unless listed below.
+*
+!apps
+!packages
+!deploy
+!docs
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!turbo.json
+
+# Never copy these even inside the allowed folders.
+**/node_modules
+**/dist
+**/.turbo
+**/coverage
+**/.env
+**/.env.*
+**/playwright-report
+**/test-results
+**/*.log

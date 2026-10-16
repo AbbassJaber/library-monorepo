@@ -1,0 +1,33 @@
+{
+  "invalidId": "Cet identifiant de livre n’est pas valide",
+  "notFound": {
+    "title": "{{item}} introuvable",
+    "body": "Il a peut-être été archivé ou n’a jamais existé."
+  },
+  "rating": "Note",
+  "edit": "Modifier ce {{item}}",
+  "version": "version {{version}}",
+  "similar": {
+    "heading": "Livres proches",
+    "subtitle": "Proches par le sens, dans tout le catalogue"
+  },
+  "ratingValue": "{{rating}} sur 5",
+  "close": "Fermer le livre",
+  "closeShort": "Fermer",
+  "askLibrarian": "Demander au bibliothécaire",
+  "askPrompt": "Parle-moi de « {{title}} » de {{author}}.",
+  "card": {
+    "title": "Fiche de prêt",
+    "shelfMark": "Cote",
+    "author": "Auteur",
+    "published": "Publié en",
+    "genre": "Genre",
+    "rating": "Note",
+    "ratingValue": "{{rating}} / 5",
+    "onList": "Dans votre liste",
+    "since": "depuis le {{date}}",
+    "notYet": "Pas encore",
+    "yours": "Votre lecture",
+    "language": "Langue"
+  }
+}

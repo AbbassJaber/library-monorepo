@@ -1,0 +1,144 @@
+{
+  "status": {
+    "active": "Active",
+    "archived": "Archived",
+    "all": "All"
+  },
+  "actions": {
+    "archive": "Archive",
+    "restore": "Restore",
+    "archiveTitled": "Archive {{title}}",
+    "restoreTitled": "Restore {{title}}"
+  },
+  "books": {
+    "add": "Add a {{item}}",
+    "search": "Search",
+    "show": "Show",
+    "columns": {
+      "title": "Title",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "noMatch": "No {{items}} match.",
+    "archived": "{{item}} archived",
+    "restored": "{{item}} restored"
+  },
+  "form": {
+    "addTitle": "Add a {{item}}",
+    "editTitle": "Edit {{item}}",
+    "back": "Back to manage {{items}}",
+    "create": "Create {{item}}",
+    "created": "{{item}} created",
+    "saved": "Changes saved",
+    "editingVersion": "Editing version {{version}}",
+    "fields": {
+      "title": "Title",
+      "isbnHint": "ISBN-10 or ISBN-13; hyphens are fine.",
+      "rating": "Rating (0–5)",
+      "coverUrl": "Cover image URL",
+      "coverUrlHint": "Optional; a generated cover is used otherwise.",
+      "genresHint": "Choose 1 to {{max}}.",
+      "language": "Language",
+      "languageUnknown": "Not set"
+    }
+  },
+  "conflict": {
+    "title": "This {{item}} changed since you opened it",
+    "body": "Someone saved version {{version}} while you were editing. The latest values are:",
+    "explain": "Keep my changes re-submits your form on top of version {{version}}; use the latest version replaces your edits.",
+    "takeTheirs": "Use the latest version",
+    "keepMine": "Keep my changes and retry"
+  },
+  "genres": {
+    "lede": "A {{genre}} cannot be archived while it is the only active {{genre}} of an active {{item}}.",
+    "new": "New {{genre}}",
+    "add": "Add {{genre}}",
+    "columns": {
+      "name": "Name",
+      "slug": "Slug",
+      "activeItems": "Active {{items}}"
+    },
+    "newNameFor": "New name for {{name}}",
+    "rename": "Rename",
+    "renameTitled": "Rename {{name}}",
+    "created": "{{genre}} created",
+    "renamed": "{{genre}} renamed",
+    "archived": "{{genre}} archived",
+    "restored": "{{genre}} restored",
+    "blocked": {
+      "title": "{{name}} cannot be archived yet",
+      "body": "It is the only active {{genre}} of these {{items}}. Give each of them another {{genre}} first, or archive them."
+    }
+  },
+  "autofill": {
+    "heading": "Fill from Open Library",
+    "intro": "Type an ISBN, or a title and author. Each value shows where it came from; nothing is saved until you create the book.",
+    "isbn": "Look-up ISBN",
+    "title": "Look-up title",
+    "author": "Look-up author",
+    "submit": "Look up",
+    "apply": "Use these values",
+    "discard": "Discard",
+    "notFound": "This book is not in Open Library. What you typed is kept; check everything else before saving.",
+    "check": "check this",
+    "source": {
+      "lookup": "From Open Library",
+      "input": "As typed",
+      "model": "Suggested by AI",
+      "empty": "Not found"
+    },
+    "aiSays": "AI says {{year}}",
+    "useYear": "Use {{year}}",
+    "keepYear": "Keep {{year}}"
+  },
+  "activity": {
+    "title": "Activity",
+    "lede": "Changes to the catalog and the genres, newest first. Reading lists, favorites and accounts are behind the filter.",
+    "filter": "Show",
+    "count_one": "{{count}} entry",
+    "count_other": "{{count}} entries",
+    "types": {
+      "all": "Everything",
+      "book": "Books",
+      "genre": "Genres",
+      "reading_list_entry": "Reading lists",
+      "favorite_genre": "Favorite genres",
+      "user": "Accounts",
+      "catalog": "Catalog: books and genres"
+    },
+    "who": {
+      "seed": "Seed data",
+      "unknown": "A deleted account",
+      "librarian": "Librarian"
+    },
+    "via": {
+      "HTTP": "Web app",
+      "AI": "Librarian assistant",
+      "SEED": "Seed"
+    },
+    "changes_one": "{{count}} change",
+    "changes_other": "{{count}} changes",
+    "to": "changed to",
+    "empty": {
+      "title": "Nothing here yet",
+      "hint": "Changes appear here as soon as someone makes one."
+    },
+    "actions": {
+      "bookCreate": "added the {{item}} <item>{{label}}</item>",
+      "bookUpdate": "edited the {{item}} <item>{{label}}</item>",
+      "bookArchive": "archived the {{item}} <item>{{label}}</item>",
+      "bookRestore": "restored the {{item}} <item>{{label}}</item>",
+      "genreCreate": "added the {{genre}} <item>{{label}}</item>",
+      "genreRename": "renamed the {{genre}} now called <item>{{label}}</item>",
+      "genreArchive": "archived the {{genre}} <item>{{label}}</item>",
+      "genreRestore": "restored the {{genre}} <item>{{label}}</item>",
+      "shelfAdd": "added <item>{{label}}</item> to their {{shelf}}",
+      "shelfUpdate": "changed the state of <item>{{label}}</item> on their {{shelf}}",
+      "shelfRemove": "removed <item>{{label}}</item> from their {{shelf}}",
+      "favoritesSet": "updated their favorite genres",
+      "userRegister": "created an account",
+      "userDisable": "disabled the account <item>{{label}}</item>",
+      "seedRun": "set up the demo catalog"
+    }
+  }
+}

@@ -1,0 +1,235 @@
+:root,
+:root[data-theme='dark'] {
+  --bg: #0e0f12;
+  --nav: #0a0b0d;
+  --surface: #15161b;
+  --surface-2: #1b1d24;
+  --input: #17181d;
+  --line: #262832;
+  --line-strong: #33353f;
+  --text: #f2f2f4;
+  --text-2: #a6a8b3;
+  --text-3: #8a8d99;
+  --accent: #5b8cff;
+  --accent-hover: #7aa3ff;
+  --accent-ink: #0b0d12;
+  --accent-soft: #1a2547;
+  --link: #8fb0ff;
+  --success: #3ddc97;
+  --danger: #ff8080;
+  --danger-soft: #2e1517;
+  --danger-solid: #d42a30;
+  --danger-ink: #ffffff;
+  --warning: #ffb547;
+  --focus: #8fb0ff;
+  --pill-bg: #0b0c0f;
+  --pill-text: #ffffff;
+  --cover-shadow: 0 24px 48px -18px rgb(0 0 0 / 0.7), 0 6px 14px -6px rgb(0 0 0 / 0.5);
+  --pop-shadow: 0 18px 40px -12px rgb(0 0 0 / 0.65);
+  --backdrop: rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #ffffff;
+  --nav: #f6f7f9;
+  --surface: #f6f7f9;
+  --surface-2: #eef0f3;
+  --input: #ffffff;
+  --line: #e6e8ec;
+  --line-strong: #dadde3;
+  --text: #16181d;
+  --text-2: #5e6370;
+  --text-3: #6b7080;
+  --accent: #3a63e6;
+  --accent-hover: #2f56d3;
+  --accent-ink: #ffffff;
+  --accent-soft: #e8eeff;
+  --link: #2f56d3;
+  --success: #136b3f;
+  --danger: #c4282e;
+  --danger-soft: #fdecec;
+  --danger-solid: #d42a30;
+  --danger-ink: #ffffff;
+  --warning: #995200;
+  --focus: #2f56d3;
+  --pill-bg: #0b0c0f;
+  --pill-text: #ffffff;
+  --cover-shadow: 0 22px 44px -20px rgb(16 24 40 / 0.45), 0 4px 10px -4px rgb(16 24 40 / 0.2);
+  --pop-shadow: 0 16px 36px -12px rgb(16 24 40 / 0.25);
+  --backdrop: rgb(16 18 24 / 0.45);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #ffffff;
+    --nav: #f6f7f9;
+    --surface: #f6f7f9;
+    --surface-2: #eef0f3;
+    --input: #ffffff;
+    --line: #e6e8ec;
+    --line-strong: #dadde3;
+    --text: #16181d;
+    --text-2: #5e6370;
+    --text-3: #6b7080;
+    --accent: #3a63e6;
+    --accent-hover: #2f56d3;
+    --accent-ink: #ffffff;
+    --accent-soft: #e8eeff;
+    --link: #2f56d3;
+    --success: #136b3f;
+    --danger: #c4282e;
+    --danger-soft: #fdecec;
+    --danger-solid: #d42a30;
+    --danger-ink: #ffffff;
+    --warning: #995200;
+    --focus: #2f56d3;
+    --pill-bg: #0b0c0f;
+    --pill-text: #ffffff;
+    --cover-shadow: 0 22px 44px -20px rgb(16 24 40 / 0.45), 0 4px 10px -4px rgb(16 24 40 / 0.2);
+    --pop-shadow: 0 16px 36px -12px rgb(16 24 40 / 0.25);
+    --backdrop: rgb(16 18 24 / 0.45);
+    color-scheme: light;
+  }
+}
+
+.call-dark {
+  --bg: #0e0f12;
+  --nav: #0a0b0d;
+  --surface: #15161b;
+  --surface-2: #1b1d24;
+  --input: #17181d;
+  --line: #262832;
+  --line-strong: #33353f;
+  --text: #f2f2f4;
+  --text-2: #a6a8b3;
+  --text-3: #8a8d99;
+  --accent: #5b8cff;
+  --accent-hover: #7aa3ff;
+  --accent-ink: #0b0d12;
+  --accent-soft: #1a2547;
+  --link: #8fb0ff;
+  --success: #3ddc97;
+  --danger: #ff8080;
+  --danger-soft: #2e1517;
+  --danger-solid: #d42a30;
+  --danger-ink: #ffffff;
+  --warning: #ffb547;
+  --focus: #8fb0ff;
+  --pill-bg: #0b0c0f;
+  --pill-text: #ffffff;
+  --cover-shadow: 0 24px 48px -18px rgb(0 0 0 / 0.7), 0 6px 14px -6px rgb(0 0 0 / 0.5);
+  --pop-shadow: 0 18px 40px -12px rgb(0 0 0 / 0.65);
+  --backdrop: rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.cover-stage {
+  --bg: var(--cover-stage, #142347);
+  --text: #f2f2f4;
+  --text-2: #b4b7c2;
+  --text-3: #9a9daa;
+  --link: #8fb0ff;
+  --focus: #8fb0ff;
+  --line: #ffffff26;
+  --line-strong: #ffffff40;
+  --surface-2: #ffffff14;
+  color-scheme: dark;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.paper {
+  --bg: #f2f3f5;
+  --surface: #fafbfc;
+  --surface-2: #e6e8ec;
+  --input: #ffffff;
+  --line: #dfe2e7;
+  --line-strong: #c3c7cf;
+  --text: #16181d;
+  --text-2: #575c68;
+  --text-3: #5e6370;
+  --accent: #16181d;
+  --accent-hover: #2b2e36;
+  --accent-ink: #f2f3f5;
+  --accent-soft: #e3e8f7;
+  --link: #2f56d3;
+  --success: #136b3f;
+  --danger: #c4282e;
+  --danger-soft: #fdecec;
+  --warning: #995200;
+  --focus: #2f56d3;
+  --stamp: #2f56d3;
+  --page-edge: #d9dce1;
+  --page-edge-2: #c9cdd3;
+  --page-edge-3: #bcc1c8;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-nav: var(--nav);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-input: var(--input);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--text);
+  --color-fg-2: var(--text-2);
+  --color-fg-3: var(--text-3);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-link: var(--link);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-solid: var(--danger-solid);
+  --color-danger-ink: var(--danger-ink);
+  --color-warning: var(--warning);
+  --color-focus: var(--focus);
+  --color-pill: var(--pill-bg);
+  --color-pill-fg: var(--pill-text);
+  --color-stamp: var(--stamp);
+
+  --font-sans:
+    'Geist Variable', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-arabic: 'IBM Plex Sans Arabic', 'Geist Variable', sans-serif;
+
+  --text-display: 4rem;
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 800;
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 1.05;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h1--font-weight: 700;
+  --text-h2: 1.625rem;
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h2--font-weight: 700;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.45;
+  --text-meta: 0.8125rem;
+  --text-meta--line-height: 1.4;
+  --text-label: 0.875rem;
+  --text-label--line-height: 1.3;
+  --text-label--font-weight: 600;
+
+  --radius-cover: 6px;
+  --radius-control-sm: 10px;
+  --radius-control: 12px;
+  --radius-control-lg: 14px;
+  --radius-panel: 24px;
+
+  --shadow-cover: var(--cover-shadow);
+  --shadow-pop: var(--pop-shadow);
+}

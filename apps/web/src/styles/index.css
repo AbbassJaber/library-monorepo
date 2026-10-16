@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+@import '@fontsource/ibm-plex-sans-arabic/arabic-500.css';
+@import '@fontsource/ibm-plex-sans-arabic/arabic-700.css';
+@import './tokens.css';
+@import './base.css';
+@import './cover.css';
+@import './book.css';
+@import './command.css';

@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - packages/*
+
+# pnpm 10 refuses dependency build scripts unless allow-listed.
+onlyBuiltDependencies:
+  - prisma
+  - '@prisma/engines'
+  - '@prisma/client'
+  - esbuild
+  - '@tailwindcss/oxide'
+  - sharp
+  - onnxruntime-node

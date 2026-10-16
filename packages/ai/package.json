@@ -1,0 +1,51 @@
+{
+  "name": "@library/ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Domain-agnostic AI layer: ports, providers, tool registry, features, safety, cost and prompts. No Prisma, no Express.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./dist/testing/index.d.ts",
+      "default": "./dist/testing/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "test:providers": "AI_PROVIDER_TESTS=1 vitest run src/providers/providers.contract.test.ts",
+    "check:bedrock": "node scripts/bedrock-check.mjs",
+    "test:voice": "VOICE_PROVIDER_TESTS=1 vitest run src/providers/voice/novaSonic.contract.test.ts",
+    "voice:step0": "node scripts/voice-step0.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "0.34.2",
+    "@anthropic-ai/sdk": "0.131.0",
+    "@aws-sdk/client-bedrock-runtime": "3.1144.0",
+    "@library/contracts": "workspace:*",
+    "@library/domain-config": "workspace:*",
+    "@smithy/node-http-handler": "4.12.1",
+    "@xenova/transformers": "2.17.2",
+    "openai": "7.25.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-bedrock": "3.1144.0",
+    "@library/tsconfig": "workspace:*",
+    "typescript": "6.0.3",
+    "vitest": "^5.0.3"
+  }
+}

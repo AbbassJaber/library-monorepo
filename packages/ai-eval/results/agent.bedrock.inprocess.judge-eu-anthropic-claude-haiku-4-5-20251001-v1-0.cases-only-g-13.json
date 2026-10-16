@@ -1,0 +1,152 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-g-13",
+  "date": "2026-10-06T20:56:41.101Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0136686,
+      "agentCostPerCase": 0.0103015,
+      "judgeCostTotal": 0.0033671,
+      "latencyMs": {
+        "p50": 3917,
+        "p95": 3917
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0136686,
+      "agentCostPerCase": 0.0103015,
+      "judgeCostTotal": 0.0033671,
+      "latencyMs": {
+        "p50": 3917,
+        "p95": 3917
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "g-13",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I'll remove these 3 books from your reading list: *Nineteen Eighty-Four*, *Dune*, and *Le Petit Prince*. Please confirm.",
+      "citations": [
+        16,
+        12,
+        104
+      ],
+      "toolCalls": [
+        "getReadingList",
+        "changeReadingList"
+      ],
+      "pending": {
+        "tool": "changeReadingList",
+        "input": {
+          "changes": [
+            {
+              "action": "remove",
+              "bookId": 16
+            },
+            {
+              "action": "remove",
+              "bookId": 12
+            },
+            {
+              "action": "remove",
+              "bookId": 104
+            }
+          ]
+        }
+      },
+      "costUsd": 0.0103015,
+      "judgeCostUsd": 0.0033671,
+      "latencyMs": 3917,
+      "wallMs": 12976,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies the three books on the user's reading list (Nineteen Eighty-Four, Dune, and Le Petit Prince) based on the getReadingList tool output. All three books are properly cited with their bookIds. The answer appropriately addresses the user's request to remove every book from their reading list by proposing the action and asking for confirmation. Importantly, the answer does not claim the removal has already happened—it says \"I'll remove\" and \"Please confirm,\" indicating the action is pending user confirmation rather than already executed. This is the correct behavior. All factual claims about the books (titles, that there are 3 books) are grounded in the evidence provided by the tool.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

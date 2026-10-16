@@ -1,0 +1,161 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-f-04-f-06",
+  "date": "2026-10-09T23:29:48.879Z",
+  "summary": {
+    "all": {
+      "cases": 2,
+      "ran": 2,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 2,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0221694,
+      "agentCostPerCase": 0.00722425,
+      "judgeCostTotal": 0.007720899999999999,
+      "latencyMs": {
+        "p50": 2903,
+        "p95": 3435
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 2,
+      "ran": 2,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 2,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0221694,
+      "agentCostPerCase": 0.00722425,
+      "judgeCostTotal": 0.007720899999999999,
+      "latencyMs": {
+        "p50": 2903,
+        "p95": 3435
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "f-04",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Nous proposons douze genres : Fantasy, Science-Fiction, Mystère & Crime, Thriller, Romance, Fiction historique, Fiction littéraire, Non-fiction, Biographie & Mémoires, Poésie, Philosophie et Jeunesse. Vous pouvez en choisir jusqu'à cinq comme favoris pour personnaliser votre expérience de lecture.",
+      "citations": [],
+      "toolCalls": [
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0.0070796,
+      "judgeCostUsd": 0.0039853,
+      "latencyMs": 3435,
+      "wallMs": 7127,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer lists twelve genres that match exactly what the listGenres tool returned: Fantasy, Science-Fiction, Mystère & Crime (Mystery & Crime), Thriller, Romance, Fiction historique (Historical Fiction), Fiction littéraire (Literary Fiction), Non-fiction, Biographie & Mémoires (Biography & Memoir), Poésie (Poetry), Philosophie (Philosophy), and Jeunesse (Children's). All factual claims about the genres are grounded in the evidence. The answer also makes a claim about being able to choose \"up to five\" as favorites, which is a statement about how the app works rather than a claim about a book, so it doesn't affect the grounded flag. No catalog books are recommended or described, so no citations are needed. The answer does not claim any reading-list changes have already happened. The answer directly addresses the question about which genres are offered.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-06",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "librarian",
+      "answer": "Voici la fiche brouillon pour cet ISBN :\n\n**The Hobbit** de J.R.R. Tolkien (1937)\n\n*Synopsis :* Un conte d'aventure où Bilbo Sacquet, un hobbit casanier, se joint à une compagnie de nains en quête d'or gardé par un dragon. Le récit mêle rencontres avec trolls, gobelins, elfes, araignées géantes et le dragon Smaug, culminant à la Bataille des Cinq Armées.\n\nLa fiche est prête. Vous devez ajouter les genres avant de la valider.",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0.007368899999999999,
+      "judgeCostUsd": 0.0037356,
+      "latencyMs": 2903,
+      "wallMs": 6806,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer provides a draft book record for ISBN 9780547928227. All factual claims about the book are grounded in the evidence: the title \"The Hobbit\", author \"J.R.R. Tolkien\", publication year 1937, and the synopsis details (Bilbo Baggins/Sacquet, dwarves, dragon-guarded gold, encounters with trolls, goblins, elves, spiders, Smaug, Battle of Five Armies) all match the draftBook output. The answer correctly addresses the user's request to prepare a record (\"fiche\") for this ISBN. The answer appropriately notes that genres need to be added before validation, which is correct behavior. Since this is a draftBook result (external lookup, not a catalog book), no citation is required. The answer does not claim the change has already happened—it says the record is \"ready\" and \"must add genres before validating,\" which is appropriate language for a prepared draft awaiting user action.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

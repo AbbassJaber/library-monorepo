@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: library-demo
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./deploy/render/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: AI_CONFIRM_SECRET
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: 'true'
+      - key: SEED_ON_START
+        value: always
+      - key: BCRYPT_ROUNDS
+        value: '10'
+      - key: AI_PROVIDER
+        value: mock
+      - key: EMBEDDING_PROVIDER
+        value: mock
+      - key: VOICE_PROVIDER
+        value: 'off'
+      - key: LOG_LEVEL
+        value: info

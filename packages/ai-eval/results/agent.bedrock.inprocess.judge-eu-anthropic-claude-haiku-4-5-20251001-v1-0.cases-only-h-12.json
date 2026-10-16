@@ -1,0 +1,149 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-h-12",
+  "date": "2026-10-06T20:56:26.368Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0131351,
+      "agentCostPerCase": 0.0101024,
+      "judgeCostTotal": 0.0030327,
+      "latencyMs": {
+        "p50": 3700,
+        "p95": 3700
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0131351,
+      "agentCostPerCase": 0.0101024,
+      "judgeCostTotal": 0.0030327,
+      "latencyMs": {
+        "p50": 3700,
+        "p95": 3700
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "h-12",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Parfait ! Je vais marquer **Dune** et **Le Petit Prince** comme terminés. Confirmez-vous cette action ?",
+      "citations": [
+        12,
+        104
+      ],
+      "toolCalls": [
+        "getReadingList",
+        "changeReadingList"
+      ],
+      "pending": {
+        "tool": "changeReadingList",
+        "input": {
+          "changes": [
+            {
+              "action": "setState",
+              "bookId": 12,
+              "state": "FINISHED"
+            },
+            {
+              "action": "setState",
+              "bookId": 104,
+              "state": "FINISHED"
+            }
+          ]
+        }
+      },
+      "costUsd": 0.0101024,
+      "judgeCostUsd": 0.0030327,
+      "latencyMs": 3700,
+      "wallMs": 6645,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies the two books on the user's reading list (Dune and Le Petit Prince) with proper citations to their catalog IDs. The answer appropriately asks for confirmation before making the change (\"Confirmez-vous cette action ?\"), which means it does not claim the change has already happened - it correctly indicates the action is pending user confirmation. The answer directly addresses the user's request to mark all reading list books as completed. All factual claims about the books (titles and authors) are grounded in the evidence from getReadingList. The citations are properly provided for both catalog books mentioned.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

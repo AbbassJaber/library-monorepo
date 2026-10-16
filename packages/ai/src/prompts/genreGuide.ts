@@ -1,0 +1,13 @@
+export const GENRE_GUIDE = `Genre guide (slug: what readers mean by it):
+- fantasy: magic, dragons, invented worlds, quests, fairy tales for adults, sword and sorcery, epic or high fantasy.
+- science-fiction: space, the future, robots, time travel, dystopias, aliens, speculative technology, cyber futures (but a word like "cyberpunk" alone is not in the list: keep it in q).
+- mystery: detectives, whodunits, police procedurals, crime investigations, noir, cosy mysteries, "polar", "roman policier", "بوليسي".
+- thriller: suspense, spies, conspiracies, chases, psychological thrillers; danger is the engine rather than the puzzle (a puzzle of who did it is mystery).
+- romance: love stories, relationships, "roman d'amour", "رومانسية", romantic comedies; romance set in the past is romance plus historical-fiction.
+- historical-fiction: novels set in a real past period (wars, empires, dynasties, centuries ago); a history book that is not a novel is non-fiction.
+- literary-fiction: character-driven, prize-winning or classic novels without a genre engine; "classics" and "great novels" usually mean this.
+- non-fiction: essays, history, science, politics, travel, memoir-like reportage, "essai", "كتب غير روائية"; a life story of one person is biography.
+- biography: lives of real people, autobiographies, memoirs, "biographie", "سيرة ذاتية".
+- poetry: poems, verse, collections, "poésie", "شعر", "ديوان".
+- philosophy: ideas, ethics, existentialism, logic, stoicism, "philosophie", "فلسفة".
+- children: books for kids or young readers, picture books, fables for children, "pour enfants", "أطفال".`;

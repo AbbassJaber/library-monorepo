@@ -1,0 +1,658 @@
+{
+  "suite": "retrieval",
+  "provider": "bedrock",
+  "model": "amazon.titan-embed-text-v2:0 (512 dims) + RRF k = 60 + eu.anthropic.claude-haiku-4-5-20251001-v1:0 rerank",
+  "target": "http",
+  "setting": "rerank",
+  "date": "2026-10-01T21:42:39.899Z",
+  "summary": {
+    "cases": 24,
+    "errors": 0,
+    "recallAt5": 1,
+    "recallByKind": {
+      "title/author": 1,
+      "description": 1
+    },
+    "latencyMs": {
+      "p50": 1297,
+      "p95": 1483
+    }
+  },
+  "rows": [
+    {
+      "id": "r-01",
+      "query": "tolkien",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        1,
+        2
+      ],
+      "top": [
+        2,
+        1,
+        45,
+        56,
+        58
+      ],
+      "recall": 1,
+      "latencyMs": 1312,
+      "modelLatencyMs": 1300,
+      "costUsd": 0.00304158,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-02",
+      "query": "tolkein",
+      "kind": "author-typo",
+      "mode": "rerank",
+      "expected": [
+        1,
+        2
+      ],
+      "top": [
+        1,
+        2,
+        59,
+        45,
+        9
+      ],
+      "recall": 1,
+      "latencyMs": 1289,
+      "modelLatencyMs": 1276,
+      "costUsd": 0.00316148,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-03",
+      "query": "dune",
+      "kind": "title",
+      "mode": "rerank",
+      "expected": [
+        12
+      ],
+      "top": [
+        12,
+        36,
+        109,
+        56,
+        118
+      ],
+      "recall": 1,
+      "latencyMs": 1286,
+      "modelLatencyMs": 1273,
+      "costUsd": 0.0028754600000000003,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-04",
+      "query": "agatha christie",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        27,
+        28
+      ],
+      "top": [
+        27,
+        28,
+        59,
+        58,
+        5
+      ],
+      "recall": 1,
+      "latencyMs": 1169,
+      "modelLatencyMs": 1155,
+      "costUsd": 0.0028843,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-05",
+      "query": "orient express",
+      "kind": "title-fragment",
+      "mode": "rerank",
+      "expected": [
+        27
+      ],
+      "top": [
+        27,
+        89,
+        3,
+        104,
+        81
+      ],
+      "recall": 1,
+      "latencyMs": 1202,
+      "modelLatencyMs": 1186,
+      "costUsd": 0.00296016,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-06",
+      "query": "le guin",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        3,
+        15
+      ],
+      "top": [
+        3,
+        15,
+        102,
+        120,
+        109
+      ],
+      "recall": 1,
+      "latencyMs": 1297,
+      "modelLatencyMs": 1284,
+      "costUsd": 0.00300418,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-07",
+      "query": "camus",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        102,
+        103
+      ],
+      "top": [
+        102,
+        103,
+        65,
+        71,
+        60
+      ],
+      "recall": 1,
+      "latencyMs": 1155,
+      "modelLatencyMs": 1141,
+      "costUsd": 0.00293596,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-08",
+      "query": "نجيب محفوظ",
+      "kind": "author-ar",
+      "mode": "rerank",
+      "expected": [
+        90,
+        91,
+        92
+      ],
+      "top": [
+        90,
+        91,
+        92,
+        44,
+        95
+      ],
+      "recall": 1,
+      "latencyMs": 1115,
+      "modelLatencyMs": 1102,
+      "costUsd": 0.0031385000000000002,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-09",
+      "query": "harry potter",
+      "kind": "title",
+      "mode": "rerank",
+      "expected": [
+        10
+      ],
+      "top": [
+        10,
+        2,
+        6,
+        8,
+        5
+      ],
+      "recall": 1,
+      "latencyMs": 1191,
+      "modelLatencyMs": 1179,
+      "costUsd": 0.0028986,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-10",
+      "query": "roald dahl",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        81,
+        82
+      ],
+      "top": [
+        82,
+        81,
+        15,
+        33,
+        2
+      ],
+      "recall": 1,
+      "latencyMs": 1240,
+      "modelLatencyMs": 1227,
+      "costUsd": 0.0030031,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-11",
+      "query": "austen",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        37,
+        40
+      ],
+      "top": [
+        37,
+        40,
+        12,
+        25,
+        34
+      ],
+      "recall": 1,
+      "latencyMs": 1397,
+      "modelLatencyMs": 1381,
+      "costUsd": 0.00302288,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-12",
+      "query": "bronte",
+      "kind": "author-diacritics",
+      "mode": "rerank",
+      "expected": [
+        38,
+        39
+      ],
+      "top": [
+        38,
+        39,
+        110,
+        92,
+        17
+      ],
+      "recall": 1,
+      "latencyMs": 1434,
+      "modelLatencyMs": 1417,
+      "costUsd": 0.00298986,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-13",
+      "query": "orwell 1984",
+      "kind": "author+title-variant",
+      "mode": "rerank",
+      "expected": [
+        16
+      ],
+      "top": [
+        16,
+        99,
+        112,
+        13,
+        79
+      ],
+      "recall": 1,
+      "latencyMs": 1146,
+      "modelLatencyMs": 1132,
+      "costUsd": 0.00298992,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-14",
+      "query": "the little prince",
+      "kind": "translated-title",
+      "mode": "rerank",
+      "expected": [
+        104
+      ],
+      "top": [
+        104,
+        103,
+        84,
+        50,
+        107
+      ],
+      "recall": 1,
+      "latencyMs": 1405,
+      "modelLatencyMs": 1387,
+      "costUsd": 0.0030118799999999998,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-15",
+      "query": "a boy wizard at a school of magic",
+      "kind": "description",
+      "mode": "rerank",
+      "expected": [
+        10
+      ],
+      "top": [
+        10,
+        3,
+        5,
+        1,
+        6
+      ],
+      "recall": 1,
+      "latencyMs": 1372,
+      "modelLatencyMs": 1350,
+      "costUsd": 0.00292618,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-16",
+      "query": "murder on a train",
+      "kind": "description",
+      "mode": "rerank",
+      "expected": [
+        27
+      ],
+      "top": [
+        27,
+        33,
+        26,
+        34,
+        81
+      ],
+      "recall": 1,
+      "latencyMs": 1459,
+      "modelLatencyMs": 1442,
+      "costUsd": 0.00295032,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-17",
+      "query": "desert planet with giant worms",
+      "kind": "description",
+      "mode": "rerank",
+      "expected": [
+        12
+      ],
+      "top": [
+        12,
+        102,
+        23,
+        5,
+        77
+      ],
+      "recall": 1,
+      "latencyMs": 1177,
+      "modelLatencyMs": 1158,
+      "costUsd": 0.00298554,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-18",
+      "query": "girl with the dragon tattoo",
+      "kind": "title",
+      "mode": "rerank",
+      "expected": [
+        31
+      ],
+      "top": [
+        31,
+        9,
+        88,
+        4,
+        39
+      ],
+      "recall": 1,
+      "latencyMs": 1798,
+      "modelLatencyMs": 1781,
+      "costUsd": 0.0030658200000000004,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-19",
+      "query": "victor hugo",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        105
+      ],
+      "top": [
+        105,
+        3,
+        100,
+        87,
+        96
+      ],
+      "recall": 1,
+      "latencyMs": 1483,
+      "modelLatencyMs": 1466,
+      "costUsd": 0.0031032200000000003,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-20",
+      "query": "murakami",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        57
+      ],
+      "top": [
+        57,
+        88,
+        49,
+        3,
+        50
+      ],
+      "recall": 1,
+      "latencyMs": 1327,
+      "modelLatencyMs": 1312,
+      "costUsd": 0.00286778,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-21",
+      "query": "zola",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        112
+      ],
+      "top": [
+        112,
+        55,
+        58,
+        25,
+        41
+      ],
+      "recall": 1,
+      "latencyMs": 1074,
+      "modelLatencyMs": 1062,
+      "costUsd": 0.00290516,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 0,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-22",
+      "query": "adichie",
+      "kind": "author",
+      "mode": "rerank",
+      "expected": [
+        58,
+        59
+      ],
+      "top": [
+        59,
+        58,
+        22,
+        45,
+        5
+      ],
+      "recall": 1,
+      "latencyMs": 1451,
+      "modelLatencyMs": 1435,
+      "costUsd": 0.0029249799999999998,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-23",
+      "query": "love poems full of despair",
+      "kind": "description",
+      "mode": "rerank",
+      "expected": [
+        74
+      ],
+      "top": [
+        74,
+        73,
+        71,
+        72,
+        57
+      ],
+      "recall": 1,
+      "latencyMs": 1449,
+      "modelLatencyMs": 1432,
+      "costUsd": 0.00282932,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    },
+    {
+      "id": "r-24",
+      "query": "a plague in an algerian town",
+      "kind": "description",
+      "mode": "rerank",
+      "expected": [
+        103
+      ],
+      "top": [
+        103,
+        99,
+        66,
+        102,
+        98
+      ],
+      "recall": 1,
+      "latencyMs": 1319,
+      "modelLatencyMs": 1303,
+      "costUsd": 0.00300318,
+      "reranked": true,
+      "rerankStatus": "applied",
+      "rank": 1,
+      "throttleRetries": 1,
+      "fallbackUsed": false,
+      "error": null
+    }
+  ]
+}

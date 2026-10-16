@@ -1,0 +1,132 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-g-01",
+  "date": "2026-10-06T20:51:45.863Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0088946,
+      "agentCostPerCase": 0.0059994,
+      "judgeCostTotal": 0.0028952,
+      "latencyMs": {
+        "p50": 2582,
+        "p95": 2582
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0088946,
+      "agentCostPerCase": 0.0059994,
+      "judgeCostTotal": 0.0028952,
+      "latencyMs": {
+        "p50": 2582,
+        "p95": 2582
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "g-01",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "The catalog has two books by Tolkien: *The Hobbit* (1937) and *The Fellowship of the Ring* (1954). Both are highly rated fantasy classics.",
+      "citations": [
+        1,
+        2
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0059994,
+      "judgeCostUsd": 0.0028952,
+      "latencyMs": 2582,
+      "wallMs": 5558,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer states that the catalog has two books by Tolkien: \"The Hobbit\" (1937) and \"The Fellowship of the Ring\" (1954). All of these factual claims are directly supported by the searchBooks tool output, which returned exactly these two books with matching titles, author, and publication years. The answer includes proper citations for both books (bookId 1 and 2). The answer correctly addresses the user's question about books by Tolkien. There is no claim that a reading-list change has already occurred—no pending action is indicated. All factual claims are grounded in the evidence provided.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

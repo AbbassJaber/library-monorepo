@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BooksQuery > converts to a JSON Schema for the OpenAPI document 1`] = `
+{
+  "$defs": {
+    "BookLanguage": {
+      "pattern": "^[a-z]{2,3}$",
+      "type": "string",
+    },
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "genre": {
+      "items": {
+        "maxLength": 60,
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "type": "string",
+      },
+      "maxItems": 5,
+      "minItems": 1,
+      "type": "array",
+    },
+    "language": {
+      "items": {
+        "$ref": "#/$defs/BookLanguage",
+      },
+      "maxItems": 5,
+      "minItems": 1,
+      "type": "array",
+    },
+    "page": {
+      "default": 1,
+      "maximum": 9007199254740991,
+      "minimum": 1,
+      "type": "integer",
+    },
+    "pageSize": {
+      "default": 24,
+      "maximum": 48,
+      "minimum": 1,
+      "type": "integer",
+    },
+    "q": {
+      "maxLength": 200,
+      "minLength": 2,
+      "type": "string",
+    },
+    "sort": {
+      "enum": [
+        "newest",
+        "title",
+        "rating",
+      ],
+      "type": "string",
+    },
+    "status": {
+      "default": "active",
+      "enum": [
+        "active",
+        "archived",
+        "all",
+      ],
+      "type": "string",
+    },
+    "yearFrom": {
+      "maximum": 9999,
+      "minimum": 1000,
+      "type": "integer",
+    },
+    "yearTo": {
+      "maximum": 9999,
+      "minimum": 1000,
+      "type": "integer",
+    },
+  },
+  "type": "object",
+}
+`;

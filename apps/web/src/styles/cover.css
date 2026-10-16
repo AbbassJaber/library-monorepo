@@ -1,0 +1,122 @@
+@layer components {
+  .cover {
+    container-type: inline-size;
+    position: relative;
+    aspect-ratio: 2 / 3;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-cover);
+    background: var(--cover-bg);
+    color: var(--cover-text);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
+    pointer-events: none;
+  }
+  .cover[data-size='hero'] {
+    box-shadow: var(--cover-shadow);
+  }
+  .cover[data-archived] {
+    filter: grayscale(1);
+  }
+
+  .cover-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cover-type {
+    position: absolute;
+    inset: 9% 10% auto;
+    z-index: 1;
+    font-size: 12.5cqw;
+  }
+  .cover-title {
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+  }
+  .cover-author {
+    margin: 0.5em 0 0;
+    font-size: 0.55em;
+    font-weight: 500;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .cover-type[dir='rtl'] .cover-title,
+  .cover-type [dir='rtl'] {
+    font-family: var(--font-arabic);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+
+  .cover-art {
+    position: absolute;
+    background: var(--cover-accent);
+  }
+  .cover-art[data-shape='circle'] {
+    width: 130%;
+    aspect-ratio: 1;
+    left: -35%;
+    bottom: -40%;
+    border-radius: 50%;
+  }
+  .cover-art[data-shape='band'] {
+    inset-inline: 0;
+    top: 60%;
+    height: 11%;
+  }
+  .cover-art[data-shape='half'] {
+    inset-inline: 0;
+    bottom: 0;
+    height: 44%;
+  }
+  .cover-art[data-shape='arch'] {
+    left: 16%;
+    width: 68%;
+    bottom: 0;
+    height: 52%;
+    border-radius: 50% 50% 0 0 / 43.6% 43.6% 0 0;
+  }
+  .cover-art[data-shape='dot'] {
+    width: 22%;
+    aspect-ratio: 1;
+    right: 12%;
+    bottom: 8%;
+    border-radius: 50%;
+  }
+  .cover-art[data-shape='stripes'] {
+    inset-inline: 0;
+    bottom: 0;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+  }
+  .cover-art[data-shape='stripes'] > span {
+    display: block;
+    height: 13%;
+    background: var(--cover-accent);
+  }
+}

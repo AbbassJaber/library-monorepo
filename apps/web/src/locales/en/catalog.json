@@ -1,0 +1,111 @@
+{
+  "lede": "Search by title or author, filter by genre and year, or just browse.",
+  "filters": {
+    "search": "Search by title or author",
+    "searchPlaceholder": "Tolkien, Dune, محفوظ…",
+    "byGenre": "Filter by {{genre}}",
+    "fromYear": "From year",
+    "toYear": "To year",
+    "sort": "Sort",
+    "active": "Active filters",
+    "chipFrom": "from {{year}}",
+    "chipTo": "to {{year}}",
+    "clear": "Clear filters",
+    "language": "Language",
+    "anyLanguage": "Any language"
+  },
+  "sort": {
+    "bestMatch": "Best match",
+    "newest": "Newest",
+    "title": "Title",
+    "rating": "Rating"
+  },
+  "view": {
+    "label": "View",
+    "pages": "Pages",
+    "scroll": "Continuous scroll"
+  },
+  "empty": {
+    "title": "No {{items}} match these filters",
+    "hint": "Try fewer filters or a different spelling.",
+    "reset": "Reset search"
+  },
+  "announce": {
+    "page_one": "{{count}} book, page {{page}} of {{pages}}",
+    "page_other": "{{count}} books, page {{page}} of {{pages}}",
+    "shown_one": "{{shown}} of {{count}} book shown",
+    "shown_other": "{{shown}} of {{count}} books shown"
+  },
+  "shownOf_one": "{{shown}} of {{count}} book",
+  "shownOf_other": "{{shown}} of {{count}} books",
+  "loadMore": "Load more",
+  "pagination": {
+    "label": "Pagination",
+    "previous": "Previous page",
+    "next": "Next page",
+    "status_one": "Page {{page}} of {{pages}} · {{count}} book",
+    "status_other": "Page {{page}} of {{pages}} · {{count}} books"
+  },
+  "card": {
+    "titleBy": "{{title}} by {{author}}",
+    "onShelf": "On your {{shelf}}"
+  },
+  "ai": {
+    "heading": "Search in your own words",
+    "label": "Describe what you are looking for",
+    "placeholder": "e.g. fantasy from the 90s, best rated first",
+    "submit": "Interpret",
+    "review": "Here is what I understood. Edit or remove anything, then apply.",
+    "unsure": "I am not sure about this one: check the filters before applying.",
+    "understood": "What I understood",
+    "nothing": "No filters found in that request.",
+    "apply": "Apply filters",
+    "discard": "Discard",
+    "chip": {
+      "q": "“{{value}}”",
+      "sort": "sorted by {{label}}"
+    },
+    "edit": {
+      "chip": "Edit {{label}}",
+      "q": "Search words"
+    }
+  },
+  "semantic": {
+    "toggle": "Search by meaning",
+    "note": "Ranked by meaning as well as by words: a description finds the book that its title does not name. One genre at most; years and sort do not apply."
+  },
+  "layout": {
+    "label": "Layout",
+    "covers": "Covers",
+    "table": "Table"
+  },
+  "table": {
+    "cover": "Cover",
+    "title": "Title and author",
+    "genre": "Genre",
+    "rating": "Rating",
+    "notOnShelf": "Not on your list",
+    "language": "Language"
+  },
+  "why": {
+    "heading": "Why it matched",
+    "button": "Why",
+    "open": "Why “{{title}}” matched",
+    "close": "Close the explanation",
+    "reasons": {
+      "title": "Your words are in the title",
+      "author": "Your words are in the author’s name",
+      "spelling": "A close spelling of the title or author",
+      "meaning": "Close in meaning to your search"
+    },
+    "keywordRank": "Keyword rank",
+    "semanticScore": "Semantic similarity",
+    "semanticRank": "Semantic rank",
+    "fusedRank": "Fused rank",
+    "rerankedRank": "After rerank",
+    "rank": "#{{rank}}",
+    "rrf": "RRF {{score}}",
+    "none": "no match",
+    "note": "Ranks start at 1. The fused rank combines the keyword and meaning lists (reciprocal rank fusion)."
+  }
+}

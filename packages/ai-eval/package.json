@@ -1,0 +1,35 @@
+{
+  "name": "@library/ai-eval",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evaluation harness for the AI layer (pnpm eval): metrics, test sets, cost pre-flight.",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "eval": "node dist/cli.js",
+    "eval:docs": "node dist/evalDocs.js && prettier --write ../../docs/evaluation.md"
+  },
+  "dependencies": {
+    "@library/ai": "workspace:*",
+    "@library/contracts": "workspace:*",
+    "@library/domain-config": "workspace:*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@library/tsconfig": "workspace:*",
+    "typescript": "6.0.3",
+    "vitest": "^5.0.3"
+  },
+  "bin": {
+    "library-eval": "./dist/cli.js"
+  }
+}

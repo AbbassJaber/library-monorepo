@@ -1,0 +1,5346 @@
+{
+  "model": "cohere.embed-multilingual-v3",
+  "date": "2026-10-01T23:14:43.392Z",
+  "rows": [
+    {
+      "id": "r-01",
+      "kind": "author",
+      "expected": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "id": 1,
+          "lexical": 2,
+          "semantic": 0.4874378315549246
+        },
+        {
+          "id": 2,
+          "lexical": 1,
+          "semantic": 0.4807913300783546
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.417266449439171
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.4091939553404602
+        },
+        {
+          "id": 45,
+          "lexical": null,
+          "semantic": 0.40529303386489546
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.4043776389866194
+        },
+        {
+          "id": 89,
+          "lexical": null,
+          "semantic": 0.40073472163202206
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.39377296379281435
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.3907219822913316
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.38915812140286543
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.38590400490264964
+        },
+        {
+          "id": 4,
+          "lexical": null,
+          "semantic": 0.3853899819431241
+        },
+        {
+          "id": 71,
+          "lexical": null,
+          "semantic": 0.38112787062584785
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.38055488055164466
+        },
+        {
+          "id": 56,
+          "lexical": null,
+          "semantic": 0.3788839824997101
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.37835965741543665
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.3781610447383321
+        },
+        {
+          "id": 7,
+          "lexical": null,
+          "semantic": 0.3779686974415525
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.37677657273059606
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3764033404645728
+        }
+      ]
+    },
+    {
+      "id": "r-02",
+      "kind": "author-typo",
+      "expected": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "id": 2,
+          "lexical": 1,
+          "semantic": 0.33824771987088686
+        },
+        {
+          "id": 1,
+          "lexical": 2,
+          "semantic": 0.33906135243367386
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.3911099018112425
+        },
+        {
+          "id": 45,
+          "lexical": null,
+          "semantic": 0.384663685970014
+        },
+        {
+          "id": 35,
+          "lexical": null,
+          "semantic": 0.3504351100823817
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.35023151272975617
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.34065567069629554
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.33770036800114167
+        },
+        {
+          "id": 89,
+          "lexical": null,
+          "semantic": 0.3316488256231451
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.3313874170204275
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.3313697387050838
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.330483626827502
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.32950471322012154
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.322924400462945
+        },
+        {
+          "id": 57,
+          "lexical": null,
+          "semantic": 0.3223517564484524
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.3208192777504659
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.3195030698364836
+        },
+        {
+          "id": 71,
+          "lexical": null,
+          "semantic": 0.31868764673007366
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.31800430472307983
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.31750591470654865
+        }
+      ]
+    },
+    {
+      "id": "r-03",
+      "kind": "title",
+      "expected": [
+        12
+      ],
+      "items": [
+        {
+          "id": 12,
+          "lexical": 1,
+          "semantic": 0.5228424638600618
+        },
+        {
+          "id": 36,
+          "lexical": 2,
+          "semantic": null
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3646871430094558
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3593545838675437
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.3538992641137635
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.34115757851362805
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.3410227787023923
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.3404482194300652
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.33358870853412026
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.33109671948092867
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3309691189773195
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.3273271802024924
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.3233785790249175
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.32257235649628524
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.32255766897305804
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.32200846859761967
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.320836171736115
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3201354646785386
+        },
+        {
+          "id": 56,
+          "lexical": null,
+          "semantic": 0.3182960251097462
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.31814421594845266
+        }
+      ]
+    },
+    {
+      "id": "r-04",
+      "kind": "author",
+      "expected": [
+        27,
+        28
+      ],
+      "items": [
+        {
+          "id": 28,
+          "lexical": 1,
+          "semantic": 0.47485453242905273
+        },
+        {
+          "id": 27,
+          "lexical": 2,
+          "semantic": 0.43816854846850006
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.41776220747921766
+        },
+        {
+          "id": 38,
+          "lexical": null,
+          "semantic": 0.3934657669303122
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.39046845253542983
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.3823948139236437
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.3717510822156984
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.3616218938325835
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.3609204945455453
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.3605142798682719
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.3604314057419318
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.36031471681687144
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3533652546349264
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.35133218067876215
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.35025397228312505
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.3496980546241052
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3494903472636116
+        },
+        {
+          "id": 52,
+          "lexical": null,
+          "semantic": 0.3460422384196701
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.345792305618825
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.34522141484256674
+        }
+      ]
+    },
+    {
+      "id": "r-05",
+      "kind": "title-fragment",
+      "expected": [
+        27
+      ],
+      "items": [
+        {
+          "id": 27,
+          "lexical": 1,
+          "semantic": 0.525538514483097
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.35126961953230096
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.32993418402417474
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.32779025706994025
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.32679285963868354
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.3256510046394063
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.31863763899987396
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.31208516430934474
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.31200581837819175
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.31129217727556124
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3091791980079507
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.3082394349894748
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3079537073012957
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.30755792226391854
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.30613330540890826
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.30063805544282274
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.29945511766065236
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.29687861058438725
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.2964126664847946
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.29497928210872704
+        }
+      ]
+    },
+    {
+      "id": "r-06",
+      "kind": "author",
+      "expected": [
+        3,
+        15
+      ],
+      "items": [
+        {
+          "id": 15,
+          "lexical": 1,
+          "semantic": 0.3766154323657913
+        },
+        {
+          "id": 3,
+          "lexical": 2,
+          "semantic": 0.36237102476404526
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.3887275550762237
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.37837950637060314
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.376644911339841
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.36912053492570474
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3674847342831291
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.36548934363000996
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.3644553108102371
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3609335641289986
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.3504431047990313
+        },
+        {
+          "id": 85,
+          "lexical": null,
+          "semantic": 0.3460976861434434
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.34406643893821887
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.3438455499134587
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.342545179367004
+        },
+        {
+          "id": 52,
+          "lexical": null,
+          "semantic": 0.3327254766427259
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.33005740649674453
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.32986287263488423
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.3278034199975578
+        },
+        {
+          "id": 30,
+          "lexical": null,
+          "semantic": 0.325344271432807
+        }
+      ]
+    },
+    {
+      "id": "r-07",
+      "kind": "author",
+      "expected": [
+        102,
+        103
+      ],
+      "items": [
+        {
+          "id": 103,
+          "lexical": 1,
+          "semantic": 0.4186789811233951
+        },
+        {
+          "id": 102,
+          "lexical": 2,
+          "semantic": 0.3982637138502947
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.4017689111170577
+        },
+        {
+          "id": 65,
+          "lexical": null,
+          "semantic": 0.3718025865848589
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3460433773973969
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.3037089722815637
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.3023266340459059
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.3008778638565486
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.2980557540891242
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.2964819089644647
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.2955828446355262
+        },
+        {
+          "id": 69,
+          "lexical": null,
+          "semantic": 0.2950405484083656
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.2942846924088278
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.2932638629364531
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.28761236251584843
+        },
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.2810966050485726
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.27962886990685654
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.2792237424954114
+        },
+        {
+          "id": 74,
+          "lexical": null,
+          "semantic": 0.27913396336823193
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.2763842957687688
+        }
+      ]
+    },
+    {
+      "id": "r-08",
+      "kind": "author-ar",
+      "expected": [
+        90,
+        91,
+        92
+      ],
+      "items": [
+        {
+          "id": 92,
+          "lexical": 1,
+          "semantic": 0.5572164423688758
+        },
+        {
+          "id": 90,
+          "lexical": 3,
+          "semantic": 0.5324651204314107
+        },
+        {
+          "id": 91,
+          "lexical": 2,
+          "semantic": 0.5238070313372388
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.45211472264679564
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.4464868504450066
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.4380477408860963
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.41331740592777244
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.4097463906661767
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.4066952717774561
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.4046045139149099
+        },
+        {
+          "id": 57,
+          "lexical": null,
+          "semantic": 0.4037668522035036
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.40363532972297533
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.39849814198350864
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.39796793348301385
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.38513699849300786
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3840054062151319
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.38377457425867323
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.3820189940042823
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.38148784913929046
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3713148791697283
+        }
+      ]
+    },
+    {
+      "id": "r-09",
+      "kind": "title",
+      "expected": [
+        10
+      ],
+      "items": [
+        {
+          "id": 10,
+          "lexical": 1,
+          "semantic": 0.5723396590196397
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.4760078948900559
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.46600112503806224
+        },
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.44994848179323776
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.4312618524463785
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.4302587191009626
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.42804105176519003
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.42523575863370433
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.4192407639997138
+        },
+        {
+          "id": 54,
+          "lexical": null,
+          "semantic": 0.4152885036643803
+        },
+        {
+          "id": 4,
+          "lexical": null,
+          "semantic": 0.4117235813238227
+        },
+        {
+          "id": 26,
+          "lexical": null,
+          "semantic": 0.4098289224451611
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.40839205519756283
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.4075982503907002
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.40738359825886195
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.4045344279054707
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.4038756687961198
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.40204976959636973
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.40112768556010603
+        },
+        {
+          "id": 19,
+          "lexical": null,
+          "semantic": 0.3997327813322067
+        }
+      ]
+    },
+    {
+      "id": "r-10",
+      "kind": "author",
+      "expected": [
+        81,
+        82
+      ],
+      "items": [
+        {
+          "id": 81,
+          "lexical": 2,
+          "semantic": 0.4042011222437307
+        },
+        {
+          "id": 82,
+          "lexical": 1,
+          "semantic": 0.3826667242519295
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.36599948454009246
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.35717773688850396
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.3349173997104744
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.33381731880054466
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.33380567472225253
+        },
+        {
+          "id": 57,
+          "lexical": null,
+          "semantic": 0.3122751790432884
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.3118353951085606
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.30911893104828325
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.3070999775190284
+        },
+        {
+          "id": 116,
+          "lexical": null,
+          "semantic": 0.2988044706442141
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.29427020440090157
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.2926093781063749
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.2917302909932532
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.28914365777505946
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.28874835704806867
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.28832179818460923
+        },
+        {
+          "id": 74,
+          "lexical": null,
+          "semantic": 0.28771014988690946
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.2875569480661513
+        }
+      ]
+    },
+    {
+      "id": "r-11",
+      "kind": "author",
+      "expected": [
+        37,
+        40
+      ],
+      "items": [
+        {
+          "id": 37,
+          "lexical": 2,
+          "semantic": 0.4411166478224564
+        },
+        {
+          "id": 40,
+          "lexical": 1,
+          "semantic": 0.4384103292999266
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.3673532162146351
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3617202324724026
+        },
+        {
+          "id": 52,
+          "lexical": null,
+          "semantic": 0.3611029693089395
+        },
+        {
+          "id": 75,
+          "lexical": null,
+          "semantic": 0.35978996811566144
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.35558616054209424
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.35133842301148
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.34163253791531134
+        },
+        {
+          "id": 38,
+          "lexical": null,
+          "semantic": 0.34042081799398893
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.3318177042751719
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.33111195717665476
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.32830927408769517
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.32764823671543386
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.32281277612422543
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.3186750990824929
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.3179175792899047
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.3173329215105505
+        },
+        {
+          "id": 71,
+          "lexical": null,
+          "semantic": 0.3172937919591411
+        },
+        {
+          "id": 14,
+          "lexical": null,
+          "semantic": 0.3171210691214048
+        }
+      ]
+    },
+    {
+      "id": "r-12",
+      "kind": "author-diacritics",
+      "expected": [
+        38,
+        39
+      ],
+      "items": [
+        {
+          "id": 38,
+          "lexical": 1,
+          "semantic": 0.4481434076530817
+        },
+        {
+          "id": 39,
+          "lexical": 2,
+          "semantic": 0.40790190472464205
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.3875027307432557
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3769209368839297
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.34755762058595363
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.33590263469214277
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.33068148664159613
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.32990168717447454
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3285260992158313
+        },
+        {
+          "id": 89,
+          "lexical": null,
+          "semantic": 0.32590380016002796
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.32375351308144384
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.32097149304330763
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.31826939712652513
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.31801204873864153
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.31306372585411
+        },
+        {
+          "id": 17,
+          "lexical": null,
+          "semantic": 0.31263619297057166
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.31238870860116674
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.31032834313262647
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.309075441671556
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.30759392730537805
+        }
+      ]
+    },
+    {
+      "id": "r-13",
+      "kind": "author+title-variant",
+      "expected": [
+        16
+      ],
+      "items": [
+        {
+          "id": 16,
+          "lexical": 1,
+          "semantic": 0.6567824601787389
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.467092823901467
+        },
+        {
+          "id": 17,
+          "lexical": null,
+          "semantic": 0.4556712077946663
+        },
+        {
+          "id": 13,
+          "lexical": null,
+          "semantic": 0.4507812615467913
+        },
+        {
+          "id": 18,
+          "lexical": null,
+          "semantic": 0.4492145982708071
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.44841713451882137
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.44315625594236085
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.4391029258568411
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.43870192902208516
+        },
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.43869575429999785
+        },
+        {
+          "id": 35,
+          "lexical": null,
+          "semantic": 0.43672926835900316
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.43421535211646645
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.4325657213292218
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.42897977381369734
+        },
+        {
+          "id": 53,
+          "lexical": null,
+          "semantic": 0.42458253113587574
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.42122775906116283
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.4209164688931213
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.4203170386792128
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.41319934969127936
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.41211405902811826
+        }
+      ]
+    },
+    {
+      "id": "r-14",
+      "kind": "translated-title",
+      "expected": [
+        104
+      ],
+      "items": [
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.5754546156590112
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.39639655405104146
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.36294858798890717
+        },
+        {
+          "id": 82,
+          "lexical": null,
+          "semantic": 0.3597609150863398
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.3587164618889168
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.3580806777664546
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.35673914755631664
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.35320233315641625
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.3521603854375601
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.3511867657615868
+        },
+        {
+          "id": 45,
+          "lexical": null,
+          "semantic": 0.34889374244654714
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.3483912689980053
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.34670773466490523
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.34333164663570703
+        },
+        {
+          "id": 81,
+          "lexical": null,
+          "semantic": 0.3379491811570372
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.33688844546078656
+        },
+        {
+          "id": 85,
+          "lexical": null,
+          "semantic": 0.33560905213051884
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.334518567463164
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.3338777466299432
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.33318470713102133
+        }
+      ]
+    },
+    {
+      "id": "r-15",
+      "kind": "description",
+      "expected": [
+        10
+      ],
+      "items": [
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.4853387801964919
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.4678741750601224
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.4406074776691118
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.43570206522303034
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.4066766030655151
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.3978332248328158
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.39745755925382653
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.39692608574914756
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.3751560728493175
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.3741041311365444
+        },
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.3738933709237091
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.37094504772852077
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3709332532060938
+        },
+        {
+          "id": 19,
+          "lexical": null,
+          "semantic": 0.3708437104689428
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.3602108656318934
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.3572783952223557
+        },
+        {
+          "id": 81,
+          "lexical": null,
+          "semantic": 0.3531318589967677
+        },
+        {
+          "id": 4,
+          "lexical": null,
+          "semantic": 0.3523416371325868
+        },
+        {
+          "id": 82,
+          "lexical": null,
+          "semantic": 0.34876147750708786
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.3448863044945778
+        }
+      ]
+    },
+    {
+      "id": "r-16",
+      "kind": "description",
+      "expected": [
+        27
+      ],
+      "items": [
+        {
+          "id": 27,
+          "lexical": 1,
+          "semantic": 0.5815057232394192
+        },
+        {
+          "id": 51,
+          "lexical": null,
+          "semantic": 0.35723302126279277
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.3461880539606528
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3415686510930007
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.3307641335383922
+        },
+        {
+          "id": 34,
+          "lexical": null,
+          "semantic": 0.32883191163650205
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.32740553200676437
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.32084141732322735
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.31982833351602635
+        },
+        {
+          "id": 35,
+          "lexical": null,
+          "semantic": 0.31232910953878146
+        },
+        {
+          "id": 53,
+          "lexical": null,
+          "semantic": 0.3113024549226766
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.30318637869574605
+        },
+        {
+          "id": 31,
+          "lexical": null,
+          "semantic": 0.29996359927021343
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.29556832543982015
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.2947352920549946
+        },
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.2907026137020934
+        },
+        {
+          "id": 30,
+          "lexical": null,
+          "semantic": 0.29028165976966314
+        },
+        {
+          "id": 32,
+          "lexical": null,
+          "semantic": 0.2865959825329989
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.2862194704748323
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.28195231204312043
+        }
+      ]
+    },
+    {
+      "id": "r-17",
+      "kind": "description",
+      "expected": [
+        12
+      ],
+      "items": [
+        {
+          "id": 12,
+          "lexical": null,
+          "semantic": 0.4613422502575808
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.38478045844099507
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.37727781848305364
+        },
+        {
+          "id": 19,
+          "lexical": null,
+          "semantic": 0.37151536369426563
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.3582682471291988
+        },
+        {
+          "id": 24,
+          "lexical": null,
+          "semantic": 0.3559991949997314
+        },
+        {
+          "id": 20,
+          "lexical": null,
+          "semantic": 0.3555434197438706
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.34821006773343544
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.3475015966001418
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.34609753987017355
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.3458725893248803
+        },
+        {
+          "id": 17,
+          "lexical": null,
+          "semantic": 0.3441002568080712
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.33841804879419324
+        },
+        {
+          "id": 71,
+          "lexical": null,
+          "semantic": 0.33836782096897255
+        },
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.33735731873195496
+        },
+        {
+          "id": 14,
+          "lexical": null,
+          "semantic": 0.33718725085141465
+        },
+        {
+          "id": 55,
+          "lexical": null,
+          "semantic": 0.33674872397161937
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.33356242930605395
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.3319019617688379
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.32931303957637215
+        }
+      ]
+    },
+    {
+      "id": "r-18",
+      "kind": "title",
+      "expected": [
+        31
+      ],
+      "items": [
+        {
+          "id": 31,
+          "lexical": 1,
+          "semantic": 0.6298493208095409
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.40118503707046904
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.3502297244209349
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.3434140430643149
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.3405240457956771
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.32703047766516846
+        },
+        {
+          "id": 89,
+          "lexical": null,
+          "semantic": 0.3268209264470532
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.3265584595254616
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.32141582926892487
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.315115567950794
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3150999482737673
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.3144221205529705
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.3127545526330173
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.30970816711745064
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.30855162516575896
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.30735789129304925
+        },
+        {
+          "id": 30,
+          "lexical": null,
+          "semantic": 0.30232575259015193
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.30141460658032315
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.29733490594804046
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.2963834134506922
+        }
+      ]
+    },
+    {
+      "id": "r-19",
+      "kind": "author",
+      "expected": [
+        105
+      ],
+      "items": [
+        {
+          "id": 105,
+          "lexical": 1,
+          "semantic": 0.41044742183715344
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.34115086155342134
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.32171736809138163
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.3148154508055139
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.30233163361953674
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.2995314191709737
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.2931655066356602
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.2898162515341933
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.28981385957891426
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.2824874079318975
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.2808271153048292
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.28006180622550714
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.277486524273443
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.2773531692081258
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.2767000123378285
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.2764663780757308
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.2756140998727544
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.2743284840602176
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.2696819966028108
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.26900183372785114
+        }
+      ]
+    },
+    {
+      "id": "r-20",
+      "kind": "author",
+      "expected": [
+        57
+      ],
+      "items": [
+        {
+          "id": 57,
+          "lexical": 1,
+          "semantic": 0.4175992054209178
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.3498992479282962
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.34907528739675997
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.32790622633950617
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.31459246840012567
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.31205974535703174
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.3112654324675803
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.3056887664901039
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.30516588152336754
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.30023580518761583
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.298620854830284
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.29844995140866826
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.2980273060534824
+        },
+        {
+          "id": 47,
+          "lexical": null,
+          "semantic": 0.29729115765588443
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.29542739350172276
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.2952269173739739
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.2927285650634128
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.29058194466159226
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.29055537581178403
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.29054225852438864
+        }
+      ]
+    },
+    {
+      "id": "r-21",
+      "kind": "author",
+      "expected": [
+        112
+      ],
+      "items": [
+        {
+          "id": 112,
+          "lexical": 1,
+          "semantic": 0.4251380708179715
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.3461996062243793
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.34337641498932003
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.32857624389830786
+        },
+        {
+          "id": 74,
+          "lexical": null,
+          "semantic": 0.32328106758506503
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.3158498766158738
+        },
+        {
+          "id": 45,
+          "lexical": null,
+          "semantic": 0.31461345831672705
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.3131464946299821
+        },
+        {
+          "id": 81,
+          "lexical": null,
+          "semantic": 0.30716089874882924
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.30504569939563764
+        },
+        {
+          "id": 73,
+          "lexical": null,
+          "semantic": 0.30501528790103793
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.3031602918418492
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.29958598058227237
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.2993139964649787
+        },
+        {
+          "id": 114,
+          "lexical": null,
+          "semantic": 0.29715217755182577
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.297113850655095
+        },
+        {
+          "id": 89,
+          "lexical": null,
+          "semantic": 0.2958108524485261
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.2947730598679228
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.2916139293665647
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.2905307244586641
+        }
+      ]
+    },
+    {
+      "id": "r-22",
+      "kind": "author",
+      "expected": [
+        58,
+        59
+      ],
+      "items": [
+        {
+          "id": 59,
+          "lexical": 1,
+          "semantic": 0.4554373742562612
+        },
+        {
+          "id": 58,
+          "lexical": 2,
+          "semantic": 0.38962166489844163
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.35197477299850877
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.3319912189168881
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.328156043332394
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.31148815164527843
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.309415766592366
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3084389553806939
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.3066598848388663
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.305715754248177
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.30569146697635363
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.3055326499939828
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.30511074418629724
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.3024784360681918
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.29281724011670596
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.2925678815437742
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.2919915609866639
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.29038344502659186
+        },
+        {
+          "id": 54,
+          "lexical": null,
+          "semantic": 0.2896975006300605
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.2872156441142486
+        }
+      ]
+    },
+    {
+      "id": "r-23",
+      "kind": "description",
+      "expected": [
+        74
+      ],
+      "items": [
+        {
+          "id": 74,
+          "lexical": 1,
+          "semantic": 0.6219202816111074
+        },
+        {
+          "id": 114,
+          "lexical": null,
+          "semantic": 0.4833755623847096
+        },
+        {
+          "id": 75,
+          "lexical": null,
+          "semantic": 0.48119647642296204
+        },
+        {
+          "id": 71,
+          "lexical": null,
+          "semantic": 0.4539158351132053
+        },
+        {
+          "id": 73,
+          "lexical": null,
+          "semantic": 0.45273843525251667
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.4136501723323308
+        },
+        {
+          "id": 69,
+          "lexical": null,
+          "semantic": 0.40084516213187493
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.3993314634133365
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.3974813735171847
+        },
+        {
+          "id": 38,
+          "lexical": null,
+          "semantic": 0.39659518471948263
+        },
+        {
+          "id": 70,
+          "lexical": null,
+          "semantic": 0.3954503459400477
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.39429757078117045
+        },
+        {
+          "id": 40,
+          "lexical": null,
+          "semantic": 0.39161010117481476
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.39158982316356616
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.3805226548333469
+        },
+        {
+          "id": 57,
+          "lexical": null,
+          "semantic": 0.3802391465622468
+        },
+        {
+          "id": 55,
+          "lexical": null,
+          "semantic": 0.3757692587336099
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.375554212868745
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.37255394716390144
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3713050856649114
+        }
+      ]
+    },
+    {
+      "id": "r-24",
+      "kind": "description",
+      "expected": [
+        103
+      ],
+      "items": [
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.5003377950784055
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.4035883241672189
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3816017669393479
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3803728124896735
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3653555629994053
+        },
+        {
+          "id": 114,
+          "lexical": null,
+          "semantic": 0.35943054840872524
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3558282545191884
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.3485942146120147
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.34600419890470835
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.3459276892397871
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.34532617835229096
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3361033047859495
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.33262990894931943
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.33108169999111214
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.330970406280621
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.3302234551838855
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.328776431456703
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.32184034616017365
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.3202900251002927
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.3200115792636826
+        }
+      ]
+    },
+    {
+      "id": "r-25",
+      "kind": "cross-lingual-fr",
+      "expected": [
+        10
+      ],
+      "items": [
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.5171439468869299
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.4509687088337935
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.44885538523198765
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.4413592249936955
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.4233894052993389
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.41969362923802456
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.4151858301215321
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.40872550113616035
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.4060047959079739
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.40493093425937066
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.40382567255961743
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.40314961346495026
+        },
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.40067325619567873
+        },
+        {
+          "id": 54,
+          "lexical": null,
+          "semantic": 0.3999443930898765
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.39945473967972933
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.39644914057846514
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.39431258783441214
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.39306082376694274
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3903460339676079
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.38997712943473606
+        }
+      ]
+    },
+    {
+      "id": "r-26",
+      "kind": "cross-lingual-fr",
+      "expected": [
+        55
+      ],
+      "items": [
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.4038892062475904
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.4013702629580196
+        },
+        {
+          "id": 55,
+          "lexical": null,
+          "semantic": 0.37843299325350155
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.3701307310182851
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.36774164901730155
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3622734111904071
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.36158384669664634
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.3608645014010441
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.3596947152293286
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.3526143842402112
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.3505321151684757
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.35021656913283916
+        },
+        {
+          "id": 56,
+          "lexical": null,
+          "semantic": 0.34334883251800175
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.34119214228443184
+        },
+        {
+          "id": 85,
+          "lexical": null,
+          "semantic": 0.33994054439893073
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3397295394725598
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3382175419893698
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.3370259117000838
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.33656436897291386
+        },
+        {
+          "id": 12,
+          "lexical": null,
+          "semantic": 0.335980194614079
+        }
+      ]
+    },
+    {
+      "id": "r-27",
+      "kind": "cross-lingual-fr",
+      "expected": [
+        93
+      ],
+      "items": [
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.47696219386772065
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.40530935361696563
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.3845270478146843
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3823109767259918
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3806059166306477
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.3804979123155219
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.37891808691232276
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.37020745299926916
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.36942665672905506
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3677390337142721
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.3645424891031509
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.36052212285725105
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.35785369647233045
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.35562320297519656
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.3552440893960369
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.35002229346601776
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.3474641287369826
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.345534210179556
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.34307173130783664
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.3417436524384767
+        }
+      ]
+    },
+    {
+      "id": "r-28",
+      "kind": "cross-lingual-fr",
+      "expected": [
+        94
+      ],
+      "items": [
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.513435153584611
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3669537176961952
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.36031779135980735
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.355575001834336
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.35095202082912147
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.3455116550890276
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3432438061972213
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.34108860194732227
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.3380016420554508
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.33588989296779115
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.3352669591021389
+        },
+        {
+          "id": 56,
+          "lexical": null,
+          "semantic": 0.33042346893768004
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.33025294836433083
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.3286695936665327
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3224174994015909
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.32006972649180665
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3179642378956382
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.31774597350702294
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.31469271651202857
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3144478350721793
+        }
+      ]
+    },
+    {
+      "id": "r-29",
+      "kind": "cross-lingual-ar",
+      "expected": [
+        12
+      ],
+      "items": [
+        {
+          "id": 12,
+          "lexical": null,
+          "semantic": 0.4624277889354709
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.4341163626946061
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.41237828703298274
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.40082431959273357
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.39580574487745035
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.3932572082571819
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3889922237858532
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3763414600233064
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.3686314942919151
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.3645345702632239
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3526685440276489
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.3510669317737458
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.35073728106576696
+        },
+        {
+          "id": 65,
+          "lexical": null,
+          "semantic": 0.34869356881639324
+        },
+        {
+          "id": 7,
+          "lexical": null,
+          "semantic": 0.3452838843380861
+        },
+        {
+          "id": 17,
+          "lexical": null,
+          "semantic": 0.34405213608071517
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.3427870606320391
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3405573876908452
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.33983320975505404
+        },
+        {
+          "id": 14,
+          "lexical": null,
+          "semantic": 0.33948132088137717
+        }
+      ]
+    },
+    {
+      "id": "r-30",
+      "kind": "cross-lingual-ar",
+      "expected": [
+        103
+      ],
+      "items": [
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.4297056011524968
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.41215472861791946
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.40971290060516596
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.398685456029655
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.3982008724065086
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.39422892960209
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.383518935383766
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.37790807969284324
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.37403302254879434
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3737722715972307
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.37105394999034047
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.3582393239260785
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.3483920144446775
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.34584926827158513
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.3410452177419774
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.3357305635921958
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.33564612534855787
+        },
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.3353655411689318
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.33049955927234587
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.3300052732415193
+        }
+      ]
+    },
+    {
+      "id": "r-31",
+      "kind": "cross-lingual-ar",
+      "expected": [
+        67
+      ],
+      "items": [
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.5915338085508938
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.46608233915804
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.44982028086395176
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.43562636012901046
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.4180443525978873
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.41523699570527106
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.405694959721731
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3990095286182943
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.39822745426568007
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.39732257480602806
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.39237566109892774
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.39236774871613456
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.38584862366714356
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.38069785319606697
+        },
+        {
+          "id": 120,
+          "lexical": null,
+          "semantic": 0.3805032696201116
+        },
+        {
+          "id": 31,
+          "lexical": null,
+          "semantic": 0.37769030963506833
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.37617437885490046
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.3742394137000956
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.3741354969197932
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.37287388544362265
+        }
+      ]
+    },
+    {
+      "id": "r-32",
+      "kind": "cross-lingual-ar",
+      "expected": [
+        104
+      ],
+      "items": [
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.5130884118445183
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.4418040913810518
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.4413324453623799
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.4283366274155511
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.4075493301154981
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.39689010199438446
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.394166335534452
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.39128392993985384
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.38568472586021096
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.37971936773374915
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.37905423687383044
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3705985226784394
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.3639979579823017
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.36381951960911874
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3538149652801055
+        },
+        {
+          "id": 20,
+          "lexical": null,
+          "semantic": 0.35353689118223586
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.35227170274483677
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3497206467841556
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.3472094176274205
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.34320972311978826
+        }
+      ]
+    },
+    {
+      "id": "r-33",
+      "kind": "paraphrase",
+      "expected": [
+        18
+      ],
+      "items": [
+        {
+          "id": 18,
+          "lexical": null,
+          "semantic": 0.5438573248890297
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.4449759131768214
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3877652470980445
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.38671000842726544
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.37676043831018524
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.36729489321657016
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.36422452956475304
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3619263216387465
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.36151038154651016
+        },
+        {
+          "id": 34,
+          "lexical": null,
+          "semantic": 0.36119294961128634
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.3589952719551379
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.3589851077266718
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.3587560475660372
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.356332075535284
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3556043656537421
+        },
+        {
+          "id": 32,
+          "lexical": null,
+          "semantic": 0.3544997059659506
+        },
+        {
+          "id": 7,
+          "lexical": null,
+          "semantic": 0.35439304202713795
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.3514278066222116
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.35008408557558046
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.34961559190004277
+        }
+      ]
+    },
+    {
+      "id": "r-34",
+      "kind": "paraphrase",
+      "expected": [
+        24
+      ],
+      "items": [
+        {
+          "id": 24,
+          "lexical": null,
+          "semantic": 0.5179251056467103
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.3944374524941927
+        },
+        {
+          "id": 14,
+          "lexical": null,
+          "semantic": 0.38893048600518665
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.38197215065227996
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.37406637531335774
+        },
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.3719724419106867
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.37075800713545715
+        },
+        {
+          "id": 13,
+          "lexical": null,
+          "semantic": 0.36910807656949707
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.3685676396159211
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.3634433880564927
+        },
+        {
+          "id": 34,
+          "lexical": null,
+          "semantic": 0.35783355591342303
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.3544485445006331
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.34872061128857457
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.3458639584172625
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.34564552623593525
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.34262224483791237
+        },
+        {
+          "id": 47,
+          "lexical": null,
+          "semantic": 0.34251695752782585
+        },
+        {
+          "id": 23,
+          "lexical": null,
+          "semantic": 0.3413844747427127
+        },
+        {
+          "id": 26,
+          "lexical": null,
+          "semantic": 0.3412113935227781
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.33989449909347114
+        }
+      ]
+    },
+    {
+      "id": "r-35",
+      "kind": "paraphrase",
+      "expected": [
+        80
+      ],
+      "items": [
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.5375781554534647
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.34704404712049364
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.3459248167029776
+        },
+        {
+          "id": 34,
+          "lexical": null,
+          "semantic": 0.34565009594295293
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.3370446613418565
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3332787258082438
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.32205227448920926
+        },
+        {
+          "id": 35,
+          "lexical": null,
+          "semantic": 0.320702300457696
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.31573741215334705
+        },
+        {
+          "id": 24,
+          "lexical": null,
+          "semantic": 0.31535259929430026
+        },
+        {
+          "id": 75,
+          "lexical": null,
+          "semantic": 0.3150328827932356
+        },
+        {
+          "id": 69,
+          "lexical": null,
+          "semantic": 0.30680340644521753
+        },
+        {
+          "id": 40,
+          "lexical": null,
+          "semantic": 0.3053642262201729
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.3045223047716411
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.30405115307003394
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3036407596572581
+        },
+        {
+          "id": 73,
+          "lexical": null,
+          "semantic": 0.3019018436390841
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.30101726887144253
+        },
+        {
+          "id": 51,
+          "lexical": null,
+          "semantic": 0.3003419860336066
+        },
+        {
+          "id": 85,
+          "lexical": null,
+          "semantic": 0.29816229151947504
+        }
+      ]
+    },
+    {
+      "id": "r-36",
+      "kind": "paraphrase",
+      "expected": [
+        66
+      ],
+      "items": [
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.6048114475909193
+        },
+        {
+          "id": 118,
+          "lexical": null,
+          "semantic": 0.348742603128952
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.3345304718739487
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.3327883144143522
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3238628263395411
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.323286012154978
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.31490239501495854
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.3145906583482072
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.3136314604438767
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.3133508980890034
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3107804687135358
+        },
+        {
+          "id": 31,
+          "lexical": null,
+          "semantic": 0.30759899551413294
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3068730347659365
+        },
+        {
+          "id": 67,
+          "lexical": null,
+          "semantic": 0.30632181235945477
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.30387724153879236
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.30060901903187776
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.298308385481618
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.2980988375345508
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.29557861230258575
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.29288638807604883
+        }
+      ]
+    },
+    {
+      "id": "r-37",
+      "kind": "paraphrase",
+      "expected": [
+        25
+      ],
+      "items": [
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.529451129323941
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.40757459863609324
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.4039223152608815
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.402316630337048
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.3944470636898483
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.39297606641054106
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3883194543645011
+        },
+        {
+          "id": 113,
+          "lexical": null,
+          "semantic": 0.387654398313815
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.38723081984722985
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.38670875707899577
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.38077461983537364
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.38070689716969386
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.3784520126700316
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.37752696891167536
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.37696703367712847
+        },
+        {
+          "id": 9,
+          "lexical": null,
+          "semantic": 0.37561203178537106
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.37480404319001037
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.37393471570700176
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.3724492415918882
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.371487719913839
+        }
+      ]
+    },
+    {
+      "id": "r-38",
+      "kind": "near-duplicate",
+      "expected": [
+        40
+      ],
+      "items": [
+        {
+          "id": 40,
+          "lexical": null,
+          "semantic": 0.6670152720905321
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.47982304791685404
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.46794620209615734
+        },
+        {
+          "id": 38,
+          "lexical": null,
+          "semantic": 0.44875692379958876
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.43357494783810746
+        },
+        {
+          "id": 52,
+          "lexical": null,
+          "semantic": 0.43273256859642384
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.428713255924806
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.42212102980168287
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.4213631986890193
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.4213227144963936
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.41213313682118047
+        },
+        {
+          "id": 35,
+          "lexical": null,
+          "semantic": 0.40796161326502867
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.4039505989329928
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.4031917372958843
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.39880843150208123
+        },
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.39099734816846343
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.3887591332817599
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.3847622714475558
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3835926586159353
+        },
+        {
+          "id": 109,
+          "lexical": null,
+          "semantic": 0.38280853477910504
+        }
+      ]
+    },
+    {
+      "id": "r-39",
+      "kind": "near-duplicate",
+      "expected": [
+        102
+      ],
+      "items": [
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.6373532462508228
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.5197613298531572
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.489863434425966
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.47323690103346705
+        },
+        {
+          "id": 107,
+          "lexical": null,
+          "semantic": 0.4721683306685719
+        },
+        {
+          "id": 28,
+          "lexical": null,
+          "semantic": 0.45544309499677504
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.45537785735109537
+        },
+        {
+          "id": 51,
+          "lexical": null,
+          "semantic": 0.4546134703851725
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.4527230548015092
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.44520625975837
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.4440193674831773
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.43833309636634077
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.4278694069736635
+        },
+        {
+          "id": 36,
+          "lexical": null,
+          "semantic": 0.4274693626101379
+        },
+        {
+          "id": 53,
+          "lexical": null,
+          "semantic": 0.42606488330016024
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.42437352428143393
+        },
+        {
+          "id": 32,
+          "lexical": null,
+          "semantic": 0.42419373475169864
+        },
+        {
+          "id": 114,
+          "lexical": null,
+          "semantic": 0.4190243334845971
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.4166392458573759
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.4159331199189661
+        }
+      ]
+    },
+    {
+      "id": "r-40",
+      "kind": "near-duplicate",
+      "expected": [
+        2
+      ],
+      "items": [
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.6497597101708334
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.5537515701241572
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.47449697009243974
+        },
+        {
+          "id": 7,
+          "lexical": null,
+          "semantic": 0.4742428850524929
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.4633929021064549
+        },
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.4513472965962634
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.4455911010617437
+        },
+        {
+          "id": 15,
+          "lexical": null,
+          "semantic": 0.4445885906082132
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.4384479010800918
+        },
+        {
+          "id": 26,
+          "lexical": null,
+          "semantic": 0.43246918895443365
+        },
+        {
+          "id": 4,
+          "lexical": null,
+          "semantic": 0.424582383251622
+        },
+        {
+          "id": 41,
+          "lexical": null,
+          "semantic": 0.42175239057898284
+        },
+        {
+          "id": 19,
+          "lexical": null,
+          "semantic": 0.416169798821893
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.41516806897525105
+        },
+        {
+          "id": 31,
+          "lexical": null,
+          "semantic": 0.4138342866096405
+        },
+        {
+          "id": 12,
+          "lexical": null,
+          "semantic": 0.4097589334932281
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.40795912082393326
+        },
+        {
+          "id": 9,
+          "lexical": null,
+          "semantic": 0.40602806115559564
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.40269324090230496
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.3995055856113008
+        }
+      ]
+    },
+    {
+      "id": "r-41",
+      "kind": "near-duplicate",
+      "expected": [
+        17
+      ],
+      "items": [
+        {
+          "id": 17,
+          "lexical": null,
+          "semantic": 0.502074228107062
+        },
+        {
+          "id": 117,
+          "lexical": null,
+          "semantic": 0.4041851468483202
+        },
+        {
+          "id": 118,
+          "lexical": null,
+          "semantic": 0.36977098976788936
+        },
+        {
+          "id": 66,
+          "lexical": null,
+          "semantic": 0.36963434707238896
+        },
+        {
+          "id": 16,
+          "lexical": null,
+          "semantic": 0.36444056902354405
+        },
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.3631843846201537
+        },
+        {
+          "id": 116,
+          "lexical": null,
+          "semantic": 0.3555720538735201
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.3532044725623089
+        },
+        {
+          "id": 12,
+          "lexical": null,
+          "semantic": 0.3506581042217126
+        },
+        {
+          "id": 82,
+          "lexical": null,
+          "semantic": 0.3451005521858368
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.3442901434712564
+        },
+        {
+          "id": 48,
+          "lexical": null,
+          "semantic": 0.3427378158870005
+        },
+        {
+          "id": 13,
+          "lexical": null,
+          "semantic": 0.33980880296844207
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.33888220567045324
+        },
+        {
+          "id": 79,
+          "lexical": null,
+          "semantic": 0.3387501832851729
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.33708230074371626
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.33619774222671217
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3354554807801988
+        },
+        {
+          "id": 68,
+          "lexical": null,
+          "semantic": 0.33515650808035324
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.3346074537865429
+        }
+      ]
+    },
+    {
+      "id": "r-42",
+      "kind": "near-duplicate",
+      "expected": [
+        90
+      ],
+      "items": [
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.5141171278378184
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.47548603328644823
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.4512458703741893
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.446692217885416
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.4405258230164357
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.4391520786603702
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.43797262601117426
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.4359098541117614
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.4341371102538285
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.4297957484621425
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.4294248891588457
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.4265945829520308
+        },
+        {
+          "id": 25,
+          "lexical": null,
+          "semantic": 0.417127499921508
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.41606064633871676
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.41590661118396066
+        },
+        {
+          "id": 69,
+          "lexical": null,
+          "semantic": 0.415146661555704
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.4142663291533287
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.4123018629540184
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.41200439278553413
+        },
+        {
+          "id": 44,
+          "lexical": null,
+          "semantic": 0.4100834417533641
+        }
+      ]
+    },
+    {
+      "id": "r-43",
+      "kind": "near-duplicate",
+      "expected": [
+        3
+      ],
+      "items": [
+        {
+          "id": 3,
+          "lexical": null,
+          "semantic": 0.5102116792785347
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.4027688825809157
+        },
+        {
+          "id": 115,
+          "lexical": null,
+          "semantic": 0.39961944469897515
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.3975227034877189
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.39696872260301763
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.3950583497125363
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.39279835976534705
+        },
+        {
+          "id": 83,
+          "lexical": null,
+          "semantic": 0.39031914233564824
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.3817344597902079
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.3788437551719599
+        },
+        {
+          "id": 104,
+          "lexical": null,
+          "semantic": 0.37258889855229316
+        },
+        {
+          "id": 42,
+          "lexical": null,
+          "semantic": 0.36880956649830265
+        },
+        {
+          "id": 77,
+          "lexical": null,
+          "semantic": 0.3622774783992564
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3588733492816585
+        },
+        {
+          "id": 4,
+          "lexical": null,
+          "semantic": 0.35693673858494623
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.3569050515841621
+        },
+        {
+          "id": 19,
+          "lexical": null,
+          "semantic": 0.35270368825309595
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.35138756869176757
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.35042033116067606
+        },
+        {
+          "id": 49,
+          "lexical": null,
+          "semantic": 0.3501546338631979
+        }
+      ]
+    },
+    {
+      "id": "r-44",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3287030861520672
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.32685747180442415
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.32635921701297455
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.3261664479658196
+        },
+        {
+          "id": 76,
+          "lexical": null,
+          "semantic": 0.32080079680662577
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.31974042162280436
+        },
+        {
+          "id": 10,
+          "lexical": null,
+          "semantic": 0.3167070893295295
+        },
+        {
+          "id": 53,
+          "lexical": null,
+          "semantic": 0.3104314827664969
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.3067470752116175
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.30497379248080825
+        },
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.3041483680227228
+        },
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.3025984655897923
+        },
+        {
+          "id": 105,
+          "lexical": null,
+          "semantic": 0.2983705908145745
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.2974462471352297
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.29630430594406343
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.2942281742673152
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.29329388744662
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.2921143008976701
+        },
+        {
+          "id": 80,
+          "lexical": null,
+          "semantic": 0.291092415448599
+        },
+        {
+          "id": 106,
+          "lexical": null,
+          "semantic": 0.29061620898826757
+        }
+      ]
+    },
+    {
+      "id": "r-45",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.3370527460837167
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.3361210787879826
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3308791972894345
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.3274232712293257
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.3272087227857916
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3261768986049153
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3253799740944059
+        },
+        {
+          "id": 26,
+          "lexical": null,
+          "semantic": 0.32528974908104447
+        },
+        {
+          "id": 50,
+          "lexical": null,
+          "semantic": 0.3225427581291074
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.32202646185181494
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.3211845492970601
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.32082634349872263
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3198889384163722
+        },
+        {
+          "id": 101,
+          "lexical": null,
+          "semantic": 0.31957484162905736
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.31847908341056086
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.31761772401923927
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.3159552426278158
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.31517158575666304
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.31499862916269583
+        },
+        {
+          "id": 22,
+          "lexical": null,
+          "semantic": 0.3132830366173016
+        }
+      ]
+    },
+    {
+      "id": "r-46",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.4261874084406584
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.41222879939724777
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.3895842222008097
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3737359196795881
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.36932644712384977
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.36706352097220174
+        },
+        {
+          "id": 29,
+          "lexical": null,
+          "semantic": 0.3655596323985497
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.36299591255319696
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.35802866402931355
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.35582053548690973
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.3548944445098632
+        },
+        {
+          "id": 110,
+          "lexical": null,
+          "semantic": 0.35204304529275254
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.3482082058385141
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.3479459565951255
+        },
+        {
+          "id": 69,
+          "lexical": null,
+          "semantic": 0.34230422733209487
+        },
+        {
+          "id": 64,
+          "lexical": null,
+          "semantic": 0.33877389663262814
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.3375667351249998
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.33624514568254504
+        },
+        {
+          "id": 72,
+          "lexical": null,
+          "semantic": 0.33580329797941333
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.3357645580124897
+        }
+      ]
+    },
+    {
+      "id": "r-47",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.38056603569924086
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.3696526438188096
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.364915269893455
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.35021572101625287
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.3474837594052542
+        },
+        {
+          "id": 112,
+          "lexical": null,
+          "semantic": 0.34019602262127346
+        },
+        {
+          "id": 93,
+          "lexical": null,
+          "semantic": 0.3378481311150362
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.3289982217695653
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.317918849240755
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.3127632329424246
+        },
+        {
+          "id": 88,
+          "lexical": null,
+          "semantic": 0.30795232455370214
+        },
+        {
+          "id": 91,
+          "lexical": null,
+          "semantic": 0.30486244723025224
+        },
+        {
+          "id": 43,
+          "lexical": null,
+          "semantic": 0.3022495186350036
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.30213342556315537
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.299253562032781
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.29736009408671404
+        },
+        {
+          "id": 33,
+          "lexical": null,
+          "semantic": 0.29514681000205
+        },
+        {
+          "id": 60,
+          "lexical": null,
+          "semantic": 0.2935755503254638
+        },
+        {
+          "id": 56,
+          "lexical": null,
+          "semantic": 0.2930589345016401
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.2929796770238762
+        }
+      ]
+    },
+    {
+      "id": "r-48",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.35741416097014433
+        },
+        {
+          "id": 59,
+          "lexical": null,
+          "semantic": 0.3499262100932452
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.3497239914679957
+        },
+        {
+          "id": 119,
+          "lexical": null,
+          "semantic": 0.3440233156231598
+        },
+        {
+          "id": 111,
+          "lexical": null,
+          "semantic": 0.3416339276861161
+        },
+        {
+          "id": 97,
+          "lexical": null,
+          "semantic": 0.3388013983829581
+        },
+        {
+          "id": 96,
+          "lexical": null,
+          "semantic": 0.33727316964487897
+        },
+        {
+          "id": 78,
+          "lexical": null,
+          "semantic": 0.3346047072994067
+        },
+        {
+          "id": 90,
+          "lexical": null,
+          "semantic": 0.32887574326486646
+        },
+        {
+          "id": 58,
+          "lexical": null,
+          "semantic": 0.3278806500267646
+        },
+        {
+          "id": 94,
+          "lexical": null,
+          "semantic": 0.3277034725968597
+        },
+        {
+          "id": 21,
+          "lexical": null,
+          "semantic": 0.327313592437661
+        },
+        {
+          "id": 92,
+          "lexical": null,
+          "semantic": 0.326268987188141
+        },
+        {
+          "id": 95,
+          "lexical": null,
+          "semantic": 0.32589440566685535
+        },
+        {
+          "id": 37,
+          "lexical": null,
+          "semantic": 0.32460063080355894
+        },
+        {
+          "id": 27,
+          "lexical": null,
+          "semantic": 0.32163923778067705
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.3204631522827992
+        },
+        {
+          "id": 62,
+          "lexical": null,
+          "semantic": 0.31972474047858435
+        },
+        {
+          "id": 100,
+          "lexical": null,
+          "semantic": 0.31952247118503085
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.31684020938402324
+        }
+      ]
+    },
+    {
+      "id": "r-49",
+      "kind": "nonsense",
+      "expected": [],
+      "items": [
+        {
+          "id": 84,
+          "lexical": null,
+          "semantic": 0.3717959550606378
+        },
+        {
+          "id": 108,
+          "lexical": null,
+          "semantic": 0.37124944830435425
+        },
+        {
+          "id": 8,
+          "lexical": null,
+          "semantic": 0.3631536503874495
+        },
+        {
+          "id": 1,
+          "lexical": null,
+          "semantic": 0.3554082924486708
+        },
+        {
+          "id": 6,
+          "lexical": null,
+          "semantic": 0.35470278875715466
+        },
+        {
+          "id": 87,
+          "lexical": null,
+          "semantic": 0.34169815032259276
+        },
+        {
+          "id": 39,
+          "lexical": null,
+          "semantic": 0.339097923280677
+        },
+        {
+          "id": 26,
+          "lexical": null,
+          "semantic": 0.3386237869485209
+        },
+        {
+          "id": 61,
+          "lexical": null,
+          "semantic": 0.33656672890763173
+        },
+        {
+          "id": 116,
+          "lexical": null,
+          "semantic": 0.33424024339593195
+        },
+        {
+          "id": 103,
+          "lexical": null,
+          "semantic": 0.33280194320096124
+        },
+        {
+          "id": 46,
+          "lexical": null,
+          "semantic": 0.33060152876575155
+        },
+        {
+          "id": 98,
+          "lexical": null,
+          "semantic": 0.32960444790714916
+        },
+        {
+          "id": 99,
+          "lexical": null,
+          "semantic": 0.32929211399400216
+        },
+        {
+          "id": 5,
+          "lexical": null,
+          "semantic": 0.32771285163797703
+        },
+        {
+          "id": 11,
+          "lexical": null,
+          "semantic": 0.326866830757394
+        },
+        {
+          "id": 102,
+          "lexical": null,
+          "semantic": 0.3254816935169872
+        },
+        {
+          "id": 2,
+          "lexical": null,
+          "semantic": 0.32456234093089575
+        },
+        {
+          "id": 86,
+          "lexical": null,
+          "semantic": 0.3245251405140199
+        },
+        {
+          "id": 38,
+          "lexical": null,
+          "semantic": 0.32444892983644236
+        }
+      ]
+    }
+  ]
+}

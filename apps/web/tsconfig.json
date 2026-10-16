@@ -1,0 +1,12 @@
+{
+  "extends": "@library/tsconfig/react.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "types": ["vite/client"],
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "e2e", "vite.config.ts", "vitest.config.ts", "playwright.config.ts"]
+}

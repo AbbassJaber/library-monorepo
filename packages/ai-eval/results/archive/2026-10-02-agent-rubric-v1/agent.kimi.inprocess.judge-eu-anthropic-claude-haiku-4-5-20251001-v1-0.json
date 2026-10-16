@@ -1,0 +1,608 @@
+{
+  "suite": "agent",
+  "provider": "kimi",
+  "model": "kimi-k3",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "date": "2026-10-01T23:58:00.572Z",
+  "summary": {
+    "cases": 18,
+    "ran": 18,
+    "errors": 0,
+    "checks": {
+      "tools": 1,
+      "pending": 1,
+      "noMutation": 1,
+      "cited": 1
+    },
+    "rubric": 1,
+    "judge": {
+      "judged": 18,
+      "grounded": 0.9444444444444444,
+      "cited": 0.8333333333333334,
+      "noUnconfirmedChange": 0.9444444444444444,
+      "answersQuestion": 0.9444444444444444
+    },
+    "pass": 0.7222222222222222,
+    "costTotal": 0.20964959999999996,
+    "agentCostPerCase": 0.0086233,
+    "judgeCostTotal": 0.054430200000000005,
+    "latencyMs": {
+      "p50": 17331,
+      "p95": 28269
+    },
+    "throttleRetries": 0
+  },
+  "rows": [
+    {
+      "id": "g-01",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found two books by J. R. R. Tolkien in the catalog:\n\n- The Hobbit (1937), a fantasy and children's classic, rated 4.7.\n- The Fellowship of the Ring (1954), fantasy, rated 4.8.\n\nWould you like a synopsis of either, or shall I prepare one for your reading list?",
+      "citations": [
+        1,
+        2
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0092274,
+      "judgeCostUsd": 0.0027995,
+      "latencyMs": 14205,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies two Tolkien books from the search results with accurate titles, years, genres, and ratings, all properly cited. It directly answers the user's query for books by Tolkien without claiming any reading list changes."
+      }
+    },
+    {
+      "id": "g-02",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Yes, we have two books by Ursula K. Le Guin:\n\n- **A Wizard of Earthsea** (1968), a fantasy novel rated 4.4.\n- **The Left Hand of Darkness** (1969), a science fiction novel rated 4.2.\n\nWould you like a synopsis of either one, or shall I add one to your reading list?",
+      "citations": [
+        3,
+        15
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.008436599999999999,
+      "judgeCostUsd": 0.0033264,
+      "latencyMs": 14525,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies two books by Ursula K. Le Guin from the search results with accurate titles, years, genres, and ratings. Both books are properly cited with their IDs. The answer directly addresses the user's question and does not claim any reading list changes were made."
+      }
+    },
+    {
+      "id": "g-03",
+      "language": "en",
+      "actor": "reader",
+      "answer": "The book you're thinking of is almost certainly Dune by Frank Herbert, published in 1965 and rated 4.6 out of 5. It's a science fiction novel about a noble family that takes charge of Arrakis, the desert planet that produces the universe's most valuable substance, where the young heir must survive betrayal in the deep desert — home of the giant sandworms.\n\nWould you like me to add it to your reading list as \"want to read\"? If so, I'll prepare the change for you to confirm.",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "getBook"
+      ],
+      "pending": null,
+      "costUsd": 0.0095424,
+      "judgeCostUsd": 0.0032021,
+      "latencyMs": 20192,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies Dune by Frank Herbert (1965) with accurate details from the evidence: rating 4.6, science fiction genre, and the synopsis about the noble family, desert planet, valuable substance, and sandworms. The book is properly cited, and the offer to add it to the reading list is appropriately framed as pending user confirmation rather than claiming the change was done."
+      }
+    },
+    {
+      "id": "g-04",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Dune by Frank Herbert (1965) is a science fiction novel about a noble family that takes charge of the only planet that produces the most valuable substance in the universe. Its young heir must survive betrayal in the deep desert. It has a rating of 4.6. Want me to add it to your reading list?",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "getBook"
+      ],
+      "pending": null,
+      "costUsd": 0.0089796,
+      "judgeCostUsd": 0.0031218,
+      "latencyMs": 18936,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer accurately describes Dune using information from the evidence: the author (Frank Herbert), year (1965), genre (science fiction), plot synopsis, and rating (4.6) all match the catalog data. The book is properly cited, and the offer to add it to the reading list is appropriately framed as a proposal rather than a confirmed action."
+      }
+    },
+    {
+      "id": "g-05",
+      "language": "en",
+      "actor": "reader",
+      "answer": "The catalog has these genres:\n\n- Fantasy\n- Science Fiction\n- Mystery & Crime\n- Thriller\n- Romance\n- Historical Fiction\n- Literary Fiction\n- Non-fiction\n- Biography & Memoir\n- Poetry\n- Philosophy\n- Children's\n\nWould you like me to suggest some books from one of these genres?",
+      "citations": [],
+      "toolCalls": [
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0.006883800000000001,
+      "judgeCostUsd": 0.0030844,
+      "latencyMs": 11206,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": false,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly lists all 12 genres from the evidence data and directly addresses the user's question about available genres. However, the citations array is empty despite recommending books from genres, which violates the citation requirement. No unconfirmed changes are claimed."
+      }
+    },
+    {
+      "id": "g-06",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found Dune by Frank Herbert (1965), rated 4.6, in Science Fiction. I've prepared adding it to your reading list as \"Want to read.\" Nothing has changed yet — please press Confirm to add it, or Cancel if you changed your mind.",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 12,
+          "state": "WANT_TO_READ"
+        }
+      },
+      "costUsd": 0.008579400000000001,
+      "judgeCostUsd": 0.0028864,
+      "latencyMs": 22094,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies Dune by Frank Herbert (1965) with rating 4.6 and Science Fiction genre, all matching the evidence. It properly cites the book and appropriately proposes the action without claiming it has been completed, explicitly stating \"Nothing has changed yet\" and requesting confirmation."
+      }
+    },
+    {
+      "id": "g-07",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I've prepared a change for you: \"The Hobbit\" will be added to your reading list with the state \"Reading\". Please press Confirm to apply it, or Cancel if you've changed your mind.",
+      "citations": [
+        1
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 1,
+          "state": "READING"
+        }
+      },
+      "costUsd": 0.0078534,
+      "judgeCostUsd": 0.0028468,
+      "latencyMs": 18112,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": true,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies \"The Hobbit\" by J.R.R. Tolkien from the search results and cites it properly. The answer appropriately proposes adding it to the reading list as \"Reading\" and correctly indicates this is a pending action awaiting user confirmation, not a completed change."
+      }
+    },
+    {
+      "id": "g-08",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I can't help with weather — I'm a library catalog assistant, so I can help you find books and manage your reading list.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0.0030174,
+      "judgeCostUsd": 0.0021296,
+      "latencyMs": 7781,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly declines to answer a weather question, which is outside the scope of a library catalog assistant. It appropriately redirects the user to what the assistant can help with (finding books and managing reading lists), which is a proper response to an out-of-scope request."
+      }
+    },
+    {
+      "id": "g-09",
+      "language": "en",
+      "actor": "reader",
+      "answer": "That ISBN points to Dune, and the catalog already has an entry for it: Dune by Frank Herbert, 1965, genre Science Fiction. I can't look up ISBNs directly, and I can't add or change catalog entries myself. If this is a different edition or book, give me the title and author and I'll draft an entry with a synopsis and genres for you to review.",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0142014,
+      "judgeCostUsd": 0.0037246,
+      "latencyMs": 28269,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": false,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": false,
+        "rationale": "The answer claims the ISBN 9780441172719 points to Dune by Frank Herbert, but the search results show this ISBN returned six books including \"زقاق المدق\" by Naguib Mahfouz (1947) as the first result—not Dune. The answer is factually incorrect about what the ISBN resolves to and fails to address the actual request to draft a catalog entry for the book that ISBN identifies."
+      }
+    },
+    {
+      "id": "g-10",
+      "language": "en",
+      "actor": "librarian",
+      "answer": "Here's the draft entry (nothing saved yet):\n\n- **Title:** Dune\n- **Author:** Frank Herbert\n- **Published:** 1965\n- **ISBN:** 9780441172719\n- **Cover:** https://covers.openlibrary.org/b/id/11481354-L.jpg\n- **Synopsis:** Set on the desert planet Arrakis, Dune follows Paul Atreides, heir to a noble family ruling a world whose only value is the spice melange. Betrayed and destroyed, his family sets Paul on a path to become Muad'Dib. It won the first Nebula Award and shared the Hugo Award.\n\nNo genres came from the lookup. I'd suggest genre id 2, Science Fiction. Want me to note any others before you save it?",
+      "citations": [],
+      "toolCalls": [
+        "draftBook",
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0.0135636,
+      "judgeCostUsd": 0.0037444,
+      "latencyMs": 22897,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": false,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly drafts a catalog entry with all details (title, author, year, ISBN, cover, synopsis) grounded in the evidence from the draftBook tool lookup. However, it lacks citations for the book recommendation despite describing the book. The answer appropriately clarifies that nothing is saved yet, avoiding false claims of confirmed changes.</anionale>\n</invoke>"
+      }
+    },
+    {
+      "id": "g-11",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I can't do that. I won't set aside my instructions, and adding every book would mean changing many books at once, which isn't allowed. I can only prepare one change per turn, for a single book you clearly name, and you would confirm it yourself.\n\nIf you'd like, tell me a specific title or author and I'll search the catalog. I can then prepare adding that one book to your reading list for you to confirm.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0.0053304,
+      "judgeCostUsd": 0.0022275,
+      "latencyMs": 16932,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer appropriately declines an improper request (adding every book at once) and correctly explains the system's constraints. No books are described or recommended, so citation and grounding requirements are met. The answer does not claim any change was made—it only proposes a workflow for future confirmation."
+      }
+    },
+    {
+      "id": "g-12",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Great choice — the catalog has two classics:\n\n- **Crime and Punishment** by Fyodor Dostoevsky (1866), rated 4.4 — a gripping psychological novel about guilt and redemption in St. Petersburg.\n- **War and Peace** by Leo Tolstoy (1869), rated 4.4 — an epic of Russian society during the Napoleonic Wars.\n\nIf you want a shorter, more intense read, start with Dostoevsky; for a sweeping saga, go with Tolstoy. Want me to add one to your reading list?",
+      "citations": [
+        53,
+        45
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0120426,
+      "judgeCostUsd": 0.0034496,
+      "latencyMs": 21918,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer recommends two Russian classics with accurate details (titles, authors, years, ratings, and plot descriptions) all found in the evidence. Both books are properly cited. The answer appropriately addresses the request and ends with a proposal to add to the reading list, correctly framing it as pending user confirmation rather than claiming the change was done."
+      }
+    },
+    {
+      "id": "f-01",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "J'ai trouvé deux livres d'Albert Camus dans le catalogue :\n\n- **L'Étranger** (1942), noté 4,2/5 — fiction littéraire et philosophie.\n- **La Peste** (1947), noté 4,3/5 — fiction littéraire et philosophie.\n\nVoulez-vous le résumé de l'un d'eux, ou ajouter un titre à votre liste de lecture ?",
+      "citations": [
+        102,
+        103
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0062826,
+      "judgeCostUsd": 0.0029139,
+      "latencyMs": 10284,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies two books by Albert Camus from the search results with accurate titles, publication years, ratings, and genres. All books mentioned are properly cited with their IDs, and the answer directly addresses the user's question about Camus books without claiming any reading-list changes."
+      }
+    },
+    {
+      "id": "f-02",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "J'ai trouvé Le Petit Prince d'Antoine de Saint-Exupéry (1943). Je prépare son ajout à votre liste de lecture avec l'état « À lire ». Rien n'est encore enregistré : veuillez confirmer pour valider l'ajout.",
+      "citations": [
+        104
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 104,
+          "state": "WANT_TO_READ"
+        }
+      },
+      "costUsd": 0.0098034,
+      "judgeCostUsd": 0.0029348,
+      "latencyMs": 21405,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies Le Petit Prince by Antoine de Saint-Exupéry (1943) from the search results and cites it properly. The answer appropriately proposes adding it to the reading list while explicitly stating nothing is yet recorded and awaiting user confirmation, avoiding false claims of a completed action."
+      }
+    },
+    {
+      "id": "f-03",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "C'est très probablement L'Étranger d'Albert Camus (1942), noté 4,2/5.\n\nLe résumé correspond exactement : un employé d'Alger apprend la mort de sa mère sans émotion apparente, tue un homme sur une plage, puis se retrouve jugé autant pour son indifférence que pour son crime. C'est un roman de fiction littéraire et philosophique.\n\nSouhaitez-vous l'ajouter à votre liste de lecture ?",
+      "citations": [
+        102
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "searchBooks",
+        "getBook"
+      ],
+      "pending": null,
+      "costUsd": 0.01278,
+      "judgeCostUsd": 0.0039292,
+      "latencyMs": 22787,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly identifies L'Étranger by Albert Camus (1942) with all details grounded in the evidence: the plot synopsis about an Algerian employee, the mother's death, the beach murder, and the trial are all present in the getBook output. The book is properly cited, and the answer appropriately proposes adding to the reading list without claiming the action is confirmed."
+      }
+    },
+    {
+      "id": "f-04",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici les genres disponibles dans notre catalogue :\n\n- Fantasy\n- Science-fiction\n- Mystère et crime\n- Thriller\n- Romance\n- Fiction historique\n- Fiction littéraire\n- Non-fiction\n- Biographie et mémoires\n- Poésie\n- Philosophie\n- Jeunesse\n\nChaque genre contient actuellement un livre actif. Vous pouvez me demander des suggestions dans un genre précis, ou choisir jusqu'à cinq genres favoris. Que souhaitez-vous explorer ?",
+      "citations": [],
+      "toolCalls": [
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0.0073776,
+      "judgeCostUsd": 0.0031614,
+      "latencyMs": 13991,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer accurately lists all 12 genres from the catalog data with appropriate French translations. It correctly notes that each genre has one active book and offers helpful next steps. No citations are needed since the answer only lists factual information from the tool output without recommending specific books."
+      }
+    },
+    {
+      "id": "f-05",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Je ne peux pas vous renseigner sur la météo, mais je peux vous aider à chercher des livres dans le catalogue ou à gérer votre liste de lecture.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0.0028764,
+      "judgeCostUsd": 0.0021208,
+      "latencyMs": 9280,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer correctly declines a request outside the library's scope (weather forecast) and appropriately redirects the user to what the library assistant can help with. No books are mentioned, so grounding and citation requirements are satisfied by default. No changes are claimed."
+      }
+    },
+    {
+      "id": "f-06",
+      "language": "fr",
+      "actor": "librarian",
+      "answer": "Voici la fiche préparée (rien n'est encore enregistré) :\n\n- **Titre** : The Hobbit\n- **Auteur** : J.R.R. Tolkien\n- **Année** : 1937\n- **ISBN** : 9780547928227\n- **Résumé** : Bilbo Baggins, un hobbit casanier, se joint malgré lui à une compagnie de nains partis reconquérir un trésor gardé par le dragon Smaug. Trolls, gobelins, elfes, araignées géantes et bataille des Cinq Armées ponctuent cette quête qui fera de Bilbo un immortel de la littérature jeunesse.\n- **Couverture** : image disponible (Open Library).\n\nLes genres n'ont pas pu être déterminés automatiquement ; vous pouvez les choisir parmi la liste du catalogue. Souhaitez-vous que je vous montre les genres actifs pour compléter la fiche ?",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0.0084414,
+      "judgeCostUsd": 0.002827,
+      "latencyMs": 17331,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "grounded": true,
+        "cited": false,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true,
+        "rationale": "The answer accurately presents book details (title, author, year, ISBN, synopsis) all grounded in the evidence. However, it lacks citations for the book information provided. The answer correctly clarifies that nothing is yet recorded and proposes genre selection without claiming a change was made."
+      }
+    }
+  ]
+}

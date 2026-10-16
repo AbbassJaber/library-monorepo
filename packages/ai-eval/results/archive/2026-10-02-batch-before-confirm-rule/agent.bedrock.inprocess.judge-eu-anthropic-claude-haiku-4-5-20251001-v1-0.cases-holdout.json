@@ -1,0 +1,559 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "holdout",
+  "date": "2026-10-02T11:34:48.385Z",
+  "summary": {
+    "all": {
+      "cases": 13,
+      "ran": 12,
+      "errors": 1,
+      "checks": {
+        "tools": 1,
+        "pending": 0.9166666666666666,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 0.9166666666666666,
+      "judge": {
+        "judged": 12,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 0.9166666666666666,
+      "costTotal": 0.1182137,
+      "agentCostPerCase": 0.006678741666666667,
+      "judgeCostTotal": 0.0380688,
+      "latencyMs": {
+        "p50": 3710,
+        "p95": 14400
+      },
+      "throttleRetries": 8
+    },
+    "tuned": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 13,
+      "ran": 12,
+      "errors": 1,
+      "checks": {
+        "tools": 1,
+        "pending": 0.9166666666666666,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 0.9166666666666666,
+      "judge": {
+        "judged": 12,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 0.9166666666666666,
+      "costTotal": 0.1182137,
+      "agentCostPerCase": 0.006678741666666667,
+      "judgeCostTotal": 0.0380688,
+      "latencyMs": {
+        "p50": 3710,
+        "p95": 14400
+      },
+      "throttleRetries": 8
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "h-01",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Yes! We have **Nineteen Eighty-Four** by George Orwell, published in 1949. It's a science fiction novel with a rating of 4.6 out of 5. Would you like to know more about it, or would you like to add it to your reading list?",
+      "citations": [
+        16
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.005859700000000001,
+      "judgeCostUsd": 0.0031757,
+      "latencyMs": 3710,
+      "wallMs": 7297,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies \"Nineteen Eighty-Four\" by George Orwell as a book in the catalog and provides accurate details: the author (George Orwell), publication year (1949), genre (science fiction), and rating (4.6). All these facts are grounded in the searchBooks tool output. The answer is properly cited with bookId 16. The answer directly addresses the user's question about whether the library has books by George Orwell. However, the search results also returned \"Les Misérables\" by Victor Hugo, which is not by George Orwell and should not have been included in the results—but the answer correctly ignored this irrelevant result. The answer does not claim any reading-list changes have already occurred; it only offers to add the book if the user wants. No unconfirmed changes are claimed.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-02",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found *Germinal* by Émile Zola, published in 1885. This classic novel is set in a nineteenth-century French coal mining region and depicts a miners' strike. It's a powerful work of historical fiction with a rating of 4.3. Would you like more details about it?",
+      "citations": [
+        112
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.005797,
+      "judgeCostUsd": 0.0028765,
+      "latencyMs": 3320,
+      "wallMs": 6269,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer identifies *Germinal* by Émile Zola, published in 1885, as a novel about miners going on strike in nineteenth-century France. All factual claims about the book (title, author, publication year, setting, plot about miners' strike, genre as historical fiction, rating of 4.3) are directly supported by the searchBooks tool output. The answer is properly cited with a citation to bookId 112. There is no claim that a reading-list change has already occurred—the answer only offers to provide more details. The answer directly addresses the user's question about miners going on strike in nineteenth-century France by recommending the relevant catalog book found.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-03",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Ready to add Nineteen Eighty-Four to your reading list as finished. Please confirm.",
+      "citations": [
+        16
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 16,
+          "state": "FINISHED"
+        }
+      },
+      "costUsd": 0.009125600000000001,
+      "judgeCostUsd": 0.0028479,
+      "latencyMs": 3861,
+      "wallMs": 6612,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly addresses the user's request to add \"Nineteen Eighty-Four\" to their reading list as finished. The book \"Nineteen Eighty-Four\" by George Orwell (1949) is properly cited with bookId 16, which matches the searchBooks result in the evidence. The answer appropriately prepares the action without claiming it has already been completed—it says \"Ready to add\" and asks for confirmation, which is the correct behavior. The answer does not claim an unconfirmed change has already happened. All factual claims about the book (title, author) are grounded in the evidence from the searchBooks tool.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-04",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I can help you find books in this library catalog and manage your reading list. For general questions like geography, I'm not the right tool!",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0.0026015,
+      "judgeCostUsd": 0.0025014,
+      "latencyMs": 1023,
+      "wallMs": 3945,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly declines to answer a general knowledge question (about the capital of Australia) that is outside the scope of a library catalog assistant. The assistant appropriately explains its purpose and redirects the user to what it can help with. No factual claims about books are made, so there are no grounding issues. No catalog books are recommended or described, so citation is not applicable. The answer does not claim any reading-list changes have occurred. The answer directly addresses the user's request by correctly declining it as outside the library's scope.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-05",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "You have 3 books on your reading list. I'll prepare to remove all of them:\n\n- Nineteen Eighty-Four\n- Dune\n- Le Petit Prince\n\nShould I go ahead and remove all three?",
+      "citations": [
+        16,
+        12,
+        104
+      ],
+      "toolCalls": [
+        "getReadingList"
+      ],
+      "pending": null,
+      "costUsd": 0.0061116,
+      "judgeCostUsd": 0.003278,
+      "latencyMs": 2161,
+      "wallMs": 11072,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies the three books on the reading list (Nineteen Eighty-Four, Dune, and Le Petit Prince) with accurate titles and authors from the evidence. All three books are properly cited with their bookIds. The answer appropriately addresses the user's request to remove books by preparing to remove all three and asking for confirmation before executing the action. Importantly, the answer does not claim the removal has already happened—it says \"I'll prepare to remove\" and asks \"Should I go ahead,\" which correctly indicates the action is pending user confirmation rather than already completed. All factual claims about the books are grounded in the evidence from getReadingList.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-06",
+      "set": "holdout",
+      "language": "en",
+      "actor": "librarian",
+      "answer": "I've drafted a catalog record for *The Shining* [book:draft]. Here's what was found:\n\n**Title:** The Shining  \n**Author:** Stephen King  \n**Year:** 1977  \n**ISBN:** 9780451139764  \n**Synopsis:** Jack Torrance, a recovering alcoholic and struggling writer, becomes caretaker of the isolated Overlook Hotel. His son Danny possesses psychic abilities and senses the hotel's dark past. When a winter storm traps the family, supernatural forces threaten their survival.\n\nThe draft is ready but not yet saved. You'll need to assign genres and confirm before adding it to the catalog.",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0.0070466,
+      "judgeCostUsd": 0.0035618,
+      "latencyMs": 3529,
+      "wallMs": 18786,
+      "throttleRetries": 1,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer addresses the user's request to prepare a catalog record for The Shining by Stephen King. All factual claims about the book (title, author, year, ISBN, and synopsis details) are grounded in the evidence from the draftBook tool output. The answer correctly cites the draft using [book:draft]. The answer does not claim the record has already been added to the catalog; instead, it appropriately states \"The draft is ready but not yet saved\" and that the user \"will need to assign genres and confirm before adding it to the catalog,\" which correctly describes a prepared but not yet confirmed action. The synopsis provided is a condensed version of the detailed synopsis from the tool output, accurately capturing the key plot points about Jack Torrance, Danny's psychic abilities, and the supernatural threat.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-07",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Oui, nous avons un roman de Victor Hugo : **Les Misérables**, publié en 1862. C'est une fresque historique avec une note de 4,5/5. C'est l'une de ses œuvres majeures, mêlant histoire, drame social et aventure. Souhaitez-vous en savoir plus ou l'ajouter à votre liste de lecture ?",
+      "citations": [
+        105
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0062425,
+      "judgeCostUsd": 0.0034628,
+      "latencyMs": 14400,
+      "wallMs": 39724,
+      "throttleRetries": 2,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies \"Les Misérables\" by Victor Hugo (1862) with a rating of 4.5/5 as a catalog book in response to the question about Victor Hugo novels. All factual claims about the book (title, author, publication year, rating, and genre classification as historical fiction) are directly supported by the search results. The book is properly cited with bookId 105. The answer appropriately addresses the user's question by confirming the availability of Victor Hugo's work in the catalog. The additional descriptive content (\"historical fresco mixing history, social drama and adventure\") is generic characterization that doesn't require citation. No unconfirmed changes are claimed - the answer only offers to add it to the reading list pending user confirmation. The search results also returned two other books (Candide by Voltaire and Mémoires d'Hadrien by Yourcenar), but these are correctly not included in the answer since they are not by Victor Hugo.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-08",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "C'est **Le Comte de Monte-Cristo** d'Alexandre Dumas (1844) ! Ce classique raconte l'histoire d'Edmond Dantès, emprisonné injustement au château d'If, une forteresse sur une île. Après son évasion spectaculaire, il découvre un trésor et se venge méthodiquement de ceux qui l'ont trahi. C'est un roman d'aventure et de vengeance avec une note de thriller. Note : 4,6/5.",
+      "citations": [
+        107
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0068948,
+      "judgeCostUsd": 0.0035596,
+      "latencyMs": 4011,
+      "wallMs": 7127,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer identifies \"Le Comte de Monte-Cristo\" by Alexandre Dumas (1844) as matching the user's query about a man escaping from a prison on an island and seeking revenge. All factual claims about the book (title, author, year, plot details about Edmond Dantès, the château d'If, the treasure, and the revenge theme) are confirmed in the search results returned by the tool. The answer is properly cited with bookId 107. The answer directly addresses the user's question by providing a relevant recommendation. No unconfirmed changes are claimed - the answer simply provides information and a recommendation. The answer is grounded in the evidence, cited appropriately, and answers the question.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-09",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Je vais ajouter **Madame Bovary** de Gustave Flaubert (1857) à votre liste avec le statut \"En cours de lecture\". Confirmez-vous ?",
+      "citations": [
+        106
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 106,
+          "state": "READING"
+        }
+      },
+      "costUsd": 0.009721800000000001,
+      "judgeCostUsd": 0.0029975,
+      "latencyMs": 4687,
+      "wallMs": 51715,
+      "throttleRetries": 3,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies Madame Bovary by Gustave Flaubert (1857) based on the searchBooks results (book id 106). All factual claims about the book are grounded in the evidence. The answer is properly cited with a citation to bookId 106. The answer does not claim the change has already happened - it correctly proposes the action and asks for confirmation (\"Confirmez-vous ?\"), which is the appropriate behavior for a pending action. The answer directly addresses the user's request to add Madame Bovary to their reading list.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-10",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "librarian",
+      "answer": "",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 0,
+      "wallMs": 40254,
+      "throttleRetries": 2,
+      "error": "bedrock: Request timed out.",
+      "checks": {
+        "tools": false,
+        "pending": false,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-11",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Je peux vous aider à consulter le catalogue de la bibliothèque, mais je n'ai pas d'outil pour créer des fiches de catalogue à partir d'un ISBN. \n\nLes outils disponibles me permettent de rechercher des livres dans le catalogue existant, de consulter les détails d'un livre par son ID interne, et de gérer votre liste de lecture.\n\nSi ce livre existe déjà dans notre catalogue, je peux vous en montrer les informations. Sinon, vous devrez contacter directement un bibliothécaire pour ajouter une nouvelle entrée au catalogue.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0.0032417,
+      "judgeCostUsd": 0.0026928,
+      "latencyMs": 7362,
+      "wallMs": 12541,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The user asked the assistant to prepare a catalog entry for ISBN 9780553103540. The assistant correctly declined this request, explaining that it lacks the tool to create catalog entries from an ISBN. The assistant accurately described its available capabilities (searching the catalog, consulting book details, managing reading lists) and appropriately directed the user to contact a librarian for adding new entries. The answer is grounded (no false claims about books), cited (no catalog books described), does not claim an unconfirmed change has occurred, and properly addresses the request by correctly declining it and explaining why.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-12",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Parfait ! Je suis prêt à marquer ces 2 livres comme terminés. Confirmez-vous cette action ?",
+      "citations": [],
+      "toolCalls": [
+        "getReadingList",
+        "changeReadingList"
+      ],
+      "pending": {
+        "tool": "changeReadingList",
+        "input": {
+          "changes": [
+            {
+              "action": "setState",
+              "bookId": 12,
+              "state": "FINISHED"
+            },
+            {
+              "action": "setState",
+              "bookId": 104,
+              "state": "FINISHED"
+            }
+          ]
+        }
+      },
+      "costUsd": 0.009726199999999999,
+      "judgeCostUsd": 0.0030349,
+      "latencyMs": 6864,
+      "wallMs": 9893,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly addresses the user's request to mark all reading list books as completed. It identifies the two books on the reading list (Dune and Le Petit Prince) based on the evidence from getReadingList, which returned exactly these two books in WANT_TO_READ state. The answer appropriately proposes the action and asks for confirmation rather than claiming the change has already been made. The book titles and count are accurate and grounded in the evidence. No citations are needed since the answer is proposing an action rather than recommending specific catalog books to the user. The answer correctly waits for user confirmation before executing the change.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-13",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here are the fantasy books in our catalog:\n\n1. One Hundred Years of Solitude\n2. Northern Lights\n3. Harry Potter and the Philosopher's Stone\n4. The Fifth Season\n5. Jonathan Strange & Mr Norrell\n6. Mistborn: The Final Empire\n7. فرانكشتاين في بغداد\n8. The Colour of Magic\n9. The Lion, the Witch and the Wardrobe\n10. Coraline\n\nWhich one would you like me to add first?",
+      "citations": [
+        49,
+        11,
+        10,
+        9,
+        8,
+        7,
+        119,
+        6,
+        5,
+        89
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.0077759,
+      "judgeCostUsd": 0.0040799,
+      "latencyMs": 3158,
+      "wallMs": 6588,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer lists 10 fantasy books from the catalog search results with proper citations for each book. All factual claims about titles and authors match the evidence from the searchBooks tool output. However, the user asked to \"add all the fantasy books to my reading list,\" but the answer does not actually add them. Instead, it lists the books and asks which one to add first. This is appropriate behavior—the answer correctly prepares the action without claiming it has already happened (no \"I added\" or \"it is on your list\" language). The answer addresses the request by showing what books are available and asking for confirmation before proceeding. All books mentioned are properly cited with their bookIds.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

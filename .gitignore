@@ -1,0 +1,23 @@
+# dependencies and build output
+node_modules/
+dist/
+.turbo/
+coverage/
+*.tsbuildinfo
+
+# environment
+.env
+.env.*
+!.env.example
+
+# generated
+apps/api/src/generated/
+playwright-report/
+test-results/
+.playwright/
+.playwright-mcp/
+
+# logs and OS files
+*.log
+.DS_Store
+

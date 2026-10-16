@@ -1,0 +1,265 @@
+generator client {
+  provider            = "prisma-client"
+  output              = "../src/generated/prisma"
+  moduleFormat        = "esm"
+  importFileExtension = "js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  READER
+  LIBRARIAN
+}
+
+enum ReadingState {
+  WANT_TO_READ
+  READING
+  FINISHED
+}
+
+enum AuditSource {
+  HTTP
+  AI
+  SEED
+}
+
+enum AiFeature {
+  NL_SEARCH
+  HYBRID_SEARCH
+  RERANK
+  SIMILAR
+  AUTOFILL
+  RECOMMEND
+  AGENT_CHAT
+  EMBEDDING
+  JUDGE
+  EXPANSION
+  VOICE
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
+  passwordHash String
+  displayName  String
+  role         Role      @default(READER)
+  disabledAt   DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  refreshTokens  RefreshToken[]
+  readingList    ReadingListEntry[]
+  favoriteGenres FavoriteGenre[]
+  auditLogs      AuditLog[]
+  aiRuns         AiRun[]
+  pendingActions PendingAction[]
+
+  @@map("users")
+}
+
+model RefreshToken {
+  id           Int       @id @default(autoincrement())
+  userId       Int
+  tokenHash    String    @unique
+  familyId     String
+  expiresAt    DateTime
+  revokedAt    DateTime?
+  replacedById Int?
+  createdAt    DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([familyId])
+  @@index([expiresAt])
+  @@map("refresh_tokens")
+}
+
+model Book {
+  id            Int       @id @default(autoincrement())
+  title         String
+  author        String
+  publishedYear Int
+  synopsis      String
+  isbn          String?   @unique
+  coverUrl      String?
+  language      String?
+  rating        Decimal   @default(0) @db.Decimal(2, 1)
+  version       Int       @default(1)
+  archivedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  genres             BookGenre[]
+  readingListEntries ReadingListEntry[]
+  embedding          BookEmbedding?
+  expansion          BookExpansion?
+
+  @@index([archivedAt, createdAt(sort: Desc)])
+  @@index([publishedYear])
+  @@index([language])
+  @@index([rating])
+  @@index([title(ops: raw("gin_trgm_ops"))], type: Gin)
+  @@index([author(ops: raw("gin_trgm_ops"))], type: Gin)
+  @@map("books")
+}
+
+model Genre {
+  id         Int       @id @default(autoincrement())
+  name       String    @unique
+  slug       String    @unique
+  archivedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  books      BookGenre[]
+  favoriteOf FavoriteGenre[]
+
+  @@map("genres")
+}
+
+model BookGenre {
+  bookId  Int
+  genreId Int
+
+  book  Book  @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  genre Genre @relation(fields: [genreId], references: [id], onDelete: Restrict)
+
+  @@id([bookId, genreId])
+  @@index([genreId])
+  @@map("book_genres")
+}
+
+model FavoriteGenre {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  genreId   Int
+  position  Int
+  removedAt DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  genre Genre @relation(fields: [genreId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, genreId])
+  @@index([userId, removedAt])
+  @@map("favorite_genres")
+}
+
+model ReadingListEntry {
+  id        Int          @id @default(autoincrement())
+  userId    Int
+  bookId    Int
+  state     ReadingState @default(WANT_TO_READ)
+  removedAt DateTime?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  book Book @relation(fields: [bookId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, bookId])
+  @@index([userId, removedAt])
+  @@map("reading_list_entries")
+}
+
+model AuditLog {
+  id         Int         @id @default(autoincrement())
+  actorId    Int?
+  action     String
+  entityType String
+  entityId   Int
+  before     Json?
+  after      Json?
+  source     AuditSource @default(HTTP)
+  requestId  String?
+  createdAt  DateTime    @default(now())
+
+  actor User? @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([entityType, entityId])
+  @@index([createdAt(sort: Desc)])
+  @@map("audit_logs")
+}
+
+model AiRun {
+  id                Int       @id @default(autoincrement())
+  userId            Int?
+  feature           AiFeature
+  provider          String
+  model             String
+  tokensIn          Int
+  tokensOut         Int
+  tokensCachedRead  Int       @default(0)
+  tokensCachedWrite Int       @default(0)
+  tokensSpeechIn    Int       @default(0)
+  tokensSpeechOut   Int       @default(0)
+  costUsd           Decimal   @db.Decimal(12, 8)
+  latencyMs         Int
+  success           Boolean
+  fallbackUsed      Boolean   @default(false)
+  errorCode         String?
+  requestId         String?
+  createdAt         DateTime  @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([feature, createdAt(sort: Desc)])
+  @@map("ai_runs")
+}
+
+model BookEmbedding {
+  bookId      Int                   @id
+  embedding   Unsupported("vector")
+  dimensions  Int
+  contentHash String
+  model       String
+  updatedAt   DateTime              @updatedAt
+
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@map("book_embeddings")
+}
+
+model BookExpansion {
+  bookId     Int      @id
+  sourceHash String
+  model      String
+  fr         String
+  ar         String
+  updatedAt  DateTime @updatedAt
+
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@map("book_expansions")
+}
+
+enum PendingActionStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+model PendingAction {
+  id        String              @id
+  userId    Int
+  tool      String
+  input     Json
+  summary   String
+  locale    String
+  status    PendingActionStatus @default(PENDING)
+  ok        Boolean?
+  error     String?
+  expiresAt DateTime
+  decidedAt DateTime?
+  createdAt DateTime            @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("pending_actions")
+}

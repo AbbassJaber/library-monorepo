@@ -1,0 +1,133 @@
+{
+  "language": "en",
+  "cases": [
+    {
+      "id": "en-01",
+      "text": "science fiction from the 80s",
+      "expected": {
+        "genre": ["science-fiction"],
+        "yearFrom": 1980,
+        "yearTo": 1989
+      }
+    },
+    {
+      "id": "en-02",
+      "text": "top rated poetry",
+      "expected": {
+        "genre": ["poetry"],
+        "sort": "rating"
+      }
+    },
+    {
+      "id": "en-03",
+      "text": "agatha christie",
+      "expected": {
+        "q": "agatha christie"
+      }
+    },
+    {
+      "id": "en-04",
+      "text": "fantasy books for kids",
+      "expected": {
+        "genre": ["fantasy", "children"]
+      }
+    },
+    {
+      "id": "en-05",
+      "text": "historical fiction before 1900",
+      "expected": {
+        "genre": ["historical-fiction"],
+        "yearTo": 1899
+      }
+    },
+    {
+      "id": "en-06",
+      "text": "new spy thrillers",
+      "expected": {
+        "genre": ["thriller"],
+        "sort": "newest"
+      }
+    },
+    {
+      "id": "en-07",
+      "text": "romance from the 1840s",
+      "expected": {
+        "genre": ["romance"],
+        "yearFrom": 1840,
+        "yearTo": 1849
+      }
+    },
+    {
+      "id": "en-08",
+      "text": "philosophy after 1950",
+      "expected": {
+        "genre": ["philosophy"],
+        "yearFrom": 1951
+      }
+    },
+    {
+      "id": "en-09",
+      "text": "the great gatsby",
+      "expected": {
+        "q": "the great gatsby"
+      }
+    },
+    {
+      "id": "en-10",
+      "text": "memoirs sorted alphabetically",
+      "expected": {
+        "genre": ["biography"],
+        "sort": "title"
+      }
+    },
+    {
+      "id": "en-11",
+      "text": "non-fiction from the 2010s",
+      "expected": {
+        "genre": ["non-fiction"],
+        "yearFrom": 2010,
+        "yearTo": 2019
+      }
+    },
+    {
+      "id": "en-12",
+      "text": "detective stories between 1930 and 1940",
+      "expected": {
+        "genre": ["mystery"],
+        "yearFrom": 1930,
+        "yearTo": 1940
+      }
+    },
+    {
+      "id": "en-13",
+      "text": "le guin",
+      "expected": {
+        "q": "le guin"
+      }
+    },
+    {
+      "id": "en-14",
+      "text": "best classics",
+      "expected": {
+        "genre": ["literary-fiction"],
+        "sort": "rating"
+      }
+    },
+    {
+      "id": "en-15",
+      "text": "kids books from the 60s",
+      "expected": {
+        "genre": ["children"],
+        "yearFrom": 1960,
+        "yearTo": 1969
+      }
+    },
+    {
+      "id": "en-16",
+      "text": "dune by frank herbert",
+      "expected": {
+        "q": "dune frank herbert"
+      }
+    }
+  ]
+}

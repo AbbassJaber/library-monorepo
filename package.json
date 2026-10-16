@@ -1,0 +1,55 @@
+{
+  "name": "library-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Book library take-home: Turborepo + pnpm monorepo with an Express/Prisma API, a React web app and a domain-agnostic AI layer.",
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": ">=22.22.0",
+    "pnpm": ">=10"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint && node scripts/lint-workflows.mjs",
+    "lint:workflows": "node scripts/lint-workflows.mjs",
+    "test": "turbo run test",
+    "coverage": "turbo run coverage",
+    "format": "prettier --write \"{apps,packages,docs}/**/*.{ts,tsx,js,cjs,mjs,json,css,md,yaml,yml}\" \"*.{json,md,yaml,yml,js}\" \"!pnpm-lock.yaml\" \"!apps/api/openapi.json\" \"!packages/ai-eval/results/**\"",
+    "format:check": "prettier --check \"{apps,packages,docs}/**/*.{ts,tsx,js,cjs,mjs,json,css,md,yaml,yml}\" \"*.{json,md,yaml,yml,js}\" \"!pnpm-lock.yaml\" \"!apps/api/openapi.json\" \"!packages/ai-eval/results/**\"",
+    "eval": "turbo run build --filter=@library/ai-eval... --output-logs=errors-only && pnpm --filter @library/ai-eval run eval",
+    "smoke": "turbo run smoke --filter=@library/api",
+    "e2e": "turbo run e2e --filter=@library/web",
+    "stack": "docker compose -p library-monorepo-test stop && docker compose up --build -d --wait",
+    "stack:real": "docker compose -p library-monorepo-test stop && docker compose --env-file apps/api/.env up --build -d --wait",
+    "stack:down": "docker compose down",
+    "stack:test": "docker compose -p library-monorepo stop && docker compose -f compose.yaml -f compose.test.yaml up --build -d --wait",
+    "stack:test:down": "docker compose -f compose.yaml -f compose.test.yaml down -v",
+    "db:migrate": "pnpm --filter @library/api db:migrate",
+    "db:seed": "pnpm --filter @library/api db:seed",
+    "db:reset": "pnpm --filter @library/api db:reset",
+    "eval:docs": "turbo run build --filter=@library/ai-eval... --output-logs=errors-only && pnpm --filter @library/ai-eval run eval:docs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@vitest/coverage-v8": "^5.0.3",
+    "actionlint": "2.0.6",
+    "eslint": "^10.11.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9",
+    "turbo": "^2.11.5",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.71.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint-plugin-jsx-a11y>eslint": "10"
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-f-01",
+  "date": "2026-10-06T20:52:19.519Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.009377499999999999,
+      "agentCostPerCase": 0.006301899999999999,
+      "judgeCostTotal": 0.0030756,
+      "latencyMs": {
+        "p50": 2840,
+        "p95": 2840
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.009377499999999999,
+      "agentCostPerCase": 0.006301899999999999,
+      "judgeCostTotal": 0.0030756,
+      "latencyMs": {
+        "p50": 2840,
+        "p95": 2840
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "f-01",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici les livres d'Albert Camus disponibles au catalogue : *L'Étranger* (1942) et *La Peste* (1947). Deux grands classiques de la littérature française, tous deux explorant des thèmes philosophiques profonds.",
+      "citations": [
+        102,
+        103
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.006301899999999999,
+      "judgeCostUsd": 0.0030756,
+      "latencyMs": 2840,
+      "wallMs": 12164,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies two books by Albert Camus from the catalog search results: L'Étranger (1942) and La Peste (1947). All factual claims about these books (titles, author, publication years) are directly supported by the evidence from the searchBooks tool. Both books are properly cited with their bookIds (102 and 103). The answer addresses the user's question asking for books by Albert Camus. The answer makes a generic descriptive statement about them being \"grands classiques\" and exploring philosophical themes, which is reasonable characterization supported by the genres returned (Literary Fiction and Philosophy). There is no claim that a reading-list change has already occurred - the answer simply presents available books. All requirements are met.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

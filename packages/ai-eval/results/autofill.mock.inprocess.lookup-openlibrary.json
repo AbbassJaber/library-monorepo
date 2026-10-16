@@ -1,0 +1,2290 @@
+{
+  "suite": "autofill",
+  "provider": "mock",
+  "model": "mock-small",
+  "target": "inprocess",
+  "setting": "openlibrary",
+  "date": "2026-10-01T20:19:42.626Z",
+  "summary": {
+    "cases": 24,
+    "errors": 0,
+    "accuracy": {
+      "title": 1,
+      "author": 0.9583333333333334,
+      "year": 0.7916666666666666,
+      "genres": 0.3333333333333333,
+      "synopsis": 0.8333333333333334,
+      "exact": 0.3333333333333333,
+      "genresLenient": 0,
+      "exactLenient": 0
+    },
+    "yearCheck": {
+      "wrongLookupYears": 4,
+      "flagged": 0,
+      "flaggedWithRightYear": 0,
+      "rightLookupYears": 18,
+      "falseFlags": 0
+    },
+    "exactByLanguage": {
+      "en": 0.5,
+      "fr": 0,
+      "ar": 0
+    },
+    "lookupHitRate": 0.9166666666666666,
+    "modelCalls": 23,
+    "fallbackRate": 0,
+    "modelFilled": {
+      "author": {
+        "filled": 0,
+        "correct": 0
+      },
+      "year": {
+        "filled": 0,
+        "correct": 0
+      },
+      "synopsis": {
+        "filled": 0,
+        "correct": 0
+      },
+      "genres": {
+        "filled": 17,
+        "correct": 7
+      }
+    },
+    "costTotal": 0,
+    "costPerCase": 0,
+    "totalMs": {
+      "p50": 587,
+      "p95": 801
+    },
+    "modelMs": {
+      "p50": 2,
+      "p95": 12
+    },
+    "meanTokensIn": 1182,
+    "meanTokensOut": 51,
+    "throttleRetries": 0
+  },
+  "rows": [
+    {
+      "id": "i-01",
+      "language": "en",
+      "input": {
+        "isbn": "9780439023481"
+      },
+      "expected": {
+        "title": [
+          "The Hunger Games"
+        ],
+        "author": [
+          "Suzanne Collins"
+        ],
+        "year": [
+          2008
+        ],
+        "genres": [
+          "science-fiction",
+          "children",
+          "thriller"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Hunger Games",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Suzanne Collins",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 2008,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. It is written in the perspective of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America. The Capitol, a highly advanced metropolis, exercises political control over the rest of the nation. The Hunger Games is an annual event in which one boy and one girl aged 12–18 from each of the twelve districts surrounding the Capitol are selected by lottery to compete in a televised battle royale to the death.\r\n\r\nThe book received critical acclaim from major reviewers and authors. It was praised for its plot and character development. In writing The Hunger Games, Collins drew upon Greek mythology, Roman gladiatorial games, and contemporary reality television for thematic content. The novel won many awards, including the California Young Reader Medal, and was named one of Publishers Weekly's \"Best Books of the Year\" in 2008.\r\n\r\nThe Hunger Games was first published in hardcover on September 14, 2008, by Scholastic, featuring a cover designed by Tim O'Brien.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780439023481",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/12646537-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            2
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 13,
+      "totalMs": 1197,
+      "tokensIn": 1243,
+      "tokensOut": 50,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-02",
+      "language": "en",
+      "input": {
+        "isbn": "9780553103540"
+      },
+      "expected": {
+        "title": [
+          "A Game of Thrones"
+        ],
+        "author": [
+          "George R. R. Martin"
+        ],
+        "year": [
+          1996
+        ],
+        "genres": [
+          "fantasy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "A Game of Thrones",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "George R. R. Martin",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 1996,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "***A Game of Thrones*** is the inaugural novel in ***A Song of Ice and Fire***, an epic series of fantasy novels crafted by the American author **George R. R. Martin**. Published on August 1, 1996, this novel introduces readers to the richly detailed world of Westeros and Essos, where political intrigue, power struggles, and magical elements intertwine.\r\n\r\nThe story unfolds through multiple perspectives, each chapter focusing on a different character, allowing readers to experience the narrative from various angles. This complex structure has become a hallmark of Martin's storytelling, immersing readers in the lives and motivations of a diverse cast.\r\n\r\n### Plot Summary\r\n\r\nSet in the fictional continents of Westeros and Essos, the narrative revolves around the power struggles among noble families vying for the Iron Throne, the seat of power in the Seven Kingdoms of Westeros. The story is rich with political intrigue, betrayal, and epic battles, as well as a deep exploration of themes such as loyalty, honor, and the consequences of power.\r\n\r\n### Themes\r\n\r\nThe novel explores themes of power, loyalty, and the moral complexities of leadership. It delves into the consequences of ambition and the struggle between personal honor and political necessity. The richly detailed world-building and intricate character development make ***A Game of Thrones*** a compelling and immersive read.\r\n\r\n### Key Characters\r\n\r\n- **Eddard \"Ned\" Stark**: The honorable Lord of Winterfell and Warden of the North, known for his unwavering honor and sense of duty.\r\n- **Catelyn Stark**: The devoted wife of Eddard Stark, whose strength and wisdom guide her family through challenging times.\r\n- **Robert Baratheon**: The King of the Seven Kingdoms, who won the throne through rebellion. His reign is marked by political intrigue and personal struggles, reflecting the broader conflicts of the realm.\r\n- **Cersei Lannister**: The ambitious and cunning Queen of Westeros, whose political acumen and determination make her a formidable presence in the court.\r\n- **Jaime Lannister**: A skilled swordsman and member of the Kingsguard, known for his prowess in battle and complex loyalties.\r\n- **Tyrion Lannister**: The witty and resourceful dwarf, known for his sharp mind and cunning, navigating the treacherous politics of the realm.\r\n- **Daenerys Targaryen**: An exiled princess of House Targaryen, seeking to reclaim her birthright and restore her family's dynasty.\r\n- **Jon Snow**: The bastard son of Eddard Stark, who joins the Night's Watch and faces unique challenges in the far north.\r\n- **Sansa Stark**: The eldest daughter of Eddard Stark, initially known for her naivety and romantic ideals, who learns to navigate the complexities of court life.\r\n- **Arya Stark**: The youngest daughter of Eddard Stark, known for her spirited and adventurous nature, seeking her own path in the world.\r\n- **Bran Stark**: The second son of Eddard Stark, whose life takes a dramatic turn.\r\n\r\n### Awards and Recognition\r\n\r\n- Winner of the 1997 Locus Award\r\n- Nominated for the 1997 Nebula Award\r\n- Nominated for the 1997 World Fantasy Award\r\n- Winner of the 1997 Hugo Award for Best Novella for \"Blood of the Dragon,\" which includes the Daenerys Targaryen chapters from the novel\r\n- Became a New York Times Bestseller in January 2011 and reached No. 1 on the list in July 2011\r\n\r\nFollowed by: [***A Clash of Kings***][1]\r\n\r\n[1]: https://openlibrary.org/works/OL257939W",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780553103540",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/9269962-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            2,
+            1
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 6,
+      "totalMs": 760,
+      "tokensIn": 1230,
+      "tokensOut": 52,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-03",
+      "language": "en",
+      "input": {
+        "isbn": "9781451648539"
+      },
+      "expected": {
+        "title": [
+          "Steve Jobs"
+        ],
+        "author": [
+          "Walter Isaacson"
+        ],
+        "year": [
+          2011
+        ],
+        "genres": [
+          "biography",
+          "non-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Steve Jobs",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Walter Isaacson",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 2011,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "Based on more than forty interviews with Jobs conducted over two years -- as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues -- Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. At a time when America is seeking ways to sustain its innovative edge, and when societies around the world are trying to build digital-age economies, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering. Although Jobs cooperated with this book, he asked for no control over what was written nor even the right to read it before it was published. He put nothing off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view of the passions, perfectionism, obsessions, artistry, devilry, and compulsion for control that shaped his approach to business and the innovative products that resulted. Driven by demons, Jobs could drive those around him to fury and despair. But his personality and products were interrelated, just as Apple's hardware and software tended to be, as if part of an integrated system. His tale is instructive and cautionary, filled with lessons about innovation, character, leadership, and values. - Publisher.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9781451648539",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/12374726-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            9
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 12,
+      "totalMs": 508,
+      "tokensIn": 1267,
+      "tokensOut": 48,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-04",
+      "language": "en",
+      "input": {
+        "isbn": "9780804139021"
+      },
+      "expected": {
+        "title": [
+          "The Martian"
+        ],
+        "author": [
+          "Andy Weir"
+        ],
+        "year": [
+          2011,
+          2014
+        ],
+        "genres": [
+          "science-fiction",
+          "thriller"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Martian",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Andy Weir",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 2011,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "The Martian is a 2011 science fiction novel written by Andy Weir. It was his debut novel under his own name. It was originally self-published in 2011; Crown Publishing purchased the rights and re-released it in 2014. The story follows an American astronaut, Mark Watney, as he becomes stranded alone on Mars in 2035 and must improvise in order to survive.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780804139021",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            2,
+            4,
+            1
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 554,
+      "tokensIn": 1199,
+      "tokensOut": 55,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-05",
+      "language": "en",
+      "input": {
+        "isbn": "9781400078776"
+      },
+      "expected": {
+        "title": [
+          "Never Let Me Go"
+        ],
+        "author": [
+          "Kazuo Ishiguro"
+        ],
+        "year": [
+          2005
+        ],
+        "genres": [
+          "literary-fiction",
+          "science-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Never Let Me Go",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Kazuo Ishiguro",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 2005,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "Ishiguro explores what it means to have a soul and how art distinguishes man from other life forms. But above all, *Never Let Me Go* is a study of friendship and the bonds we form which make or break while we come of age.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9781400078776",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            2,
+            12,
+            8
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 584,
+      "tokensIn": 1159,
+      "tokensOut": 56,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-06",
+      "language": "en",
+      "input": {
+        "isbn": "9780141439600"
+      },
+      "expected": {
+        "title": [
+          "A Tale of Two Cities"
+        ],
+        "author": [
+          "Charles Dickens"
+        ],
+        "year": [
+          1859
+        ],
+        "genres": [
+          "historical-fiction",
+          "literary-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "A Tale of Two Cities",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Charles Dickens",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 1800,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution. The novel tells the story of the French Doctor Manette, his 18-year-long imprisonment in the Bastille in Paris, and his release to live in London with his daughter Lucie whom he had never met. The story is set against the conditions that led up to the French Revolution and the Reign of Terror. In the Introduction to the Encyclopedia of Adventure Fiction, critic Don D'Ammassa argues that it is an adventure novel because the protagonists are in constant danger of being imprisoned or killed.\r\n\r\nAs Dickens's best-known work of historical fiction, A Tale of Two Cities is said to be one of the best-selling novels of all time. In 2003, the novel was ranked 63rd on the BBC's The Big Read poll. The novel has been adapted for film, television, radio, and the stage, and has continued to influence popular culture.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780141439600",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/13301713-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            6,
+            12,
+            7
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": false,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 743,
+      "tokensIn": 1251,
+      "tokensOut": 58,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-07",
+      "language": "en",
+      "input": {
+        "isbn": "9780441172719"
+      },
+      "expected": {
+        "title": [
+          "Dune"
+        ],
+        "author": [
+          "Frank Herbert"
+        ],
+        "year": [
+          1965
+        ],
+        "genres": [
+          "science-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Dune",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "Frank Herbert",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 1965,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the \"spice\" melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...\r\n\r\nWhen House Atreides is betrayed, the destruction of Paul's family will set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad'Dib, he will bring to fruition humankind's most ancient and unattainable dream.\r\n\r\nA stunning blend of adventure and mysticism, environmentalism and politics, Dune won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780441172719",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            2,
+            1,
+            8
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 505,
+      "tokensIn": 1278,
+      "tokensOut": 56,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-08",
+      "language": "en",
+      "input": {
+        "isbn": "9780547928227"
+      },
+      "expected": {
+        "title": [
+          "The Hobbit"
+        ],
+        "author": [
+          "J. R. R. Tolkien"
+        ],
+        "year": [
+          1937
+        ],
+        "genres": [
+          "fantasy",
+          "children"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Hobbit",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "author": {
+          "value": "J.R.R. Tolkien",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "publishedYear": {
+          "value": 1937,
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "synopsis": {
+          "value": "The Hobbit is a tale of high adventure, undertaken by a company of dwarves in search of dragon-guarded gold. A reluctant partner in this perilous quest is Bilbo Baggins, a comfort-loving unambitious hobbit, who surprises even himself by his resourcefulness and skill as a burglar.\r\n\r\nEncounters with trolls, goblins, dwarves, elves, and giant spiders, conversations with the dragon, Smaug, and a rather unwilling presence at the Battle of Five Armies are just some of the adventures that befall Bilbo.\r\n\r\nBilbo Baggins has taken his place among the ranks of the immortals of children’s fiction. Written by Professor Tolkien for his children, The Hobbit met with instant critical acclaim when published.",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "isbn": {
+          "value": "9780547928227",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+          "source": "lookup",
+          "confidence": 0.95
+        },
+        "genreIds": {
+          "value": [
+            1
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 652,
+      "tokensIn": 1221,
+      "tokensOut": 48,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "i-09",
+      "language": "en",
+      "input": {
+        "isbn": "9791099998880"
+      },
+      "expected": {
+        "title": null,
+        "author": null,
+        "year": null,
+        "genres": [],
+        "synopsis": false
+      },
+      "draft": {
+        "title": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "author": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "publishedYear": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "synopsis": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "isbn": {
+          "value": "9791099998880",
+          "source": "input",
+          "confidence": 1
+        },
+        "coverUrl": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": null
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "empty",
+        "author": "empty",
+        "year": "empty",
+        "synopsis": "empty",
+        "genres": "empty"
+      },
+      "lookupHit": false,
+      "modelCalled": false,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 0,
+      "totalMs": 401,
+      "tokensIn": 0,
+      "tokensOut": 0,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-01",
+      "language": "en",
+      "input": {
+        "title": "The Master and Margarita",
+        "author": "Mikhail Bulgakov"
+      },
+      "expected": {
+        "title": [
+          "The Master and Margarita"
+        ],
+        "author": [
+          "Mikhail Bulgakov",
+          "Михаил Булгаков"
+        ],
+        "year": [
+          1966,
+          1967
+        ],
+        "genres": [
+          "literary-fiction",
+          "fantasy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Master and Margarita",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Михаил Афанасьевич Булгаков",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1967,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "isbn": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/15013644-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": false,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "empty",
+        "genres": "empty"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 3,
+      "totalMs": 615,
+      "tokensIn": 1017,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-02",
+      "language": "en",
+      "input": {
+        "title": "The Shining",
+        "author": "Stephen King"
+      },
+      "expected": {
+        "title": [
+          "The Shining"
+        ],
+        "author": [
+          "Stephen King"
+        ],
+        "year": [
+          1977
+        ],
+        "genres": [
+          "thriller",
+          "fantasy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Shining",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Stephen King",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1977,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardback bestseller; its success firmly established King as a preeminent author in the horror genre. The setting and characters are influenced by King's personal experiences, including both his visit to The Stanley Hotel in 1974 and his struggle with alcoholism. The book was followed by a sequel, Doctor Sleep, published in 2013.\r\n\r\nThe Shining centers on the life of Jack Torrance, a struggling writer and recovering alcoholic who accepts a position as the off-season caretaker of the historic Overlook Hotel in the Colorado Rockies. His family accompanies him on this job, including his young son Danny Torrance, who possesses \"the shining\", an array of psychic abilities that allow Danny to see the hotel's horrific past. Soon, after a winter storm leaves them snowbound, the supernatural forces inhabiting the hotel influence Jack's sanity, leaving his wife and son in incredible danger.\r\n\r\n---\r\n\r\nAlso contained in:\r\n\r\n- [Carrie / Night Shift / 'Salem's Lot / Shining](https://openlibrary.org/works/OL14917547W)\r\n- [Works (Danse Macabre / Salem's Lot / Shining)](https://openlibrary.org/works/OL24233994W)",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9780451139764",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/12376585-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            4
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 522,
+      "tokensIn": 1232,
+      "tokensOut": 48,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-03",
+      "language": "en",
+      "input": {
+        "title": "The Secret History",
+        "author": "Donna Tartt"
+      },
+      "expected": {
+        "title": [
+          "The Secret History"
+        ],
+        "author": [
+          "Donna Tartt"
+        ],
+        "year": [
+          1992
+        ],
+        "genres": [
+          "literary-fiction",
+          "mystery",
+          "thriller"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "The Secret History",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Donna Tartt",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1992,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Under the influence of their charismatic classics professor, a group of clever, eccentric misfits at an elite New England college discover a way of thinking and living that is a world away from the humdrum existence of their contemporaries. But when they go beyond the boundaries of normal morality they slip gradually from obsession to corruption and betrayal, and at last - inexorably - into evil.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9788372980281",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/744854-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            3
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 587,
+      "tokensIn": 1215,
+      "tokensOut": 48,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-04",
+      "language": "en",
+      "input": {
+        "title": "Gödel, Escher, Bach",
+        "author": "Douglas Hofstadter"
+      },
+      "expected": {
+        "title": [
+          "Gödel, Escher, Bach"
+        ],
+        "author": [
+          "Douglas Hofstadter"
+        ],
+        "year": [
+          1979
+        ],
+        "genres": [
+          "non-fiction",
+          "philosophy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Gödel, Escher, Bach",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Douglas R. Hofstadter",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1979,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Winner of the Pulitzer Prize\r\n\r\nA metaphorical fugue on minds and machines in the spirit of Lewis Carroll\r\n\r\nDouglas Hofstadter's book is concerned directly with the nature of \"maps\" or links between formal systems. However, according to Hofstadter, the formal system that underlies all mental activity transcends the system that supports it. If life can grow out of the formal chemical substrate of the cell, if consciousness can emerge out of a formal system of firing neurons, then so too will computers attain human intelligence. Gödel, Escher, Bach is a wonderful exploration of fascinating ideas at the heart of cognitive science: meaning, reduction, recursion, and much more.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9780394756820",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/14368453-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "empty"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 593,
+      "tokensIn": 1269,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-05",
+      "language": "en",
+      "input": {
+        "title": "Gone with the Wind",
+        "author": "Margaret Mitchell"
+      },
+      "expected": {
+        "title": [
+          "Gone with the Wind"
+        ],
+        "author": [
+          "Margaret Mitchell"
+        ],
+        "year": [
+          1936
+        ],
+        "genres": [
+          "historical-fiction",
+          "romance",
+          "literary-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Gone With the Wind",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Margaret Mitchell",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1936,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Margaret Mitchell's monumental epic of the South won a Pulitzer Prize, gave rise to the most popular motion picture of our time, and inspired a sequel that became the fastest selling novel of the century. It is one of the most popular books ever written: more than 28 million copies of the book have been sold in more than 37 countries. Today, more than 60 years after its initial publication, its achievements are unparalleled, and it remains the most revered American saga and the most beloved work by an American writer...",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9789578477186",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/14817133-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            6
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 801,
+      "tokensIn": 1250,
+      "tokensOut": 51,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-06",
+      "language": "en",
+      "input": {
+        "title": "Siddhartha",
+        "author": "Hermann Hesse"
+      },
+      "expected": {
+        "title": [
+          "Siddhartha"
+        ],
+        "author": [
+          "Hermann Hesse"
+        ],
+        "year": [
+          1922
+        ],
+        "genres": [
+          "literary-fiction",
+          "philosophy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Siddhartha",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Hermann Hesse",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1922,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Hermann Hesse wrote Siddhartha after he traveled to India in the 1910s. It tells the story of a young boy who travels the country in a quest for spiritual enlightenment in the time of Guatama Buddha. It is a compact, lyrical work, which reads like an allegory about the finding of wisdom.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9788482882697",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/6562535-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            11,
+            7
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": true,
+        "synopsis": true,
+        "exact": true
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 645,
+      "tokensIn": 1161,
+      "tokensOut": 53,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "t-07",
+      "language": "en",
+      "input": {
+        "title": "Cat's Cradle"
+      },
+      "expected": {
+        "title": [
+          "Cat's Cradle"
+        ],
+        "author": [
+          "Kurt Vonnegut"
+        ],
+        "year": [
+          1963
+        ],
+        "genres": [
+          "science-fiction",
+          "literary-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Cat's Cradle",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Kurt Vonnegut",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1963,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Cat's Cradle is Kurt Vonnegut's satirical commentary on modern man and his madness. An apocalyptic tale of this planet's ultimate fate, it features a midget as the protagonist, a complete, original theology created by a calypso singer, and a vision of the future that is at once blackly fatalistic and hilariously funny. A book that left an indelible mark on an entire generation of readers, Cat's Cradle is one of the twentieth century's most important works -- and Vonnegut at his very best.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9789756006870",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/12709654-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            2,
+            1,
+            7
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 522,
+      "tokensIn": 1247,
+      "tokensOut": 57,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "f-01",
+      "language": "fr",
+      "input": {
+        "title": "Le Rouge et le Noir",
+        "author": "Stendhal"
+      },
+      "expected": {
+        "title": [
+          "Le Rouge et le Noir",
+          "The Red and the Black"
+        ],
+        "author": [
+          "Stendhal"
+        ],
+        "year": [
+          1830
+        ],
+        "genres": [
+          "literary-fiction",
+          "historical-fiction",
+          "romance"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Le rouge et le noir",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Stendhal",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1830,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "The story of an ambitious youth without birth or fortune in France in the 19th century.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9798554064418",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/8231413-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            7,
+            3
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 652,
+      "tokensIn": 1147,
+      "tokensOut": 53,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "f-02",
+      "language": "fr",
+      "input": {
+        "title": "L'Écume des jours",
+        "author": "Boris Vian"
+      },
+      "expected": {
+        "title": [
+          "L'Écume des jours",
+          "Froth on the Daydream",
+          "Mood Indigo"
+        ],
+        "author": [
+          "Boris Vian"
+        ],
+        "year": [
+          1947
+        ],
+        "genres": [
+          "literary-fiction",
+          "romance",
+          "fantasy"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "L'Écume des jours",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Boris Vian",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1963,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Chick, Alise, Chloé et Colin passent leur temps à dire des choses rigolotes, à écouter Duke Ellington et à patiner. Dans ce monde où les pianos sont des mélangeurs à cocktails, la réalité semble ne pas avoir de prise. On se marie à l'église comme on va à la fête foraine et on ignore le travail, qui se réduit à une usine monstrueuse faisant tache sur le paysage. \r\n\r\nPied de nez aux conventions romanesques et à la morale commune, *L'Écume des jours* est un délice verbal et un festin poétique. Jeux de mots, néologismes, décalages incongrus... Vian surenchérit sans cesse, faisant naître comme un vertige chez le lecteur hébété, qui sourit quand il peut.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9788420634548",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/3169856-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            2,
+            1,
+            5
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": false,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 602,
+      "tokensIn": 1258,
+      "tokensOut": 55,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "f-03",
+      "language": "fr",
+      "input": {
+        "title": "Les Trois Mousquetaires",
+        "author": "Alexandre Dumas"
+      },
+      "expected": {
+        "title": [
+          "Les Trois Mousquetaires",
+          "The Three Musketeers"
+        ],
+        "author": [
+          "Alexandre Dumas"
+        ],
+        "year": [
+          1844
+        ],
+        "genres": [
+          "historical-fiction",
+          "literary-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Les trois Mousquetaires",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Alexandre Dumas",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1844,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "During the reign of France's King Louis XIV, D'Artagnan and three musketeers unite to defend the honor of Anne of Austria against the plots of Cardinal Richeliu.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9781278659220",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/11929973-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            6,
+            12
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 688,
+      "tokensIn": 1171,
+      "tokensOut": 53,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "f-04",
+      "language": "fr",
+      "input": {
+        "title": "Le Petit Nicolas",
+        "author": "René Goscinny"
+      },
+      "expected": {
+        "title": [
+          "Le Petit Nicolas"
+        ],
+        "author": [
+          "René Goscinny"
+        ],
+        "year": [
+          1959,
+          1960
+        ],
+        "genres": [
+          "children"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "Le petit Nicolas",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Jean-Jacques Sempé",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1960,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "A little French boy recounts the many escapades that he and his classmates indulge in as they make their way through a year at primary school.",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9782070524273",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/12856967-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": [
+            7,
+            12
+          ],
+          "source": "model",
+          "confidence": 0.6
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": false,
+        "year": true,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "model"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 741,
+      "tokensIn": 1142,
+      "tokensOut": 53,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "a-01",
+      "language": "ar",
+      "input": {
+        "title": "بين القصرين",
+        "author": "نجيب محفوظ"
+      },
+      "expected": {
+        "title": [
+          "بين القصرين",
+          "Palace Walk",
+          "Bayn al-qasrayn"
+        ],
+        "author": [
+          "نجيب محفوظ",
+          "Naguib Mahfouz",
+          "Najib Mahfuz"
+        ],
+        "year": [
+          1956,
+          1957
+        ],
+        "genres": [
+          "literary-fiction",
+          "historical-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "بين القصرين",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "نجيب محفوظ",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1960,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": "Palace Walk (Arabic: بين القصرين, romanized: Bayn al-Quṣrayn, lit. 'Between Two Palaces') is a novel by Nobel Prize winning Egyptian writer Naguib Mahfouz, and the first installment of Mahfouz's Cairo Trilogy. Originally published in 1956 with the title Bayn al-qasrayn, the book was then translated into English by William M. Hutchins and Olive Kenny, and then published by Doubleday (publisher) in 1990. The book's Arabic title translates into 'between two palaces'. The setting of the novel is Cairo around the time period of World War I. It begins in 1917, during World War I, and ends in 1919, the year of the Egyptian Revolution of 1919. The novel is written in a social realist style and reflects the social and political setting of Egypt in during 1917 to 1919.\r\n\r\n\r\n----------\r\nContained in:\r\n[The Cairo trilogy](https://openlibrary.org/works/OL1599697W)",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "isbn": {
+          "value": "9782253050919",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/14816592-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": false,
+        "genres": false,
+        "synopsis": true,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "lookup",
+        "genres": "empty"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 1,
+      "totalMs": 513,
+      "tokensIn": 1218,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "a-02",
+      "language": "ar",
+      "input": {
+        "title": "اللص والكلاب",
+        "author": "نجيب محفوظ"
+      },
+      "expected": {
+        "title": [
+          "اللص والكلاب",
+          "The Thief and the Dogs",
+          "al-Liṣṣ wa-al-kilāb"
+        ],
+        "author": [
+          "نجيب محفوظ",
+          "Naguib Mahfouz",
+          "Najib Mahfuz"
+        ],
+        "year": [
+          1961
+        ],
+        "genres": [
+          "literary-fiction",
+          "mystery",
+          "thriller"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "اللص والكلاب",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "نجيب محفوظ",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1961,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "isbn": {
+          "value": "9780385269339",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": "https://covers.openlibrary.org/b/id/14816596-L.jpg",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": true,
+        "genres": false,
+        "synopsis": false,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "empty",
+        "genres": "empty"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 509,
+      "tokensIn": 1026,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "a-03",
+      "language": "ar",
+      "input": {
+        "title": "الخبز الحافي",
+        "author": "محمد شكري"
+      },
+      "expected": {
+        "title": [
+          "الخبز الحافي",
+          "For Bread Alone",
+          "Le pain nu"
+        ],
+        "author": [
+          "محمد شكري",
+          "Mohamed Choukri",
+          "Muhammad Shukri"
+        ],
+        "year": [
+          1973,
+          1982
+        ],
+        "genres": [
+          "biography",
+          "literary-fiction"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "الخبز الحافي",
+          "source": "input",
+          "confidence": 1
+        },
+        "author": {
+          "value": "محمد شكري",
+          "source": "input",
+          "confidence": 1
+        },
+        "publishedYear": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "synopsis": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "isbn": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "coverUrl": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": null
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": false,
+        "genres": false,
+        "synopsis": false,
+        "exact": false
+      },
+      "sources": {
+        "title": "input",
+        "author": "input",
+        "year": "empty",
+        "synopsis": "empty",
+        "genres": "empty"
+      },
+      "lookupHit": false,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 252,
+      "tokensIn": 981,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    },
+    {
+      "id": "a-04",
+      "language": "ar",
+      "input": {
+        "title": "يوميات نائب في الأرياف",
+        "author": "توفيق الحكيم"
+      },
+      "expected": {
+        "title": [
+          "يوميات نائب في الأرياف",
+          "Maze of Justice",
+          "Diary of a Country Prosecutor"
+        ],
+        "author": [
+          "توفيق الحكيم",
+          "Tawfiq al-Hakim"
+        ],
+        "year": [
+          1937
+        ],
+        "genres": [
+          "literary-fiction",
+          "mystery"
+        ],
+        "synopsis": true
+      },
+      "draft": {
+        "title": {
+          "value": "يوميات نائب في الأرياف",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "author": {
+          "value": "Tawfīq Ḥakīm",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "publishedYear": {
+          "value": 1988,
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "synopsis": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "isbn": {
+          "value": "9789771103592",
+          "source": "lookup",
+          "confidence": 0.8
+        },
+        "coverUrl": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "genreIds": {
+          "value": null,
+          "source": "empty",
+          "confidence": 0
+        },
+        "lookupSource": "openlibrary"
+      },
+      "fields": {
+        "title": true,
+        "author": true,
+        "year": false,
+        "genres": false,
+        "synopsis": false,
+        "exact": false
+      },
+      "sources": {
+        "title": "lookup",
+        "author": "lookup",
+        "year": "lookup",
+        "synopsis": "empty",
+        "genres": "empty"
+      },
+      "lookupHit": true,
+      "modelCalled": true,
+      "fallbackUsed": false,
+      "aiUnavailable": false,
+      "costUsd": 0,
+      "latencyMs": 2,
+      "totalMs": 554,
+      "tokensIn": 1014,
+      "tokensOut": 45,
+      "tokensCachedRead": 0,
+      "tokensCachedWrite": 0,
+      "throttleRetries": 0,
+      "error": null
+    }
+  ]
+}

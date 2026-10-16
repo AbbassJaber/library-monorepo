@@ -1,0 +1,1068 @@
+{
+  "suite": "agent",
+  "provider": "mock",
+  "model": "mock-small",
+  "target": "inprocess",
+  "setting": "none",
+  "cases": "all",
+  "date": "2026-10-11T18:18:28.776Z",
+  "summary": {
+    "all": {
+      "cases": 33,
+      "ran": 33,
+      "errors": 0,
+      "checks": {
+        "tools": 0.9090909090909091,
+        "pending": 0.8484848484848485,
+        "noMutation": 1,
+        "cited": 0.8484848484848485
+      },
+      "rubric": 0.6363636363636364,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0.6363636363636364,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 4,
+        "p95": 14
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 19,
+      "ran": 19,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 0.8947368421052632
+      },
+      "rubric": 0.8947368421052632,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0.8947368421052632,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 3,
+        "p95": 29
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 14,
+      "ran": 14,
+      "errors": 0,
+      "checks": {
+        "tools": 0.7857142857142857,
+        "pending": 0.6428571428571429,
+        "noMutation": 1,
+        "cited": 0.7857142857142857
+      },
+      "rubric": 0.2857142857142857,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0.2857142857142857,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 4,
+        "p95": 6
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "g-01",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: The Fellowship of the Ring by J. R. R. Tolkien, The Hobbit by J. R. R. Tolkien.",
+      "citations": [
+        2,
+        1
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 29,
+      "wallMs": 30,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-02",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: The Left Hand of Darkness by Ursula K. Le Guin.",
+      "citations": [
+        15
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 6,
+      "wallMs": 6,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-03",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found no matching books.",
+      "citations": [],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 2,
+      "wallMs": 2,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-04",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: Dune by Frank Herbert.",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 3,
+      "wallMs": 3,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-05",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Genres: Fantasy, Science Fiction, Mystery & Crime, Thriller, Romance, Historical Fiction, Literary Fiction, Non-fiction, Biography & Memoir, Poetry, Philosophy, Children's.",
+      "citations": [],
+      "toolCalls": [
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 3,
+      "wallMs": 3,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-06",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I have prepared this change: Add “Dune” to your reading list as “Want to read”. Please confirm it with the button to apply it.",
+      "citations": [
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 12,
+          "state": "WANT_TO_READ"
+        }
+      },
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 4,
+      "wallMs": 4,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-07",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I have prepared this change: Add “The Hobbit” to your reading list as “Reading”. Please confirm it with the button to apply it.",
+      "citations": [
+        1
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 1,
+          "state": "READING"
+        }
+      },
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-08",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I can help with the library catalog and your reading list.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-09",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Drafting catalog entries is for librarians.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-10",
+      "set": "tuned",
+      "language": "en",
+      "actor": "librarian",
+      "answer": "The draft is ready; review it in the book form before saving it.",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-11",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I change one book at a time, when you name it.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 14,
+      "wallMs": 14,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-12",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found no matching books.",
+      "citations": [],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 2,
+      "wallMs": 2,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "g-13",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I have prepared this change: Remove 3 books from your reading list: “Nineteen Eighty-Four”, “Dune” and “Le Petit Prince”. Please confirm it with the button to apply it.",
+      "citations": [
+        16,
+        12,
+        104
+      ],
+      "toolCalls": [
+        "getReadingList",
+        "changeReadingList"
+      ],
+      "pending": {
+        "tool": "changeReadingList",
+        "input": {
+          "changes": [
+            {
+              "action": "remove",
+              "bookId": 16
+            },
+            {
+              "action": "remove",
+              "bookId": 12
+            },
+            {
+              "action": "remove",
+              "bookId": 104
+            }
+          ]
+        }
+      },
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 6,
+      "wallMs": 6,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-01",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : La Peste de Albert Camus, L'Étranger de Albert Camus.",
+      "citations": [
+        103,
+        102
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 4,
+      "wallMs": 4,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-02",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "J'ai préparé cette modification : Ajouter « Le Petit Prince » à votre liste de lecture (« À lire »). Confirmez-la avec le bouton pour l'appliquer.",
+      "citations": [
+        104
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "addToReadingList"
+      ],
+      "pending": {
+        "tool": "addToReadingList",
+        "input": {
+          "bookId": 104,
+          "state": "WANT_TO_READ"
+        }
+      },
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 3,
+      "wallMs": 3,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-03",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : L'Étranger de Albert Camus, Les Misérables de Victor Hugo, Le Petit Prince de Antoine de Saint-Exupéry, Vingt mille lieues sous les mers de Jules Verne, Le Comte de Monte-Cristo de Alexandre Dumas.",
+      "citations": [
+        102,
+        105,
+        104,
+        109,
+        107
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 4,
+      "wallMs": 4,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-04",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Genres: Fantasy, Science Fiction, Mystery & Crime, Thriller, Romance, Historical Fiction, Literary Fiction, Non-fiction, Biography & Memoir, Poetry, Philosophy, Children's.",
+      "citations": [],
+      "toolCalls": [
+        "listGenres"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-05",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Je peux vous aider avec le catalogue de la bibliothèque et votre liste de lecture.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 0,
+      "wallMs": 0,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "f-06",
+      "set": "tuned",
+      "language": "fr",
+      "actor": "librarian",
+      "answer": "Le brouillon est prêt ; relisez-le dans le formulaire du livre avant de l’enregistrer.",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-01",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I found no matching books.",
+      "citations": [],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-02",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: Murder on the Orient Express by Agatha Christie, Jane Eyre by Charlotte Brontë, The Left Hand of Darkness by Ursula K. Le Guin, Norwegian Wood by Haruki Murakami, A Wizard of Earthsea by Ursula K. Le Guin.",
+      "citations": [
+        27,
+        38,
+        15,
+        57,
+        3
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-03",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: The Hobbit by J. R. R. Tolkien, Gone Girl by Gillian Flynn, Neuromancer by William Gibson, A Wizard of Earthsea by Ursula K. Le Guin, Madame Bovary by Gustave Flaubert.",
+      "citations": [
+        1,
+        30,
+        13,
+        3,
+        106
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-04",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Here is what I found: Cosmos by Carl Sagan, I Know Why the Caged Bird Sings by Maya Angelou, All the Light We Cannot See by Anthony Doerr, The Waste Land by T. S. Eliot, A Brief History of Time by Stephen Hawking.",
+      "citations": [
+        65,
+        69,
+        43,
+        71,
+        63
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-06",
+      "set": "holdout",
+      "language": "en",
+      "actor": "librarian",
+      "answer": "Here is what I found: Frankenstein by Mary Shelley, A Brief History of Time by Stephen Hawking, Wuthering Heights by Emily Brontë, Man's Search for Meaning by Viktor E. Frankl, The Gruffalo by Julia Donaldson.",
+      "citations": [
+        24,
+        63,
+        39,
+        78,
+        87
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 6,
+      "wallMs": 6,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-07",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : Madame Bovary de Gustave Flaubert, Bonjour tristesse de Françoise Sagan.",
+      "citations": [
+        106,
+        110
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 3,
+      "wallMs": 3,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": false
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-08",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : Le Petit Prince de Antoine de Saint-Exupéry, Le Comte de Monte-Cristo de Alexandre Dumas, L'Élégance du hérisson de Muriel Barbery, Madame Bovary de Gustave Flaubert, Germinal de Émile Zola.",
+      "citations": [
+        104,
+        107,
+        120,
+        106,
+        112
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 4,
+      "wallMs": 4,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-09",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : Candide de Voltaire, Madame Bovary de Gustave Flaubert, One Hundred Years of Solitude de Gabriel García Márquez, Bonjour tristesse de Françoise Sagan, Murder on the Orient Express de Agatha Christie.",
+      "citations": [
+        108,
+        106,
+        49,
+        110,
+        27
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-10",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "librarian",
+      "answer": "Le brouillon est prêt ; relisez-le dans le formulaire du livre avant de l’enregistrer.",
+      "citations": [],
+      "toolCalls": [
+        "draftBook"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-11",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Préparer une fiche est réservé aux bibliothécaires.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-12",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : Le Petit Prince de Antoine de Saint-Exupéry, Bonjour tristesse de Françoise Sagan, Le Deuxième Sexe de Simone de Beauvoir, Madame Bovary de Gustave Flaubert, La Peste de Albert Camus.",
+      "citations": [
+        104,
+        110,
+        111,
+        106,
+        103
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 3,
+      "wallMs": 3,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-13",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I change one book at a time, when you name it.",
+      "citations": [],
+      "toolCalls": [],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 1,
+      "wallMs": 1,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-14",
+      "set": "holdout",
+      "language": "en",
+      "actor": "reader",
+      "answer": "I have prepared this change: Remove “Nineteen Eighty-Four” from your reading list. Please confirm it with the button to apply it.",
+      "citations": [
+        16
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "removeFromReadingList"
+      ],
+      "pending": {
+        "tool": "removeFromReadingList",
+        "input": {
+          "bookId": 16
+        }
+      },
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 5,
+      "wallMs": 5,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    },
+    {
+      "judgeIssues": [],
+      "id": "h-15",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Voici ce que j'ai trouvé : Le Petit Prince de Antoine de Saint-Exupéry, Bonjour tristesse de Françoise Sagan, Le Deuxième Sexe de Simone de Beauvoir, Madame Bovary de Gustave Flaubert, Les Fleurs du mal de Charles Baudelaire.",
+      "citations": [
+        104,
+        110,
+        111,
+        106,
+        114
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0,
+      "judgeCostUsd": 0,
+      "latencyMs": 4,
+      "wallMs": 4,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": null
+    }
+  ]
+}

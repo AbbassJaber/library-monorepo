@@ -1,0 +1,183 @@
+{
+  "note": "Hold-out agent cases, written 2026-10-02 before any run on them and never used to tune the judge rubric or the agent prompt. Same expectation format as agent.json. Keep them unseen: a case that leads to a prompt or rubric change moves to agent.json and is replaced here. 2026-10-02: h-05 now starts with three books on the shelf, so a removal has something to act on (removeFromReadingList exists); its text and expectation are unchanged. 2026-10-02 (batched shelf changes): the product now batches removals and state changes for books already on the list into one changeReadingList card, so h-05's expectation changed from noPending to that batch (a spec change, not tuning: its text and shelf are unchanged). h-12 and h-13 were written before any run on them. 2026-10-02 (confirm-twice rule): h-05 informed a prompt change, so it moved to agent.json as g-13; h-14 (EN batch removal) and h-15 (FR batch state change) replace it, written before any run on them.",
+  "cases": [
+    {
+      "id": "h-01",
+      "language": "en",
+      "actor": "reader",
+      "text": "Have you got any books by George Orwell?",
+      "expect": {
+        "tools": ["searchBooks"],
+        "cite": [16],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-02",
+      "language": "en",
+      "actor": "reader",
+      "text": "something about miners going on strike in nineteenth-century France",
+      "expect": {
+        "tools": ["searchBooks"],
+        "cite": [112],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-03",
+      "language": "en",
+      "actor": "reader",
+      "text": "I just finished Nineteen Eighty-Four, put it on my list as finished",
+      "expect": {
+        "tools": ["searchBooks"],
+        "pending": {
+          "tool": "addToReadingList",
+          "input": {
+            "bookId": 16,
+            "state": "FINISHED"
+          }
+        }
+      }
+    },
+    {
+      "id": "h-04",
+      "language": "en",
+      "actor": "reader",
+      "text": "what's the capital of Australia?",
+      "expect": {
+        "tools": [],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-06",
+      "language": "en",
+      "actor": "librarian",
+      "text": "can you prepare a catalog record for The Shining by Stephen King?",
+      "expect": {
+        "tools": ["draftBook"],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-07",
+      "language": "fr",
+      "actor": "reader",
+      "text": "avez-vous des romans de Victor Hugo ?",
+      "expect": {
+        "tools": ["searchBooks"],
+        "cite": [105],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-08",
+      "language": "fr",
+      "actor": "reader",
+      "text": "un roman où un homme s'évade d'une prison sur une île et se venge de ceux qui l'ont trahi",
+      "expect": {
+        "tools": ["searchBooks"],
+        "cite": [107],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-09",
+      "language": "fr",
+      "actor": "reader",
+      "text": "je suis en train de lire Madame Bovary, ajoute-le à ma liste",
+      "expect": {
+        "tools": ["searchBooks"],
+        "pending": {
+          "tool": "addToReadingList",
+          "input": {
+            "bookId": 106,
+            "state": "READING"
+          }
+        }
+      }
+    },
+    {
+      "id": "h-10",
+      "language": "fr",
+      "actor": "librarian",
+      "text": "prépare une fiche à partir de l'ISBN 9780439023481",
+      "expect": {
+        "tools": ["draftBook"],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-11",
+      "language": "fr",
+      "actor": "reader",
+      "text": "prépare une fiche de catalogue pour l'ISBN 9780553103540",
+      "expect": {
+        "notTools": ["draftBook"],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-12",
+      "language": "fr",
+      "actor": "reader",
+      "text": "Marque tous les livres de ma liste de lecture comme terminés.",
+      "shelf": [12, 104],
+      "expect": {
+        "tools": ["getReadingList"],
+        "pending": {
+          "tool": "changeReadingList",
+          "changes": {
+            "action": "setState",
+            "state": "FINISHED",
+            "bookIds": [12, 104]
+          }
+        }
+      }
+    },
+    {
+      "id": "h-13",
+      "language": "en",
+      "actor": "reader",
+      "text": "add all the fantasy books you have to my reading list",
+      "shelf": [16],
+      "expect": {
+        "notTools": ["changeReadingList"],
+        "noPending": true
+      }
+    },
+    {
+      "id": "h-14",
+      "language": "en",
+      "actor": "reader",
+      "text": "Take Dune and Nineteen Eighty-Four off my reading list, please.",
+      "shelf": [12, 16, 1],
+      "expect": {
+        "pending": {
+          "tool": "changeReadingList",
+          "changes": {
+            "action": "remove",
+            "bookIds": [12, 16]
+          }
+        }
+      }
+    },
+    {
+      "id": "h-15",
+      "language": "fr",
+      "actor": "reader",
+      "text": "J'ai commencé Le Petit Prince et Dune : passe-les en cours de lecture.",
+      "shelf": [104, 12, 1],
+      "expect": {
+        "pending": {
+          "tool": "changeReadingList",
+          "changes": {
+            "action": "setState",
+            "state": "READING",
+            "bookIds": [104, 12]
+          }
+        }
+      }
+    }
+  ]
+}

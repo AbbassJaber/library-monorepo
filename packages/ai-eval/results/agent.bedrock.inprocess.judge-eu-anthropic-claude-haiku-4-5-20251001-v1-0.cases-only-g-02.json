@@ -1,0 +1,132 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-g-02",
+  "date": "2026-10-06T20:51:59.569Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0092444,
+      "agentCostPerCase": 0.006204,
+      "judgeCostTotal": 0.0030404,
+      "latencyMs": {
+        "p50": 2797,
+        "p95": 2797
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0092444,
+      "agentCostPerCase": 0.006204,
+      "judgeCostTotal": 0.0030404,
+      "latencyMs": {
+        "p50": 2797,
+        "p95": 2797
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "g-02",
+      "set": "tuned",
+      "language": "en",
+      "actor": "reader",
+      "answer": "Yes! We have two books by Ursula K. Le Guin: *The Left Hand of Darkness*, a science fiction novel from 1969, and *A Wizard of Earthsea*, a fantasy novel from 1968. Both are highly rated. Would you like to know more about either of them?",
+      "citations": [
+        15,
+        3
+      ],
+      "toolCalls": [
+        "searchBooks"
+      ],
+      "pending": null,
+      "costUsd": 0.006204,
+      "judgeCostUsd": 0.0030404,
+      "latencyMs": 2797,
+      "wallMs": 11586,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly identifies two books by Ursula K. Le Guin from the catalog search results. All factual claims are grounded in the evidence: \"The Left Hand of Darkness\" (1969, science fiction, rating 4.2) and \"A Wizard of Earthsea\" (1968, fantasy, rating 4.4) are accurately described. Both books are properly cited with their catalog IDs (15 and 3). The answer directly addresses the user's question about whether the library has anything by Ursula Le Guin. There is no claim that a change has already been made to the reading list—the answer only offers to provide more information. All requirements are met.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

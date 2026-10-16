@@ -1,0 +1,15 @@
+{
+  "lede": "Pick up to {{max}}. The order matters: the first one weighs most in “{{forYourShelves}}”.",
+  "all": "All {{genres}}",
+  "chosen": "{{count}} of {{max}} chosen",
+  "bookCount": "{{count}} {{items}}",
+  "ordered": {
+    "title": "Your favorites, in order",
+    "empty": "Nothing chosen yet. Tick a {{genre}} on the left.",
+    "listLabel": "Your favorite genres, in order",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down"
+  },
+  "save": "Save favorites",
+  "saved": "Favorites saved"
+}

@@ -1,0 +1,33 @@
+{
+  "invalidId": "That book id is not valid",
+  "notFound": {
+    "title": "{{item}} not found",
+    "body": "It may have been archived or never existed."
+  },
+  "rating": "Rating",
+  "edit": "Edit this {{item}}",
+  "version": "version {{version}}",
+  "similar": {
+    "heading": "Books like this",
+    "subtitle": "Close in meaning to this one, from the whole catalog"
+  },
+  "ratingValue": "{{rating}} out of 5",
+  "close": "Close the book",
+  "closeShort": "Close",
+  "askLibrarian": "Ask the librarian",
+  "askPrompt": "Tell me about “{{title}}” by {{author}}.",
+  "card": {
+    "title": "Library card",
+    "shelfMark": "Shelf mark",
+    "author": "Author",
+    "published": "Published",
+    "genre": "Genre",
+    "rating": "Rating",
+    "ratingValue": "{{rating}} / 5",
+    "onList": "On your list",
+    "since": "since {{date}}",
+    "notYet": "Not yet",
+    "yours": "Your reading",
+    "language": "Language"
+  }
+}

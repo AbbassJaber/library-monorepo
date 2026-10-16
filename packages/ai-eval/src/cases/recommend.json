@@ -1,0 +1,103 @@
+{
+  "note": "Reader profiles for explained recommendations (seed ids). shelf: entries with their state; favorites: genre slugs in order; expectAny: at least one of these should be recommended (a strong, obvious match). Explanations must be in the case language.",
+  "cases": [
+    {
+      "id": "rc-01",
+      "language": "en",
+      "shelf": [{ "bookId": 1, "state": "FINISHED" }],
+      "favorites": ["fantasy"],
+      "expectAny": [2]
+    },
+    {
+      "id": "rc-02",
+      "language": "en",
+      "shelf": [
+        { "bookId": 12, "state": "FINISHED" },
+        { "bookId": 14, "state": "READING" }
+      ],
+      "favorites": ["science-fiction"],
+      "expectAny": [15, 13, 23, 20, 19, 21, 9]
+    },
+    {
+      "id": "rc-03",
+      "language": "en",
+      "shelf": [
+        { "bookId": 16, "state": "FINISHED" },
+        { "bookId": 17, "state": "FINISHED" }
+      ],
+      "favorites": [],
+      "expectAny": [18, 25]
+    },
+    {
+      "id": "rc-04",
+      "language": "en",
+      "shelf": [
+        { "bookId": 27, "state": "FINISHED" },
+        { "bookId": 28, "state": "READING" }
+      ],
+      "favorites": ["mystery"],
+      "expectAny": [26, 29, 36, 32]
+    },
+    {
+      "id": "rc-05",
+      "language": "en",
+      "shelf": [{ "bookId": 37, "state": "FINISHED" }],
+      "favorites": ["romance"],
+      "expectAny": [40, 38, 39]
+    },
+    {
+      "id": "rc-06",
+      "language": "en",
+      "shelf": [
+        { "bookId": 53, "state": "FINISHED" },
+        { "bookId": 45, "state": "WANT_TO_READ" }
+      ],
+      "favorites": ["literary-fiction", "historical-fiction"]
+    },
+    {
+      "id": "rc-07",
+      "language": "en",
+      "shelf": [{ "bookId": 81, "state": "FINISHED" }],
+      "favorites": ["children"],
+      "expectAny": [82]
+    },
+    {
+      "id": "rc-08",
+      "language": "en",
+      "shelf": [
+        { "bookId": 76, "state": "FINISHED" },
+        { "bookId": 78, "state": "READING" }
+      ],
+      "favorites": ["philosophy"],
+      "expectAny": [108, 111, 79, 77, 72]
+    },
+    {
+      "id": "rc-09",
+      "language": "fr",
+      "shelf": [{ "bookId": 102, "state": "FINISHED" }],
+      "favorites": ["literary-fiction"],
+      "expectAny": [103]
+    },
+    {
+      "id": "rc-10",
+      "language": "fr",
+      "shelf": [{ "bookId": 105, "state": "FINISHED" }],
+      "favorites": ["historical-fiction"],
+      "expectAny": [107, 112, 113]
+    },
+    {
+      "id": "rc-11",
+      "language": "fr",
+      "shelf": [{ "bookId": 104, "state": "READING" }],
+      "favorites": ["children", "philosophy"],
+      "expectAny": [77]
+    },
+    {
+      "id": "rc-12",
+      "language": "fr",
+      "shelf": [{ "bookId": 90, "state": "FINISHED" }],
+      "favorites": ["literary-fiction"],
+      "expectAny": [91, 92]
+    }
+  ]
+}

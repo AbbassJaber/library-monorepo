@@ -1,0 +1,22 @@
+{
+  "lede": "{{items}} you want to read, are reading, or have finished. Archived {{items, lowercase}} stay here until you remove them.",
+  "empty": {
+    "title": "Your {{shelf, lowercase}} is empty",
+    "hint": "Add a {{item}} from the {{catalog}} and it will appear here."
+  },
+  "readingState": "Reading state",
+  "remove": "Remove",
+  "removeTitled": "Remove {{title}} from your {{shelf}}",
+  "forYourShelves": {
+    "lede": "Picked from your <favorites>{{favorites}}</favorites>, leaving out what is already on your {{shelf}}.",
+    "noFavorites": "Choose a few favorite {{genres}} and suggestions will appear here.",
+    "exhausted": "Everything in your favorite genres is already on your {{shelf}}."
+  },
+  "explained": {
+    "lede": "Chosen from what is on your {{shelf}}, each with the reason.",
+    "because": "Because of",
+    "unavailable": "Explanations are unavailable right now, so this is the plain list."
+  },
+  "count_one": "{{count}} {{item}}",
+  "count_other": "{{count}} {{items}}"
+}

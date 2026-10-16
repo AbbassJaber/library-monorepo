@@ -1,0 +1,151 @@
+{
+  "suite": "agent",
+  "provider": "bedrock",
+  "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "target": "inprocess",
+  "setting": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "cases": "only-h-15",
+  "date": "2026-10-09T17:29:33.319Z",
+  "summary": {
+    "all": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0139711,
+      "agentCostPerCase": 0.0108592,
+      "judgeCostTotal": 0.0031119,
+      "latencyMs": {
+        "p50": 4665,
+        "p95": 4665
+      },
+      "throttleRetries": 0
+    },
+    "tuned": {
+      "cases": 0,
+      "ran": 0,
+      "errors": 0,
+      "checks": {
+        "tools": 0,
+        "pending": 0,
+        "noMutation": 0,
+        "cited": 0
+      },
+      "rubric": 0,
+      "judge": {
+        "judged": 0,
+        "grounded": null,
+        "cited": null,
+        "noUnconfirmedChange": null,
+        "answersQuestion": null
+      },
+      "pass": 0,
+      "costTotal": 0,
+      "agentCostPerCase": 0,
+      "judgeCostTotal": 0,
+      "latencyMs": {
+        "p50": 0,
+        "p95": 0
+      },
+      "throttleRetries": 0
+    },
+    "holdout": {
+      "cases": 1,
+      "ran": 1,
+      "errors": 0,
+      "checks": {
+        "tools": 1,
+        "pending": 1,
+        "noMutation": 1,
+        "cited": 1
+      },
+      "rubric": 1,
+      "judge": {
+        "judged": 1,
+        "grounded": 1,
+        "cited": 1,
+        "noUnconfirmedChange": 1,
+        "answersQuestion": 1
+      },
+      "pass": 1,
+      "costTotal": 0.0139711,
+      "agentCostPerCase": 0.0108592,
+      "judgeCostTotal": 0.0031119,
+      "latencyMs": {
+        "p50": 4665,
+        "p95": 4665
+      },
+      "throttleRetries": 0
+    }
+  },
+  "rows": [
+    {
+      "judgeIssues": [],
+      "id": "h-15",
+      "set": "holdout",
+      "language": "fr",
+      "actor": "reader",
+      "answer": "Parfait ! Je vais passer Le Petit Prince et Dune à l'état « En cours de lecture ». Confirmez pour appliquer ce changement.",
+      "citations": [
+        104,
+        12
+      ],
+      "toolCalls": [
+        "searchBooks",
+        "searchBooks",
+        "updateReadingState",
+        "updateReadingState"
+      ],
+      "pending": {
+        "tool": "changeReadingList",
+        "input": {
+          "changes": [
+            {
+              "action": "setState",
+              "bookId": 104,
+              "state": "READING"
+            },
+            {
+              "action": "setState",
+              "bookId": 12,
+              "state": "READING"
+            }
+          ]
+        }
+      },
+      "costUsd": 0.0108592,
+      "judgeCostUsd": 0.0031119,
+      "latencyMs": 4665,
+      "wallMs": 7409,
+      "throttleRetries": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "noMutation": true,
+        "cited": true
+      },
+      "judge": {
+        "rationale": "The answer correctly addresses the user's request to move \"Le Petit Prince\" and \"Dune\" to \"reading in progress\" status. Both books are properly cited with their IDs (104 and 12) from the searchBooks results. The answer accurately describes the two books found in the catalog: \"Le Petit Prince\" by Antoine de Saint-Exupéry (1943) and \"Dune\" by Frank Herbert (1965). The assistant appropriately proposes the change and asks for confirmation (\"Confirmez pour appliquer ce changement\") rather than claiming the change has already been applied, which is the correct behavior. All factual claims about the books are grounded in the evidence provided by the search results.",
+        "grounded": true,
+        "cited": true,
+        "claimsUnconfirmedChange": false,
+        "answersQuestion": true
+      }
+    }
+  ]
+}

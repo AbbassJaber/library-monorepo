@@ -1,0 +1,111 @@
+{
+  "lede": "Cherchez par titre ou par auteur, filtrez par genre et par année, ou flânez.",
+  "filters": {
+    "search": "Chercher par titre ou auteur",
+    "searchPlaceholder": "Tolkien, Dune, محفوظ…",
+    "byGenre": "Filtrer par {{genre}}",
+    "fromYear": "De l’année",
+    "toYear": "À l’année",
+    "sort": "Trier",
+    "active": "Filtres actifs",
+    "chipFrom": "depuis {{year}}",
+    "chipTo": "jusqu’à {{year}}",
+    "clear": "Effacer les filtres",
+    "language": "Langue",
+    "anyLanguage": "Toutes les langues"
+  },
+  "sort": {
+    "bestMatch": "Pertinence",
+    "newest": "Nouveautés",
+    "title": "Titre",
+    "rating": "Note"
+  },
+  "view": {
+    "label": "Affichage",
+    "pages": "Pages",
+    "scroll": "Défilement continu"
+  },
+  "empty": {
+    "title": "Aucun {{items}} ne correspond à ces filtres",
+    "hint": "Essayez moins de filtres ou une autre orthographe.",
+    "reset": "Réinitialiser la recherche"
+  },
+  "announce": {
+    "page_one": "{{count}} livre, page {{page}} sur {{pages}}",
+    "page_other": "{{count}} livres, page {{page}} sur {{pages}}",
+    "shown_one": "{{shown}} livre sur {{count}} affiché",
+    "shown_other": "{{shown}} livres sur {{count}} affichés"
+  },
+  "shownOf_one": "{{shown}} sur {{count}} livre",
+  "shownOf_other": "{{shown}} sur {{count}} livres",
+  "loadMore": "Afficher plus",
+  "pagination": {
+    "label": "Pagination",
+    "previous": "Page précédente",
+    "next": "Page suivante",
+    "status_one": "Page {{page}} sur {{pages}} · {{count}} livre",
+    "status_other": "Page {{page}} sur {{pages}} · {{count}} livres"
+  },
+  "card": {
+    "titleBy": "{{title}}, de {{author}}",
+    "onShelf": "Dans votre {{shelf}}"
+  },
+  "ai": {
+    "heading": "Chercher avec vos mots",
+    "label": "Décrivez ce que vous cherchez",
+    "placeholder": "ex. fantasy des années 90, les mieux notés d’abord",
+    "submit": "Interpréter",
+    "review": "Voici ce que j’ai compris. Modifiez ou retirez ce que vous voulez, puis appliquez.",
+    "unsure": "Je n’en suis pas sûr : vérifiez les filtres avant d’appliquer.",
+    "understood": "Ce que j’ai compris",
+    "nothing": "Aucun filtre trouvé dans cette demande.",
+    "apply": "Appliquer les filtres",
+    "discard": "Abandonner",
+    "chip": {
+      "q": "« {{value}} »",
+      "sort": "triés par {{label}}"
+    },
+    "edit": {
+      "chip": "Modifier {{label}}",
+      "q": "Mots recherchés"
+    }
+  },
+  "semantic": {
+    "toggle": "Rechercher par le sens",
+    "note": "Classés par le sens autant que par les mots : une description trouve le livre que son titre ne nomme pas. Un genre au plus ; les années et le tri ne s'appliquent pas."
+  },
+  "layout": {
+    "label": "Affichage",
+    "covers": "Couvertures",
+    "table": "Tableau"
+  },
+  "table": {
+    "cover": "Couverture",
+    "title": "Titre et auteur",
+    "genre": "Genre",
+    "rating": "Note",
+    "notOnShelf": "Pas dans votre liste",
+    "language": "Langue"
+  },
+  "why": {
+    "heading": "Pourquoi ce résultat",
+    "button": "Pourquoi",
+    "open": "Pourquoi « {{title}} » correspond",
+    "close": "Fermer l’explication",
+    "reasons": {
+      "title": "Vos mots sont dans le titre",
+      "author": "Vos mots sont dans le nom de l’auteur",
+      "spelling": "Une orthographe proche du titre ou de l’auteur",
+      "meaning": "Proche du sens de votre recherche"
+    },
+    "keywordRank": "Rang par mots-clés",
+    "semanticScore": "Similarité sémantique",
+    "semanticRank": "Rang sémantique",
+    "fusedRank": "Rang fusionné",
+    "rerankedRank": "Après reclassement",
+    "rank": "n° {{rank}}",
+    "rrf": "RRF {{score}}",
+    "none": "aucune correspondance",
+    "note": "Les rangs commencent à 1. Le rang fusionné combine les listes par mots-clés et par sens (fusion des rangs réciproques)."
+  }
+}

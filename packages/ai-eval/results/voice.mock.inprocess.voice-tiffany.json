@@ -1,0 +1,625 @@
+{
+  "suite": "voice",
+  "provider": "mock",
+  "model": "mock-voice",
+  "target": "inprocess",
+  "setting": "tiffany",
+  "date": "2026-10-06T10:40:43.787Z",
+  "summary": {
+    "cases": 21,
+    "ran": 21,
+    "errors": 0,
+    "toolAccuracy": 0.47619047619047616,
+    "recovery": 0,
+    "tools": 0.6666666666666666,
+    "pending": 0.8095238095238095,
+    "noMutation": 1,
+    "bargeIn": 0,
+    "firstAudioMs": {
+      "p50": 33,
+      "p95": 36
+    },
+    "turnMs": {
+      "p50": 78,
+      "p95": 82
+    },
+    "costTotal": 0,
+    "costPerCase": 0,
+    "tokens": {
+      "speechIn": 1354,
+      "speechOut": 210,
+      "textIn": 11532,
+      "textOut": 282
+    }
+  },
+  "rows": [
+    {
+      "id": "v-01",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 91,
+      "turnMs": 135,
+      "usage": {
+        "speechIn": 55,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-02",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 36,
+      "turnMs": 78,
+      "usage": {
+        "speechIn": 65,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-03",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 74,
+      "usage": {
+        "speechIn": 50,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-04",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 32,
+      "turnMs": 78,
+      "usage": {
+        "speechIn": 53,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-05",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 82,
+      "usage": {
+        "speechIn": 45,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-06",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 32,
+      "turnMs": 74,
+      "usage": {
+        "speechIn": 47,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-07",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 79,
+      "usage": {
+        "speechIn": 71,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-08",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 36,
+      "turnMs": 80,
+      "usage": {
+        "speechIn": 99,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-09",
+      "language": "en",
+      "actor": "librarian",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 81,
+      "usage": {
+        "speechIn": 98,
+        "speechOut": 10,
+        "textIn": 550,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-10",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 80,
+      "usage": {
+        "speechIn": 69,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-11",
+      "language": "en",
+      "actor": "reader",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 78,
+      "usage": {
+        "speechIn": 83,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": false
+      }
+    },
+    {
+      "id": "v-12",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 76,
+      "usage": {
+        "speechIn": 50,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-13",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 32,
+      "turnMs": 75,
+      "usage": {
+        "speechIn": 58,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-14",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 77,
+      "usage": {
+        "speechIn": 67,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-15",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 80,
+      "usage": {
+        "speechIn": 46,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-16",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 78,
+      "usage": {
+        "speechIn": 51,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-17",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 32,
+      "turnMs": 75,
+      "usage": {
+        "speechIn": 78,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": false,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-18",
+      "language": "fr",
+      "actor": "librarian",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 32,
+      "turnMs": 74,
+      "usage": {
+        "speechIn": 68,
+        "speechOut": 10,
+        "textIn": 550,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-19",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 34,
+      "turnMs": 78,
+      "usage": {
+        "speechIn": 49,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-20",
+      "language": "fr",
+      "actor": "reader",
+      "userText": "des livres de tolkien",
+      "answer": "J'ai trouvé The Fellowship of the Ring et The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 80,
+      "usage": {
+        "speechIn": 55,
+        "speechOut": 10,
+        "textIn": 549,
+        "textOut": 14
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": true,
+        "pending": true,
+        "recovery": null,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    },
+    {
+      "id": "v-21",
+      "language": "en",
+      "actor": "librarian",
+      "userText": "books by tolkien",
+      "answer": "I found The Fellowship of the Ring and The Hobbit.",
+      "toolCalls": [
+        "searchBooks {\"q\":\"tolkien\",\"limit\":5}"
+      ],
+      "pending": null,
+      "firstAudioMs": 33,
+      "turnMs": 77,
+      "usage": {
+        "speechIn": 97,
+        "speechOut": 10,
+        "textIn": 550,
+        "textOut": 13
+      },
+      "costUsd": 0,
+      "error": null,
+      "checks": {
+        "tools": false,
+        "pending": true,
+        "recovery": false,
+        "noMutation": true,
+        "bargeIn": null
+      }
+    }
+  ]
+}

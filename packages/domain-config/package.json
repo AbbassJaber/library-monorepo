@@ -1,0 +1,35 @@
+{
+  "name": "@library/domain-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "What makes the catalog a book library: labels, fields, genre taxonomy, external lookup and prompt vocabulary. Swap the active domain in src/index.ts.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./seed": {
+      "types": "./dist/seed.d.ts",
+      "default": "./dist/seed.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@library/tsconfig": "workspace:*",
+    "typescript": "6.0.3",
+    "vitest": "^5.0.3"
+  }
+}

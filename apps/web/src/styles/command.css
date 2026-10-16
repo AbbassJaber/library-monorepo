@@ -1,0 +1,38 @@
+@layer components {
+  .command-group [cmdk-group-heading] {
+    padding: 0.625rem 0.75rem 0.25rem;
+    font-size: var(--text-meta);
+    font-weight: 600;
+    color: var(--text-3);
+  }
+  .command-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 44px;
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--radius-control);
+    font-size: var(--text-small);
+    color: var(--text);
+    cursor: pointer;
+    user-select: none;
+  }
+  .command-item[data-selected='true'] {
+    background: var(--surface-2);
+  }
+  .command-item[data-disabled='true'] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .command-kbd {
+    padding: 0 0.375rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 6px;
+  }
+
+  @media (forced-colors: active) {
+    .command-item[data-selected='true'] {
+      outline: 2px solid Highlight;
+    }
+  }
+}
